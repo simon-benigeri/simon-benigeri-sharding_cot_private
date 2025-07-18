@@ -1,0 +1,9 @@
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6
+
+Joseph's total investment for the first year is $1000 + ($100 * 12) = $2200
+The interest calculated for the first year is $2200 * 10% = $220
+The total value of the investment after the first year is $2200 + $220 = $2420
+Joseph's total investment for the second year is $2420 + ($100 * 12) = $3620
+The interest calculated after the second year is $3620 * 10% = $362
+Joseph's investment in the mutual fund will be worth $3620 + $362 = $3982

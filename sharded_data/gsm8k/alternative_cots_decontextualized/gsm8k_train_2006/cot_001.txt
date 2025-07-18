@@ -1,0 +1,11 @@
+# Alternative COT 1
+# Sequence: s2 → s1 → s3 → s4 → s5 → s6 → s7 → s8
+
+The membership fee increases by $10 each subsequent year
+Aaron pays $80 in the first year
+In year 2, Aaron pays 80 + 10 = 90 dollars
+In year 3, Aaron pays 90 + 10 = 100 dollars
+In year 4, Aaron pays 100 + 10 = 110 dollars
+In year 5, Aaron pays 110 + 10 = 120 dollars
+In year 6, Aaron pays 120 + 10 = 130 dollars
+The membership cost in the sixth year is 130 dollars

@@ -1,0 +1,110 @@
+You are a reasoning graph expert. Your task is to convert reasoning segments into a directed acyclic graph that represents logical and temporal dependencies between reasoning steps. You will be given a math word problem, its answer, the final numerical answer, a chain-of-thought explanation, and a segmented list of reasoning steps.
+
+You must output your graph using separate <nodes> and <edges> tags in the following format:
+<nodes>
+[
+  {{"id": "s1", "text": "[segment text]"}},
+  {{"id": "s2", "text": "[segment text]"}},
+  ...
+]
+</nodes>
+
+<edges>
+[
+  ["s1", "s2"],
+  ["s2", "s3"]
+]
+</edges>
+
+Guidelines:
+- **[Required segments only]** Only create nodes for segments with "is_required": 1. Skip optional transition phrases.
+- **[Unique IDs]** Assign sequential IDs (s1, s2, s3, ...) to each required segment in order of appearance.
+- **[Dependency edges]** Create a directed edge from A to B if segment A must be completed before segment B can be executed.
+- **[Calculation dependencies]** If segment B uses a result calculated in segment A, create edge A → B.
+- **[Information dependencies]** If segment B relies on information established in segment A, create edge A → B.
+- **[No cycles]** Ensure the graph is acyclic - no circular dependencies.
+- **[Exact text]** Use the exact segment text in node objects, preserving all original wording.
+
+Example:
+
+Question: Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?
+
+Answer: Matthew picked 16 + 20 = <<16+20=36>>36 strawberries.
+Natalie picked 36/2 = <<36/2=18>>18 strawberries.
+All together, they have 16 + 36 + 18 = <<16+36+18=70>>70 strawberries.
+They can make 70/7 = <<70/7=10>>10 jars of strawberries.
+They earn 10 x $4 = $<<10*4=40>>40 from the strawberries they picked.
+#### 40
+
+Final Answer: 40
+
+Chain-of-thought: First, I need to find how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty, and Betty picked 16 strawberries. So Matthew picked 16 + 20 = 36 strawberries.
+
+Next, I need to find how many strawberries Natalie picked. The problem says Matthew picked twice as many as Natalie. Since Matthew picked 36 strawberries, Natalie must have picked 36/2 = 18 strawberries.
+
+Now I can calculate the total number of strawberries they all picked together. Betty picked 16, Matthew picked 36, and Natalie picked 18. So the total is 16 + 36 + 18 = 70 strawberries.
+
+Next, I need to figure out how many jars of jam they can make. Each jar uses 7 strawberries, and they have 70 strawberries total. So they can make 70/7 = 10 jars of jam.
+
+Finally, I need to calculate how much money they earned. They sold each jar for $4, and they made 10 jars. So they earned 10 × $4 = $40 from selling the jam.
+
+Segmented reasoning steps:
+[
+  {{"id": "s1", "text": "The problem states that Matthew picked 20 more strawberries than Betty, and Betty picked 16 strawberries", "is_required": 1}},
+  {{"id": "s2", "text": "So Matthew picked 16 + 20 = 36 strawberries", "is_required": 1}},
+  {{"id": "s3", "text": "The problem says Matthew picked twice as many as Natalie", "is_required": 1}},
+  {{"id": "s4", "text": "Since Matthew picked 36 strawberries, Natalie must have picked 36/2 = 18 strawberries", "is_required": 1}},
+  {{"id": "s5", "text": "Betty picked 16, Matthew picked 36, and Natalie picked 18", "is_required": 1}},
+  {{"id": "s6", "text": "So the total is 16 + 36 + 18 = 70 strawberries", "is_required": 1}},
+  {{"id": "s7", "text": "Each jar uses 7 strawberries, and they have 70 strawberries total", "is_required": 1}},
+  {{"id": "s8", "text": "So they can make 70/7 = 10 jars of jam", "is_required": 1}},
+  {{"id": "s9", "text": "They sold each jar for $4, and they made 10 jars", "is_required": 1}},
+  {{"id": "s10", "text": "So they earned 10 × $4 = $40 from selling the jam", "is_required": 1}},
+  {{"id": "s11", "text": "First, I need to find how many strawberries Matthew picked", "is_required": 0}},
+  {{"id": "s12", "text": "Next, I need to find how many strawberries Natalie picked", "is_required": 0}}
+]
+
+<nodes>
+[
+  {{"id": "s1", "text": "The problem states that Matthew picked 20 more strawberries than Betty, and Betty picked 16 strawberries"}},
+  {{"id": "s2", "text": "So Matthew picked 16 + 20 = 36 strawberries"}},
+  {{"id": "s3", "text": "The problem says Matthew picked twice as many as Natalie"}},
+  {{"id": "s4", "text": "Since Matthew picked 36 strawberries, Natalie must have picked 36/2 = 18 strawberries"}},
+  {{"id": "s5", "text": "Betty picked 16, Matthew picked 36, and Natalie picked 18"}},
+  {{"id": "s6", "text": "So the total is 16 + 36 + 18 = 70 strawberries"}},
+  {{"id": "s7", "text": "Each jar uses 7 strawberries, and they have 70 strawberries total"}},
+  {{"id": "s8", "text": "So they can make 70/7 = 10 jars of jam"}},
+  {{"id": "s9", "text": "They sold each jar for $4, and they made 10 jars"}},
+  {{"id": "s10", "text": "So they earned 10 × $4 = $40 from selling the jam"}}
+]
+</nodes>
+
+<edges>
+[
+  ["s1", "s2"],
+  ["s2", "s4"],
+  ["s3", "s4"],
+  ["s2", "s5"],
+  ["s4", "s5"],
+  ["s5", "s6"],
+  ["s6", "s7"],
+  ["s7", "s8"],
+  ["s8", "s9"],
+  ["s9", "s10"]
+]
+</edges>
+
+---USER---
+
+Please create a dependency graph for the following reasoning segments:
+
+Question: {question}
+Answer: {answer}
+Final Answer: {final_answer}
+Chain-of-thought:
+{cot_output_from_prompt_1}
+Segmented reasoning steps:
+{segments_from_prompt_2}
+
+Provide your directed acyclic graph below:
+

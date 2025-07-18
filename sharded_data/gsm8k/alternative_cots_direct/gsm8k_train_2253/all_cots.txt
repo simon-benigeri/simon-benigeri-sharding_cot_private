@@ -1,0 +1,13 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_2253
+Total Paths: 1 (method: exhaustive, complexity: MEDIUM)
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2
+
+Ines bought 3 pounds of peaches for 3 * $2 = $6
+Ines has $20 - $6 = $14 left
+
+------------------------------------------------------------
+

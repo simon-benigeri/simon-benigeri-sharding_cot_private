@@ -1,0 +1,71 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_5238
+Total Paths: 6 (method: exhaustive, complexity: MEDIUM)
+================================================================================
+
+# Alternative COT 1
+# Sequence: s3 → s4 → s1 → s2 → s5
+
+The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms
+The family would receive $1.50 x 4 = $6 for the newspapers
+The family collected 144 cans, which is 144/12 = 12 sets of 12 cans
+The family would receive $0.50 x 12 = $6 for the cans
+The total amount the family would receive is $6 + $6 = $12
+
+------------------------------------------------------------
+
+# Alternative COT 2
+# Sequence: s3 → s1 → s2 → s4 → s5
+
+The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms
+The family collected 144 cans, which is 144/12 = 12 sets of 12 cans
+The family would receive $0.50 x 12 = $6 for the cans
+The family would receive $1.50 x 4 = $6 for the newspapers
+The total amount the family would receive is $6 + $6 = $12
+
+------------------------------------------------------------
+
+# Alternative COT 3
+# Sequence: s3 → s1 → s4 → s2 → s5
+
+The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms
+The family collected 144 cans, which is 144/12 = 12 sets of 12 cans
+The family would receive $1.50 x 4 = $6 for the newspapers
+The family would receive $0.50 x 12 = $6 for the cans
+The total amount the family would receive is $6 + $6 = $12
+
+------------------------------------------------------------
+
+# Alternative COT 4
+# Sequence: s1 → s2 → s3 → s4 → s5
+
+The family collected 144 cans, which is 144/12 = 12 sets of 12 cans
+The family would receive $0.50 x 12 = $6 for the cans
+The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms
+The family would receive $1.50 x 4 = $6 for the newspapers
+The total amount the family would receive is $6 + $6 = $12
+
+------------------------------------------------------------
+
+# Alternative COT 5
+# Sequence: s1 → s3 → s4 → s2 → s5
+
+The family collected 144 cans, which is 144/12 = 12 sets of 12 cans
+The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms
+The family would receive $1.50 x 4 = $6 for the newspapers
+The family would receive $0.50 x 12 = $6 for the cans
+The total amount the family would receive is $6 + $6 = $12
+
+------------------------------------------------------------
+
+# Alternative COT 6
+# Sequence: s1 → s3 → s2 → s4 → s5
+
+The family collected 144 cans, which is 144/12 = 12 sets of 12 cans
+The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms
+The family would receive $0.50 x 12 = $6 for the cans
+The family would receive $1.50 x 4 = $6 for the newspapers
+The total amount the family would receive is $6 + $6 = $12
+
+------------------------------------------------------------
+

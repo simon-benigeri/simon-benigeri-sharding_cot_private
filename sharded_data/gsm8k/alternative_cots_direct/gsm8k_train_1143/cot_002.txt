@@ -1,0 +1,7 @@
+# Alternative COT 2
+# Sequence: s1 → s2 → s3 → s4
+
+Kendra bought 2 wooden toys and paid 2 * $20 = $40
+Kendra bought 3 hats and paid 3 * $10 = $30
+The total cost for the wooden toys and hats is $40 + $30 = $70
+Kendra received change from her $100 bill calculated as $100 - $70 = $30

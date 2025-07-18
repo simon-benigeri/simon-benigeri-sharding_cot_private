@@ -1,0 +1,12 @@
+# Alternative COT 5
+# Sequence: s2 → s4 → s1 → s3 → s5 → s8 → s6 → s7 → s9
+
+Kendra bought 2 wooden toys
+The price of each hat is $10
+The price of each wooden toy is $20
+The total cost for the wooden toys is 2 toys × $20/toy = $40
+Kendra bought 3 hats
+Kendra went to the shop with a $100 bill
+The total cost for the hats is 3 hats × $10/hat = $30
+The total cost is $40 + $30 = $70
+The change received is $100 - $70 = $30

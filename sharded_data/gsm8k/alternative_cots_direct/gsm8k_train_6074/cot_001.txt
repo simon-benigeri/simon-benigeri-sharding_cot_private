@@ -1,0 +1,7 @@
+# Alternative COT 1
+# Sequence: s3 → s1 → s2 → s4
+
+James is missing 5 Legos
+James starts with 500 Legos
+James uses half of the Legos, leaving 500/2 = 250 Legos unused
+James puts away 250 - 5 = 245 Legos

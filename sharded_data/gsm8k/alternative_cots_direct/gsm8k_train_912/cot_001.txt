@@ -1,0 +1,8 @@
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4 → s5
+
+Matthew picked 16 + 20 = 36 strawberries
+Natalie picked 36/2 = 18 strawberries
+Betty, Matthew, and Natalie have 16 + 36 + 18 = 70 strawberries in total
+Betty, Matthew, and Natalie can make 70/7 = 10 jars of strawberries
+Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam

@@ -1,0 +1,12 @@
+# Alternative COT 5
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6 → s8 → s9 → s7
+
+James starts with a total of 500 Legos
+James uses half of his collection to build a castle
+Half of 500 is calculated as 500 / 2 = 250
+James has used 250 Legos to build the castle
+The number of Legos remaining after use is calculated as 500 - 250 = 250 Legos
+James is instructed to put away the leftover Legos
+The number of Legos James actually puts back in the box is calculated as 250 - 5 = 245 Legos
+The total number of Legos in the box at the end is 245
+James is missing 5 pieces

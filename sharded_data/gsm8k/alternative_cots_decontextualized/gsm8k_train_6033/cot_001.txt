@@ -1,0 +1,14 @@
+# Alternative COT 1
+# Sequence: s2 → s1 → s3 → s4 → s5 → s6 → s7 → s8 → s9 → s10 → s11
+
+Each generation's tails are 25% longer than the previous generation
+The first generation's tail length is given as 16 cm
+To find 25% of the first generation's tail length, calculate 25% of 16 cm
+25% of 16 cm is calculated as 0.25 * 16 cm = 4 cm
+The second generation's tail length is found by adding the increase to the first generation's tail length
+Second generation's tail length = 16 cm + 4 cm = 20 cm
+To find how much longer the third generation's tails are, calculate 25% of the second generation's tail length
+25% of 20 cm is calculated as 0.25 * 20 cm = 5 cm
+The third generation's tail length is found by adding the increase to the second generation's tail length
+Third generation's tail length = 20 cm + 5 cm = 25 cm
+The length of the third generation's tails is 25 cm

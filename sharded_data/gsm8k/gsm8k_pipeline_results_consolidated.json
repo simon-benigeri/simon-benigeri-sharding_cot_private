@@ -1,0 +1,316 @@
+[
+  {
+    "example_id": "gsm8k_train_5238",
+    "question": "For every 12 cans you recycle, you receive $0.50, and for every 5 kilograms of newspapers, you receive $1.50. If your family collected 144 cans and 20 kilograms of newspapers, how much money would you receive?",
+    "answer": "There are 144/12 = <<144/12=12>>12 sets of 12 cans that the family collected.\nSo, the family would receive $0.50 x 12 = $<<0.50*12=6>>6 for the cans.\nThere are 20/5 = <<20/5=4>>4 sets of 5 kilograms of newspapers that the family collected.\nSo, the family would receive $1.50 x 4 = $<<1.50*4=6>>6 for the newspapers.\nTherefore, the family would receive a total of $6 + $6 = $<<6+6=12>>12.\n#### 12",
+    "final_answer": "12",
+    "cot": "To determine how much money the family would receive from recycling cans and newspapers, I will break down the problem into two parts: the earnings from the cans and the earnings from the newspapers.\n\nFirst, let's calculate the earnings from the cans. The family collected a total of 144 cans. According to the problem, for every 12 cans recycled, they receive $0.50. To find out how many sets of 12 cans are in 144, I divide 144 by 12:\n\n144 ÷ 12 = 12 sets of 12 cans.\n\nNow, since they receive $0.50 for each set of 12 cans, I can calculate the total amount they earn from the cans:\n\n$0.50 × 12 = $6.\n\nNext, I will calculate the earnings from the newspapers. The family collected 20 kilograms of newspapers. The problem states that for every 5 kilograms of newspapers, they receive $1.50. To find out how many sets of 5 kilograms are in 20 kilograms, I divide 20 by 5:\n\n20 ÷ 5 = 4 sets of 5 kilograms.\n\nNow, since they receive $1.50 for each set of 5 kilograms, I can calculate the total amount they earn from the newspapers:\n\n$1.50 × 4 = $6.\n\nFinally, to find the total amount of money the family receives from both the cans and the newspapers, I add the two amounts together:\n\n$6 (from cans) + $6 (from newspapers) = $12.\n\nThus, the total amount of money the family would receive is $12.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "To determine how much money the family would receive from recycling cans and newspapers, I will break down the problem into two parts: the earnings from the cans and the earnings from the newspapers.",
+        "is_required": 0
+      },
+      {
+        "id": "s2",
+        "text": "The family collected a total of 144 cans. According to the problem, for every 12 cans recycled, they receive $0.50. To find out how many sets of 12 cans are in 144, I divide 144 by 12: 144 ÷ 12 = 12 sets of 12 cans.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Now, since they receive $0.50 for each set of 12 cans, I can calculate the total amount they earn from the cans: $0.50 × 12 = $6.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "The family collected 20 kilograms of newspapers. The problem states that for every 5 kilograms of newspapers, they receive $1.50. To find out how many sets of 5 kilograms are in 20 kilograms, I divide 20 by 5: 20 ÷ 5 = 4 sets of 5 kilograms.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Now, since they receive $1.50 for each set of 5 kilograms, I can calculate the total amount they earn from the newspapers: $1.50 × 4 = $6.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Finally, to find the total amount of money the family receives from both the cans and the newspapers, I add the two amounts together: $6 (from cans) + $6 (from newspapers) = $12.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Thus, the total amount of money the family would receive is $12.",
+        "is_required": 0
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s2",
+        "text": "The family collected a total of 144 cans. According to the problem, for every 12 cans recycled, they receive $0.50. To find out how many sets of 12 cans are in 144, I divide 144 by 12: 144 ÷ 12 = 12 sets of 12 cans.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Now, since they receive $0.50 for each set of 12 cans, I can calculate the total amount they earn from the cans: $0.50 × 12 = $6.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "The family collected 20 kilograms of newspapers. The problem states that for every 5 kilograms of newspapers, they receive $1.50. To find out how many sets of 5 kilograms are in 20 kilograms, I divide 20 by 5: 20 ÷ 5 = 4 sets of 5 kilograms.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Now, since they receive $1.50 for each set of 5 kilograms, I can calculate the total amount they earn from the newspapers: $1.50 × 4 = $6.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Finally, to find the total amount of money the family receives from both the cans and the newspapers, I add the two amounts together: $6 (from cans) + $6 (from newspapers) = $12.",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s2",
+        "text": "The family collected a total of 144 cans. According to the problem, for every 12 cans recycled, they receive $0.50. To find out how many sets of 12 cans are in 144, I divide 144 by 12: 144 ÷ 12 = 12 sets of 12 cans."
+      },
+      {
+        "id": "s3",
+        "text": "Now, since they receive $0.50 for each set of 12 cans, I can calculate the total amount they earn from the cans: $0.50 × 12 = $6."
+      },
+      {
+        "id": "s4",
+        "text": "The family collected 20 kilograms of newspapers. The problem states that for every 5 kilograms of newspapers, they receive $1.50. To find out how many sets of 5 kilograms are in 20 kilograms, I divide 20 by 5: 20 ÷ 5 = 4 sets of 5 kilograms."
+      },
+      {
+        "id": "s5",
+        "text": "Now, since they receive $1.50 for each set of 5 kilograms, I can calculate the total amount they earn from the newspapers: $1.50 × 4 = $6."
+      },
+      {
+        "id": "s6",
+        "text": "Finally, to find the total amount of money the family receives from both the cans and the newspapers, I add the two amounts together: $6 (from cans) + $6 (from newspapers) = $12."
+      }
+    ],
+    "edges": [
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s4",
+        "s5"
+      ],
+      [
+        "s3",
+        "s6"
+      ],
+      [
+        "s5",
+        "s6"
+      ]
+    ],
+    "success": true
+  },
+  {
+    "example_id": "gsm8k_train_912",
+    "question": "Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?",
+    "answer": "Matthew picked 16 + 20 = <<16+20=36>>36 strawberries.\nNatalie picked 36/2 = <<36/2=18>>18 strawberries.\nAll together, they have 16 + 36 + 18 = <<16+36+18=70>>70 strawberries.\nThey can make 70/7 = <<70/7=10>>10 jars of strawberries.\nThey earn 10 x $4 = $<<10*4=40>>40 from the strawberries they picked.\n#### 40",
+    "final_answer": "40",
+    "cot": "To solve the problem, I will break it down step by step, starting with the information given about the strawberries picked by Betty, Matthew, and Natalie.\n\nFirst, we know that Betty picked 16 strawberries. \n\nNext, we need to determine how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty. Therefore, I can calculate Matthew's strawberries as follows:\nMatthew's strawberries = Betty's strawberries + 20\nMatthew's strawberries = 16 + 20 = 36 strawberries.\n\nNow that I have the number of strawberries Matthew picked, I need to find out how many strawberries Natalie picked. The problem indicates that Matthew picked twice as many strawberries as Natalie. To find Natalie's strawberries, I can set up the equation:\nMatthew's strawberries = 2 × Natalie's strawberries\nThis means:\n36 = 2 × Natalie's strawberries\nTo find Natalie's strawberries, I divide both sides by 2:\nNatalie's strawberries = 36 / 2 = 18 strawberries.\n\nNow I have the number of strawberries picked by all three individuals:\n- Betty: 16 strawberries\n- Matthew: 36 strawberries\n- Natalie: 18 strawberries\n\nNext, I will calculate the total number of strawberries they picked together:\nTotal strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries\nTotal strawberries = 16 + 36 + 18 = 70 strawberries.\n\nNow that I know the total number of strawberries, I need to determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars they can make, I divide the total number of strawberries by the number of strawberries needed for one jar:\nNumber of jars = Total strawberries / Strawberries per jar\nNumber of jars = 70 / 7 = 10 jars.\n\nFinally, I need to calculate how much money they earned from selling the jam. They sold each jar for $4. Therefore, the total earnings can be calculated as:\nTotal earnings = Number of jars × Price per jar\nTotal earnings = 10 × $4 = $40.\n\nThus, the final answer is that they were able to make $40 from the strawberries they picked.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "First, we know that Betty picked 16 strawberries.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "The problem states that Matthew picked 20 more strawberries than Betty. Therefore, I can calculate Matthew's strawberries as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "The problem indicates that Matthew picked twice as many strawberries as Natalie. To find Natalie's strawberries, I can set up the equation: Matthew's strawberries = 2 × Natalie's strawberries This means: 36 = 2 × Natalie's strawberries To find Natalie's strawberries, I divide both sides by 2: Natalie's strawberries = 36 / 2 = 18 strawberries.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Now I have the number of strawberries picked by all three individuals: - Betty: 16 strawberries - Matthew: 36 strawberries - Natalie: 18 strawberries",
+        "is_required": 0
+      },
+      {
+        "id": "s5",
+        "text": "Next, I will calculate the total number of strawberries they picked together: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Now that I know the total number of strawberries, I need to determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars they can make, I divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Finally, I need to calculate how much money they earned from selling the jam. They sold each jar for $4. Therefore, the total earnings can be calculated as: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40.",
+        "is_required": 1
+      },
+      {
+        "id": "s8",
+        "text": "Thus, the final answer is that they were able to make $40 from the strawberries they picked.",
+        "is_required": 0
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s1",
+        "text": "First, we know that Betty picked 16 strawberries.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "The problem states that Matthew picked 20 more strawberries than Betty. Therefore, I can calculate Matthew's strawberries as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "The problem indicates that Matthew picked twice as many strawberries as Natalie. To find Natalie's strawberries, I can set up the equation: Matthew's strawberries = 2 × Natalie's strawberries This means: 36 = 2 × Natalie's strawberries To find Natalie's strawberries, I divide both sides by 2: Natalie's strawberries = 36 / 2 = 18 strawberries.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Next, I will calculate the total number of strawberries they picked together: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Now that I know the total number of strawberries, I need to determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars they can make, I divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Finally, I need to calculate how much money they earned from selling the jam. They sold each jar for $4. Therefore, the total earnings can be calculated as: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40.",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s1",
+        "text": "First, we know that Betty picked 16 strawberries."
+      },
+      {
+        "id": "s2",
+        "text": "The problem states that Matthew picked 20 more strawberries than Betty. Therefore, I can calculate Matthew's strawberries as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries."
+      },
+      {
+        "id": "s3",
+        "text": "The problem indicates that Matthew picked twice as many strawberries as Natalie. To find Natalie's strawberries, I can set up the equation: Matthew's strawberries = 2 × Natalie's strawberries This means: 36 = 2 × Natalie's strawberries To find Natalie's strawberries, I divide both sides by 2: Natalie's strawberries = 36 / 2 = 18 strawberries."
+      },
+      {
+        "id": "s5",
+        "text": "Next, I will calculate the total number of strawberries they picked together: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries."
+      },
+      {
+        "id": "s6",
+        "text": "Now that I know the total number of strawberries, I need to determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars they can make, I divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars."
+      },
+      {
+        "id": "s7",
+        "text": "Finally, I need to calculate how much money they earned from selling the jam. They sold each jar for $4. Therefore, the total earnings can be calculated as: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40."
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s2",
+        "s5"
+      ],
+      [
+        "s3",
+        "s5"
+      ],
+      [
+        "s5",
+        "s6"
+      ],
+      [
+        "s6",
+        "s7"
+      ]
+    ],
+    "success": true
+  },
+  {
+    "example_id": "gsm8k_train_204",
+    "question": "Jack has a stack of books that is 12 inches thick. He knows from experience that 80 pages is one inch thick. If he has 6 books, how many pages is each one on average?",
+    "answer": "There are 960 pages because 80 x 12 = <<80*12=960>>960\nEach book is 160 pages because 960 / 6 = <<960/6=160>>160\n#### 160",
+    "final_answer": "160",
+    "cot": "To solve the problem, I first need to determine the total number of pages in Jack's stack of books. The problem states that the stack is 12 inches thick and that 80 pages equal one inch. \n\nTo find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch. So, I calculate:\n80 pages/inch × 12 inches = 960 pages.\n\nNow that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average. To do this, I will divide the total number of pages by the number of books:\n960 pages ÷ 6 books = 160 pages/book.\n\nThus, on average, each book contains 160 pages.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "The problem states that the stack is 12 inches thick and that 80 pages equal one inch",
+        "is_required": 0
+      },
+      {
+        "id": "s2",
+        "text": "To find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch",
+        "is_required": 0
+      },
+      {
+        "id": "s3",
+        "text": "So, I calculate: 80 pages/inch × 12 inches = 960 pages",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Now that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average",
+        "is_required": 0
+      },
+      {
+        "id": "s5",
+        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Thus, on average, each book contains 160 pages",
+        "is_required": 0
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s3",
+        "text": "So, I calculate: 80 pages/inch × 12 inches = 960 pages",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s3",
+        "text": "So, I calculate: 80 pages/inch × 12 inches = 960 pages"
+      },
+      {
+        "id": "s5",
+        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book"
+      }
+    ],
+    "edges": [
+      [
+        "s3",
+        "s5"
+      ]
+    ],
+    "success": true
+  }
+]

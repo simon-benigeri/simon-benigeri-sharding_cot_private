@@ -1,0 +1,15 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_6033
+Total Paths: 1 (method: exhaustive, complexity: MEDIUM)
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4
+
+Calculate the increase in length for the second generation's tails: 25% * 16 cm = 4 cm
+Calculate the second generation's tail length by adding the increase to the first generation's tail length: 4 cm + 16 cm = 20 cm
+Calculate the increase in length for the third generation's tails: 25% * 20 cm = 5 cm
+Calculate the third generation's tail length by adding the increase to the second generation's tail length: 5 cm + 20 cm = 25 cm
+
+------------------------------------------------------------
+

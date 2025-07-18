@@ -1,0 +1,982 @@
+[
+  {
+    "example_id": "gsm8k_train_5238",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 5,
+      "edges": 4,
+      "constraint_ratio": 1.0,
+      "source_nodes": 2,
+      "sink_nodes": 1,
+      "source_sink_pairs": 2,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 6,
+    "paths": [
+      {
+        "sequence": [
+          "s3",
+          "s4",
+          "s1",
+          "s2",
+          "s5"
+        ],
+        "texts": [
+          "The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms",
+          "The family would receive $1.50 x 4 = $6 for the newspapers",
+          "The family collected 144 cans, which is 144/12 = 12 sets of 12 cans",
+          "The family would receive $0.50 x 12 = $6 for the cans",
+          "The total amount the family would receive is $6 + $6 = $12"
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s1",
+          "s2",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms",
+          "The family collected 144 cans, which is 144/12 = 12 sets of 12 cans",
+          "The family would receive $0.50 x 12 = $6 for the cans",
+          "The family would receive $1.50 x 4 = $6 for the newspapers",
+          "The total amount the family would receive is $6 + $6 = $12"
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s1",
+          "s4",
+          "s2",
+          "s5"
+        ],
+        "texts": [
+          "The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms",
+          "The family collected 144 cans, which is 144/12 = 12 sets of 12 cans",
+          "The family would receive $1.50 x 4 = $6 for the newspapers",
+          "The family would receive $0.50 x 12 = $6 for the cans",
+          "The total amount the family would receive is $6 + $6 = $12"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "The family collected 144 cans, which is 144/12 = 12 sets of 12 cans",
+          "The family would receive $0.50 x 12 = $6 for the cans",
+          "The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms",
+          "The family would receive $1.50 x 4 = $6 for the newspapers",
+          "The total amount the family would receive is $6 + $6 = $12"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s4",
+          "s2",
+          "s5"
+        ],
+        "texts": [
+          "The family collected 144 cans, which is 144/12 = 12 sets of 12 cans",
+          "The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms",
+          "The family would receive $1.50 x 4 = $6 for the newspapers",
+          "The family would receive $0.50 x 12 = $6 for the cans",
+          "The total amount the family would receive is $6 + $6 = $12"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s2",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "The family collected 144 cans, which is 144/12 = 12 sets of 12 cans",
+          "The family collected 20 kilograms of newspapers, which is 20/5 = 4 sets of 5 kilograms",
+          "The family would receive $0.50 x 12 = $6 for the cans",
+          "The family would receive $1.50 x 4 = $6 for the newspapers",
+          "The total amount the family would receive is $6 + $6 = $12"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_912",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 5,
+      "edges": 5,
+      "constraint_ratio": 1.25,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "Matthew picked 16 + 20 = 36 strawberries",
+          "Natalie picked 36/2 = 18 strawberries",
+          "Betty, Matthew, and Natalie have 16 + 36 + 18 = 70 strawberries in total",
+          "Betty, Matthew, and Natalie can make 70/7 = 10 jars of strawberries",
+          "Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_204",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 5,
+      "edges": 4,
+      "constraint_ratio": 1.0,
+      "source_nodes": 3,
+      "sink_nodes": 1,
+      "source_sink_pairs": 3,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 8,
+    "paths": [
+      {
+        "sequence": [
+          "s4",
+          "s2",
+          "s1",
+          "s3",
+          "s5"
+        ],
+        "texts": [
+          "There are 6 books in total",
+          "80 pages is equivalent to 1 inch thick",
+          "The thickness of the stack of books is 12 inches",
+          "The total number of pages in the stack is 80 x 12 = 960 pages",
+          "The average number of pages per book is 960 / 6 = 160 pages"
+        ]
+      },
+      {
+        "sequence": [
+          "s4",
+          "s1",
+          "s2",
+          "s3",
+          "s5"
+        ],
+        "texts": [
+          "There are 6 books in total",
+          "The thickness of the stack of books is 12 inches",
+          "80 pages is equivalent to 1 inch thick",
+          "The total number of pages in the stack is 80 x 12 = 960 pages",
+          "The average number of pages per book is 960 / 6 = 160 pages"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s1",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "80 pages is equivalent to 1 inch thick",
+          "The thickness of the stack of books is 12 inches",
+          "The total number of pages in the stack is 80 x 12 = 960 pages",
+          "There are 6 books in total",
+          "The average number of pages per book is 960 / 6 = 160 pages"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s1",
+          "s4",
+          "s3",
+          "s5"
+        ],
+        "texts": [
+          "80 pages is equivalent to 1 inch thick",
+          "The thickness of the stack of books is 12 inches",
+          "There are 6 books in total",
+          "The total number of pages in the stack is 80 x 12 = 960 pages",
+          "The average number of pages per book is 960 / 6 = 160 pages"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s4",
+          "s1",
+          "s3",
+          "s5"
+        ],
+        "texts": [
+          "80 pages is equivalent to 1 inch thick",
+          "There are 6 books in total",
+          "The thickness of the stack of books is 12 inches",
+          "The total number of pages in the stack is 80 x 12 = 960 pages",
+          "The average number of pages per book is 960 / 6 = 160 pages"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s2",
+          "s3",
+          "s5"
+        ],
+        "texts": [
+          "The thickness of the stack of books is 12 inches",
+          "There are 6 books in total",
+          "80 pages is equivalent to 1 inch thick",
+          "The total number of pages in the stack is 80 x 12 = 960 pages",
+          "The average number of pages per book is 960 / 6 = 160 pages"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "The thickness of the stack of books is 12 inches",
+          "80 pages is equivalent to 1 inch thick",
+          "The total number of pages in the stack is 80 x 12 = 960 pages",
+          "There are 6 books in total",
+          "The average number of pages per book is 960 / 6 = 160 pages"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s3",
+          "s5"
+        ],
+        "texts": [
+          "The thickness of the stack of books is 12 inches",
+          "80 pages is equivalent to 1 inch thick",
+          "There are 6 books in total",
+          "The total number of pages in the stack is 80 x 12 = 960 pages",
+          "The average number of pages per book is 960 / 6 = 160 pages"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_6074",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 4,
+      "edges": 3,
+      "constraint_ratio": 1.0,
+      "source_nodes": 2,
+      "sink_nodes": 1,
+      "source_sink_pairs": 2,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 3,
+    "paths": [
+      {
+        "sequence": [
+          "s3",
+          "s1",
+          "s2",
+          "s4"
+        ],
+        "texts": [
+          "James is missing 5 Legos",
+          "James starts with 500 Legos",
+          "James uses half of the Legos, leaving 500/2 = 250 Legos unused",
+          "James puts away 250 - 5 = 245 Legos"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "texts": [
+          "James starts with 500 Legos",
+          "James uses half of the Legos, leaving 500/2 = 250 Legos unused",
+          "James is missing 5 Legos",
+          "James puts away 250 - 5 = 245 Legos"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s2",
+          "s4"
+        ],
+        "texts": [
+          "James starts with 500 Legos",
+          "James is missing 5 Legos",
+          "James uses half of the Legos, leaving 500/2 = 250 Legos unused",
+          "James puts away 250 - 5 = 245 Legos"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_2253",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 2,
+      "edges": 1,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2"
+        ],
+        "texts": [
+          "Ines bought 3 pounds of peaches for 3 * $2 = $6",
+          "Ines has $20 - $6 = $14 left"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_2006",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 5,
+      "edges": 4,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "In year 2, Aaron pays 80 + 10 = 90 dollars",
+          "In year 3, Aaron pays 90 + 10 = 100 dollars",
+          "In year 4, Aaron pays 100 + 10 = 110 dollars",
+          "In year 5, Aaron pays 110 + 10 = 120 dollars",
+          "In year 6, Aaron pays 120 + 10 = 130 dollars"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_1828",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 6,
+      "edges": 6,
+      "constraint_ratio": 1.2,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "Joseph's total investment for the first year is $1000 + ($100 * 12) = $2200",
+          "The interest calculated for the first year is $2200 * 10% = $220",
+          "The total value of the investment after the first year is $2200 + $220 = $2420",
+          "Joseph's total investment for the second year is $2420 + ($100 * 12) = $3620",
+          "The interest calculated after the second year is $3620 * 10% = $362",
+          "Joseph's investment in the mutual fund will be worth $3620 + $362 = $3982"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_1143",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 4,
+      "edges": 3,
+      "constraint_ratio": 1.0,
+      "source_nodes": 2,
+      "sink_nodes": 1,
+      "source_sink_pairs": 2,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 2,
+    "paths": [
+      {
+        "sequence": [
+          "s2",
+          "s1",
+          "s3",
+          "s4"
+        ],
+        "texts": [
+          "Kendra bought 3 hats and paid 3 * $10 = $30",
+          "Kendra bought 2 wooden toys and paid 2 * $20 = $40",
+          "The total cost for the wooden toys and hats is $40 + $30 = $70",
+          "Kendra received change from her $100 bill calculated as $100 - $70 = $30"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "texts": [
+          "Kendra bought 2 wooden toys and paid 2 * $20 = $40",
+          "Kendra bought 3 hats and paid 3 * $10 = $30",
+          "The total cost for the wooden toys and hats is $40 + $30 = $70",
+          "Kendra received change from her $100 bill calculated as $100 - $70 = $30"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_6033",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 4,
+      "edges": 3,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4"
+        ],
+        "texts": [
+          "Calculate the increase in length for the second generation's tails: 25% * 16 cm = 4 cm",
+          "Calculate the second generation's tail length by adding the increase to the first generation's tail length: 4 cm + 16 cm = 20 cm",
+          "Calculate the increase in length for the third generation's tails: 25% * 20 cm = 5 cm",
+          "Calculate the third generation's tail length by adding the increase to the second generation's tail length: 5 cm + 20 cm = 25 cm"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_839",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 6,
+      "edges": 5,
+      "constraint_ratio": 1.0,
+      "source_nodes": 4,
+      "sink_nodes": 1,
+      "source_sink_pairs": 4,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 24,
+    "paths": [
+      {
+        "sequence": [
+          "s4",
+          "s3",
+          "s2",
+          "s1",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s4",
+          "s3",
+          "s1",
+          "s2",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s4",
+          "s2",
+          "s1",
+          "s3",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s4",
+          "s2",
+          "s3",
+          "s1",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s4",
+          "s1",
+          "s3",
+          "s2",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s4",
+          "s1",
+          "s2",
+          "s3",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s2",
+          "s1",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s2",
+          "s4",
+          "s1",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s1",
+          "s4",
+          "s2",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s1",
+          "s2",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s4",
+          "s2",
+          "s1",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s4",
+          "s1",
+          "s2",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s1",
+          "s4",
+          "s3",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s4",
+          "s3",
+          "s1",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s4",
+          "s1",
+          "s3",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s3",
+          "s1",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s2",
+          "s3",
+          "s4",
+          "s1",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s3",
+          "s2",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s2",
+          "s3",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s2",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s4",
+          "s2",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s3",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
+          "An estimated 1 * 35 = 35 omelets are needed for older children",
+          "An estimated 2 * 75 = 150 omelets are needed for adults",
+          "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
+        ]
+      }
+    ]
+  }
+]

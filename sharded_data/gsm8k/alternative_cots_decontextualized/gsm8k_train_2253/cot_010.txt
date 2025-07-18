@@ -1,0 +1,11 @@
+# Alternative COT 10
+# Sequence: s2 → s1 → s3 → s4 → s6 → s5 → s7 → s8
+
+Peaches cost $2 per pound
+Ines had $20 in her purse
+Ines bought 3 pounds of peaches
+The total cost of the peaches is 3 pounds * $2 per pound = $6
+Initially, Ines had $20
+Ines spent $6 on the peaches
+To find the remaining amount, subtract the cost of the peaches from her initial amount: $20 - $6
+Ines has $14 left in her purse

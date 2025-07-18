@@ -1,0 +1,9 @@
+# Alternative COT 15
+# Sequence: s2 → s4 → s3 → s1 → s5 → s6
+
+An estimated 1 * 35 = 35 omelets are needed for older children
+An estimated 1.5 * 37 = 55.5 omelets are needed for seniors
+An estimated 2 * 75 = 150 omelets are needed for adults
+An estimated 0.5 * 53 = 26.5 omelets are needed for small children
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292
+The total number of eggs needed is 2 * 292 = 584

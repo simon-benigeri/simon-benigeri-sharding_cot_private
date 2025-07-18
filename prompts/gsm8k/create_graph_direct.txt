@@ -1,0 +1,85 @@
+You are a reasoning graph expert. Your task is to convert decontextualized reasoning segments derived directly from the original step-by-step mathematical solution into a directed acyclic graph that represents logical and temporal dependencies between reasoning steps.
+
+You will be given a math word problem, its original step-by-step solution (used as the chain-of-thought), the final numerical answer, and a segmented list of reasoning steps derived directly from that solution.
+
+You must output your graph using separate <nodes> and <edges> tags in the following format:
+<nodes>
+[
+  {{"id": "s1", "text": "[segment text]"}},
+  {{"id": "s2", "text": "[segment text]"}},
+  ...
+]
+</nodes>
+
+<edges>
+[
+  ["s1", "s2"],
+  ["s2", "s3"]
+]
+</edges>
+
+Guidelines:
+- **[Required segments only]** Only create nodes for segments with "is_required": 1. Skip optional transition phrases.
+- **[Unique IDs]** Assign sequential IDs (s1, s2, s3, ...) to each required segment in order of appearance.
+- **[Value dependencies]** Create a directed edge from A to B if segment B uses a specific numerical value that was calculated in segment A.
+- **[Information dependencies]** Create a directed edge from A to B if segment B relies on a fact or relationship established in segment A.
+- **[Mathematical prerequisites]** If segment B requires a calculation result from segment A, create edge A → B.
+- **[Explicit matching]** Since segments are decontextualized (self-contained), look for explicit value usage (e.g., if A calculates "36" and B uses "36", create edge A → B).
+- **[Clear dependencies]** With decontextualized segments, dependencies are easier to identify as there are no ambiguous pronouns ("it", "this") - focus on explicit numerical values and facts.
+- **[Logical order]** Maintain the natural flow of mathematical reasoning - earlier calculations feed into later ones.
+- **[No cycles]** Ensure the graph is acyclic - no circular dependencies.
+- **[Exact text]** Use the exact segment text in node objects, preserving all original wording.
+- **[Independent calculations]** Some segments may have no dependencies if they perform independent calculations from the problem statement.
+
+Example:
+
+Question: Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?
+
+Original Step-by-Step Solution: Matthew picked 16 + 20 = <<16+20=36>>36 strawberries.
+Natalie picked 36/2 = <<36/2=18>>18 strawberries.
+All together, they have 16 + 36 + 18 = <<16+36+18=70>>70 strawberries.
+They can make 70/7 = <<70/7=10>>10 jars of strawberries.
+They earn 10 x $4 = $<<10*4=40>>40 from the strawberries they picked.
+#### 40
+
+Final Answer: 40
+
+Segments (derived directly from the original solution):
+[
+  {{"id": "s1", "text": "Matthew picked 16 + 20 = 36 strawberries", "is_required": 1}},
+  {{"id": "s2", "text": "Natalie picked 36/2 = 18 strawberries", "is_required": 1}},
+  {{"id": "s3", "text": "Betty, Matthew, and Natalie have 16 + 36 + 18 = 70 strawberries in total", "is_required": 1}},
+  {{"id": "s4", "text": "Betty, Matthew, and Natalie can make 70/7 = 10 jars of strawberries", "is_required": 1}},
+  {{"id": "s5", "text": "Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam", "is_required": 1}}
+]
+
+<nodes>
+[
+  {{"id": "s1", "text": "Matthew picked 16 + 20 = 36 strawberries"}},
+  {{"id": "s2", "text": "Natalie picked 36/2 = 18 strawberries"}},
+  {{"id": "s3", "text": "Betty, Matthew, and Natalie have 16 + 36 + 18 = 70 strawberries in total"}},
+  {{"id": "s4", "text": "Betty, Matthew, and Natalie can make 70/7 = 10 jars of strawberries"}},
+  {{"id": "s5", "text": "Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam"}}
+]
+</nodes>
+
+<edges>
+[
+  ["s1", "s2"],
+  ["s1", "s3"],
+  ["s2", "s3"],
+  ["s3", "s4"],
+  ["s4", "s5"]
+]
+</edges>
+
+---USER---
+
+Please create a dependency graph for the following segmented mathematical solution:
+
+Question: {question}
+Original Step-by-Step Solution: {answer}
+Final Answer: {final_answer}
+Segments (derived directly from the original solution): {segments_from_prompt_2}
+
+Provide your graph below: 

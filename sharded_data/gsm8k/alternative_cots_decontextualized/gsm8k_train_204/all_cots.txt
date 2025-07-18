@@ -1,0 +1,34 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_204
+Total Paths Generated: 2 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 2
+================================================================================
+
+# Alternative COT 1
+# Sequence: s2 → s1 → s3 → s4 → s5 → s6 → s7 → s8
+
+80 pages correspond to one inch of thickness
+The stack of books is 12 inches thick
+To find the total number of pages, multiply the number of pages per inch by the total thickness in inches
+Calculate 80 pages/inch × 12 inches = 960 pages
+There are 960 pages in total
+To find the number of pages in each of the 6 books on average, divide the total number of pages by the number of books
+Calculate 960 pages ÷ 6 books = 160 pages/book
+On average, each book contains 160 pages
+
+------------------------------------------------------------
+
+# Alternative COT 2
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6 → s7 → s8
+
+The stack of books is 12 inches thick
+80 pages correspond to one inch of thickness
+To find the total number of pages, multiply the number of pages per inch by the total thickness in inches
+Calculate 80 pages/inch × 12 inches = 960 pages
+There are 960 pages in total
+To find the number of pages in each of the 6 books on average, divide the total number of pages by the number of books
+Calculate 960 pages ÷ 6 books = 160 pages/book
+On average, each book contains 160 pages
+
+------------------------------------------------------------
+

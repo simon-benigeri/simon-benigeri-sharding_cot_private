@@ -1,0 +1,35 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_6074
+Total Paths: 3 (method: exhaustive, complexity: MEDIUM)
+================================================================================
+
+# Alternative COT 1
+# Sequence: s3 → s1 → s2 → s4
+
+James is missing 5 Legos
+James starts with 500 Legos
+James uses half of the Legos, leaving 500/2 = 250 Legos unused
+James puts away 250 - 5 = 245 Legos
+
+------------------------------------------------------------
+
+# Alternative COT 2
+# Sequence: s1 → s2 → s3 → s4
+
+James starts with 500 Legos
+James uses half of the Legos, leaving 500/2 = 250 Legos unused
+James is missing 5 Legos
+James puts away 250 - 5 = 245 Legos
+
+------------------------------------------------------------
+
+# Alternative COT 3
+# Sequence: s1 → s3 → s2 → s4
+
+James starts with 500 Legos
+James is missing 5 Legos
+James uses half of the Legos, leaving 500/2 = 250 Legos unused
+James puts away 250 - 5 = 245 Legos
+
+------------------------------------------------------------
+

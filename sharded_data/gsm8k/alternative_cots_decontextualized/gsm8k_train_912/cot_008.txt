@@ -1,0 +1,19 @@
+# Alternative COT 8
+# Sequence: s5 → s6 → s1 → s2 → s3 → s4 → s7 → s8 → s9 → s11 → s10 → s14 → s12 → s13 → s15 → s16
+
+Matthew picked twice as many strawberries as Natalie
+Matthew's strawberries = 2 × Natalie's strawberries
+Betty picked 16 strawberries
+Matthew picked 20 more strawberries than Betty
+Matthew's strawberries = Betty's strawberries + 20
+Matthew's strawberries = 16 + 20 = 36 strawberries
+Natalie's strawberries = 36 / 2 = 18 strawberries
+Betty picked 16 strawberries, Matthew picked 36 strawberries, and Natalie picked 18 strawberries
+Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries
+Each jar of jam requires 7 strawberries
+Total strawberries = 16 + 36 + 18 = 70 strawberries
+Each jar is sold for $4
+Number of jars = Total strawberries / Strawberries per jar
+Number of jars = 70 / 7 = 10 jars
+Total earnings = Number of jars × Price per jar
+Total earnings = 10 × $4 = $40
