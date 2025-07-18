@@ -1,0 +1,64 @@
+{
+  "source_file": "sharded_data/gsm8k/gsm8k_pipeline_results_consolidated_reasoning_paths.json",
+  "total_examples": 10,
+  "successful_examples": 10,
+  "total_cots_saved": 29,
+  "output_structure": {
+    "description": "Each example has its own directory with individual COT files and combined file",
+    "individual_files": "cot_001.txt, cot_002.txt, etc.",
+    "combined_file": "all_cots.txt",
+    "metadata_file": "metadata.json"
+  },
+  "results": [
+    {
+      "example_id": "gsm8k_train_5238",
+      "cots_saved": 6,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_5238"
+    },
+    {
+      "example_id": "gsm8k_train_912",
+      "cots_saved": 1,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_912"
+    },
+    {
+      "example_id": "gsm8k_train_204",
+      "cots_saved": 1,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_204"
+    },
+    {
+      "example_id": "gsm8k_train_6074",
+      "cots_saved": 1,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_6074"
+    },
+    {
+      "example_id": "gsm8k_train_2253",
+      "cots_saved": 1,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_2253"
+    },
+    {
+      "example_id": "gsm8k_train_2006",
+      "cots_saved": 1,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_2006"
+    },
+    {
+      "example_id": "gsm8k_train_1828",
+      "cots_saved": 1,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_1828"
+    },
+    {
+      "example_id": "gsm8k_train_1143",
+      "cots_saved": 2,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_1143"
+    },
+    {
+      "example_id": "gsm8k_train_6033",
+      "cots_saved": 5,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_6033"
+    },
+    {
+      "example_id": "gsm8k_train_839",
+      "cots_saved": 10,
+      "path": "sharded_data/gsm8k/alternative_cots_consolidated/gsm8k_train_839"
+    }
+  ]
+}

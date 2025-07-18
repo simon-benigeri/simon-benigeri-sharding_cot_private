@@ -1,0 +1,156 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_5238
+Total Paths Generated: 70 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 10 (sampled 10 of 70 paths)
+================================================================================
+
+# Alternative COT 1
+# Sequence: s10 → s11 → s2 → s3 → s13 → s5 → s8 → s16 → s18
+
+The family collected 20 kilograms of newspapers.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+The family collected a total of 144 cans.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+20 ÷ 5 = 4 sets of 5 kilograms.
+144 ÷ 12 = 12 sets of 12 cans.
+12 sets × $0.50 = $6.
+4 sets × $1.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 2
+# Sequence: s10 → s11 → s13 → s16 → s2 → s3 → s5 → s8 → s18
+
+The family collected 20 kilograms of newspapers.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+20 ÷ 5 = 4 sets of 5 kilograms.
+4 sets × $1.50 = $6.
+The family collected a total of 144 cans.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+144 ÷ 12 = 12 sets of 12 cans.
+12 sets × $0.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 3
+# Sequence: s10 → s2 → s11 → s3 → s5 → s13 → s16 → s8 → s18
+
+The family collected 20 kilograms of newspapers.
+The family collected a total of 144 cans.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+144 ÷ 12 = 12 sets of 12 cans.
+20 ÷ 5 = 4 sets of 5 kilograms.
+4 sets × $1.50 = $6.
+12 sets × $0.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 4
+# Sequence: s10 → s2 → s3 → s5 → s11 → s13 → s8 → s16 → s18
+
+The family collected 20 kilograms of newspapers.
+The family collected a total of 144 cans.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+144 ÷ 12 = 12 sets of 12 cans.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+20 ÷ 5 = 4 sets of 5 kilograms.
+12 sets × $0.50 = $6.
+4 sets × $1.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 5
+# Sequence: s2 → s10 → s11 → s13 → s3 → s5 → s8 → s16 → s18
+
+The family collected a total of 144 cans.
+The family collected 20 kilograms of newspapers.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+20 ÷ 5 = 4 sets of 5 kilograms.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+144 ÷ 12 = 12 sets of 12 cans.
+12 sets × $0.50 = $6.
+4 sets × $1.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 6
+# Sequence: s2 → s10 → s11 → s3 → s5 → s13 → s8 → s16 → s18
+
+The family collected a total of 144 cans.
+The family collected 20 kilograms of newspapers.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+144 ÷ 12 = 12 sets of 12 cans.
+20 ÷ 5 = 4 sets of 5 kilograms.
+12 sets × $0.50 = $6.
+4 sets × $1.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 7
+# Sequence: s2 → s10 → s3 → s11 → s5 → s8 → s13 → s16 → s18
+
+The family collected a total of 144 cans.
+The family collected 20 kilograms of newspapers.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+144 ÷ 12 = 12 sets of 12 cans.
+12 sets × $0.50 = $6.
+20 ÷ 5 = 4 sets of 5 kilograms.
+4 sets × $1.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 8
+# Sequence: s2 → s10 → s11 → s3 → s5 → s13 → s16 → s8 → s18
+
+The family collected a total of 144 cans.
+The family collected 20 kilograms of newspapers.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+144 ÷ 12 = 12 sets of 12 cans.
+20 ÷ 5 = 4 sets of 5 kilograms.
+4 sets × $1.50 = $6.
+12 sets × $0.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 9
+# Sequence: s2 → s3 → s5 → s10 → s11 → s8 → s13 → s16 → s18
+
+The family collected a total of 144 cans.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+144 ÷ 12 = 12 sets of 12 cans.
+The family collected 20 kilograms of newspapers.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+12 sets × $0.50 = $6.
+20 ÷ 5 = 4 sets of 5 kilograms.
+4 sets × $1.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+
+# Alternative COT 10
+# Sequence: s10 → s2 → s3 → s11 → s13 → s5 → s8 → s16 → s18
+
+The family collected 20 kilograms of newspapers.
+The family collected a total of 144 cans.
+According to the problem, for every 12 cans recycled, they receive $0.50.
+The problem states that for every 5 kilograms of newspapers, they receive $1.50.
+20 ÷ 5 = 4 sets of 5 kilograms.
+144 ÷ 12 = 12 sets of 12 cans.
+12 sets × $0.50 = $6.
+4 sets × $1.50 = $6.
+$6 (from cans) + $6 (from newspapers) = $12.
+
+------------------------------------------------------------
+

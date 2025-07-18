@@ -1,0 +1,25 @@
+{
+  "example_id": "gsm8k_train_2253",
+  "total_paths_generated": 1,
+  "cots_saved": 1,
+  "sampling_applied": false,
+  "max_cots_limit": 10,
+  "method": "exhaustive",
+  "complexity_estimate": {
+    "complexity": "MEDIUM",
+    "estimated_paths": "10\u20131,000",
+    "nodes": 4,
+    "edges": 3,
+    "constraint_ratio": 1.0,
+    "source_nodes": 1,
+    "sink_nodes": 1,
+    "source_sink_pairs": 1,
+    "use_sampling": false
+  },
+  "files_created": {
+    "individual_cots": [
+      "cot_001.txt"
+    ],
+    "combined_file": "all_cots.txt"
+  }
+}

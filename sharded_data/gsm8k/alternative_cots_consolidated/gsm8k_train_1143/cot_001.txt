@@ -1,0 +1,8 @@
+# Alternative COT 1
+# Sequence: s2 → s1 → s3 → s4 → s5
+
+Next, Kendra also bought three hats, with each hat costing $10. The total cost for the hats is: 3 hats × 10 dollars/hat = 30 dollars
+Kendra bought two wooden toys, and each wooden toy costs $20. Therefore, the total cost for the wooden toys is calculated as follows: 2 toys × 20 dollars/toy = 40 dollars
+Now, I will add the total costs of the wooden toys and the hats together to find the overall amount Kendra spent: 40 dollars (toys) + 30 dollars (hats) = 70 dollars
+Kendra went to the shop with a $100 bill. To find out how much change she received after her purchases, I will subtract the total amount spent from the amount she had: 100 dollars - 70 dollars = 30 dollars
+Thus, the change Kendra received is $30

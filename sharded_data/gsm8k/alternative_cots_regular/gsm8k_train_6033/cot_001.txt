@@ -1,0 +1,8 @@
+# Alternative COT 1
+# Sequence: s3 → s4 → s6 → s8 → s10
+
+The problem states that each generation's tails are 25% longer than the previous generation
+To find 25% of the first generation's tail length, I calculate: 25% of 16 cm = 0.25 * 16 cm = 4 cm
+Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm
+Again, I will calculate 25% of the second generation's tail length: 25% of 20 cm = 0.25 * 20 cm = 5 cm
+Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm

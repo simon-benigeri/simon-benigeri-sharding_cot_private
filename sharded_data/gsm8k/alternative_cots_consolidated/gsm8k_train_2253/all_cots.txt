@@ -1,0 +1,16 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_2253
+Total Paths Generated: 1 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 1
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s5
+
+The problem states that peaches cost $2 per pound and that Ines bought 3 pounds
+To find the total cost of the peaches, I multiply the number of pounds by the cost per pound: 3 pounds × $2 per pound = $6
+Now that I know Ines spent $6 on the peaches, I can calculate how much money she has left after her purchase
+To find the remaining amount, I subtract the cost of the peaches from her initial amount: $20 - $6 = $14
+
+------------------------------------------------------------
+

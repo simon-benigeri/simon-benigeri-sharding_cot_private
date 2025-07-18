@@ -1,0 +1,78 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_1143
+Total Paths Generated: 6 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 6
+================================================================================
+
+# Alternative COT 1
+# Sequence: s6 → s9 → s1 → s4 → s12 → s16
+
+The price of each hat is $10, and she bought 3 hats
+Cost for hats = 3 × $10 = $30
+The price of each wooden toy is $20, and she bought 2 of them
+Cost for wooden toys = 2 × $20 = $40
+Total cost = $40 + $30 = $70
+Change received = $100 - $70 = $30
+
+------------------------------------------------------------
+
+# Alternative COT 2
+# Sequence: s6 → s1 → s4 → s9 → s12 → s16
+
+The price of each hat is $10, and she bought 3 hats
+The price of each wooden toy is $20, and she bought 2 of them
+Cost for wooden toys = 2 × $20 = $40
+Cost for hats = 3 × $10 = $30
+Total cost = $40 + $30 = $70
+Change received = $100 - $70 = $30
+
+------------------------------------------------------------
+
+# Alternative COT 3
+# Sequence: s6 → s1 → s9 → s4 → s12 → s16
+
+The price of each hat is $10, and she bought 3 hats
+The price of each wooden toy is $20, and she bought 2 of them
+Cost for hats = 3 × $10 = $30
+Cost for wooden toys = 2 × $20 = $40
+Total cost = $40 + $30 = $70
+Change received = $100 - $70 = $30
+
+------------------------------------------------------------
+
+# Alternative COT 4
+# Sequence: s1 → s4 → s6 → s9 → s12 → s16
+
+The price of each wooden toy is $20, and she bought 2 of them
+Cost for wooden toys = 2 × $20 = $40
+The price of each hat is $10, and she bought 3 hats
+Cost for hats = 3 × $10 = $30
+Total cost = $40 + $30 = $70
+Change received = $100 - $70 = $30
+
+------------------------------------------------------------
+
+# Alternative COT 5
+# Sequence: s1 → s6 → s9 → s4 → s12 → s16
+
+The price of each wooden toy is $20, and she bought 2 of them
+The price of each hat is $10, and she bought 3 hats
+Cost for hats = 3 × $10 = $30
+Cost for wooden toys = 2 × $20 = $40
+Total cost = $40 + $30 = $70
+Change received = $100 - $70 = $30
+
+------------------------------------------------------------
+
+# Alternative COT 6
+# Sequence: s1 → s6 → s4 → s9 → s12 → s16
+
+The price of each wooden toy is $20, and she bought 2 of them
+The price of each hat is $10, and she bought 3 hats
+Cost for wooden toys = 2 × $20 = $40
+Cost for hats = 3 × $10 = $30
+Total cost = $40 + $30 = $70
+Change received = $100 - $70 = $30
+
+------------------------------------------------------------
+

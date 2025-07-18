@@ -1,0 +1,9 @@
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6
+
+The problem states that the stack is 12 inches thick and that 80 pages equal one inch
+To find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch
+So, I calculate: 80 pages/inch × 12 inches = 960 pages
+Now that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average
+To do this, I divide the total number of pages by the number of books
+960 pages ÷ 6 books = 160 pages per book

@@ -1,0 +1,17 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_204
+Total Paths Generated: 1 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 1
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4 → s5
+
+The problem states that the stack of books is 12 inches thick, and I know that 80 pages are equivalent to 1 inch in thickness.
+To find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch. So, I calculate: 80 pages/inch × 12 inches = 960 pages.
+Now that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average.
+To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book.
+Thus, on average, each book contains 160 pages.
+
+------------------------------------------------------------
+

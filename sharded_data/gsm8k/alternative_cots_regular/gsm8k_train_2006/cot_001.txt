@@ -1,0 +1,8 @@
+# Alternative COT 1
+# Sequence: s4 → s7 → s10 → s12 → s14
+
+Year 2 fee = 80 + 10 = $90.
+Year 3 fee = 90 + 10 = $100.
+Year 4 fee = 100 + 10 = $110.
+Year 5 fee = 110 + 10 = $120.
+Year 6 fee = 120 + 10 = $130.

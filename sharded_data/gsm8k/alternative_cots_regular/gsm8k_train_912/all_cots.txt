@@ -1,0 +1,27 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_912
+Total Paths Generated: 1 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 1
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6 → s7 → s8 → s9 → s10 → s11 → s12 → s13 → s14 → s15
+
+First, we know that Betty picked 16 strawberries
+The problem states that Matthew picked 20 more strawberries than Betty
+Since Betty picked 16 strawberries, we can calculate Matthew's total as follows
+Matthew's strawberries = Betty's strawberries + 20 = 16 + 20 = 36 strawberries
+The problem indicates that Matthew picked twice as many strawberries as Natalie
+Since we have already calculated that Matthew picked 36 strawberries, we can find Natalie's total by dividing Matthew's strawberries by 2
+Natalie's strawberries = Matthew's strawberries / 2 = 36 / 2 = 18 strawberries
+We add the strawberries picked by Betty, Matthew, and Natalie
+Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries = 16 + 36 + 18 = 70 strawberries
+Each jar of jam requires 7 strawberries
+To find out how many jars they can make, we divide the total number of strawberries by the number of strawberries needed for one jar
+Number of jars = Total strawberries / Strawberries per jar = 70 / 7 = 10 jars
+The problem states that each jar is sold for $4
+Therefore, we can find the total earnings by multiplying the number of jars by the price per jar
+Total earnings = Number of jars × Price per jar = 10 × $4 = $40
+
+------------------------------------------------------------
+

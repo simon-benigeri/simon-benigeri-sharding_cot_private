@@ -1,0 +1,1042 @@
+[
+  {
+    "example_id": "gsm8k_train_5238",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 5,
+      "edges": 4,
+      "constraint_ratio": 1.0,
+      "source_nodes": 2,
+      "sink_nodes": 1,
+      "source_sink_pairs": 2,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 6,
+    "paths": [
+      {
+        "sequence": [
+          "s3",
+          "s4",
+          "s1",
+          "s2",
+          "s5"
+        ],
+        "texts": [
+          "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms \u00f7 5 = 4 sets of 5 kilograms.",
+          "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets \u00d7 $1.50 = $6.",
+          "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans \u00f7 12 = 12 sets of 12 cans.",
+          "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets \u00d7 $0.50 = $6.",
+          "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12."
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s1",
+          "s2",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms \u00f7 5 = 4 sets of 5 kilograms.",
+          "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans \u00f7 12 = 12 sets of 12 cans.",
+          "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets \u00d7 $0.50 = $6.",
+          "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets \u00d7 $1.50 = $6.",
+          "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12."
+        ]
+      },
+      {
+        "sequence": [
+          "s3",
+          "s1",
+          "s4",
+          "s2",
+          "s5"
+        ],
+        "texts": [
+          "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms \u00f7 5 = 4 sets of 5 kilograms.",
+          "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans \u00f7 12 = 12 sets of 12 cans.",
+          "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets \u00d7 $1.50 = $6.",
+          "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets \u00d7 $0.50 = $6.",
+          "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12."
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans \u00f7 12 = 12 sets of 12 cans.",
+          "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets \u00d7 $0.50 = $6.",
+          "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms \u00f7 5 = 4 sets of 5 kilograms.",
+          "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets \u00d7 $1.50 = $6.",
+          "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12."
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s4",
+          "s2",
+          "s5"
+        ],
+        "texts": [
+          "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans \u00f7 12 = 12 sets of 12 cans.",
+          "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms \u00f7 5 = 4 sets of 5 kilograms.",
+          "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets \u00d7 $1.50 = $6.",
+          "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets \u00d7 $0.50 = $6.",
+          "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12."
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s2",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans \u00f7 12 = 12 sets of 12 cans.",
+          "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms \u00f7 5 = 4 sets of 5 kilograms.",
+          "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets \u00d7 $0.50 = $6.",
+          "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets \u00d7 $1.50 = $6.",
+          "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12."
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_912",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 6,
+      "edges": 5,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "texts": [
+          "First, we know that Betty picked 16 strawberries.",
+          "Next, we need to determine how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty. Since Betty picked 16 strawberries, we can calculate Matthew's total as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries.",
+          "Now that we know how many strawberries Matthew picked, we need to find out how many strawberries Natalie picked. The problem indicates that Matthew picked twice as many strawberries as Natalie. Therefore, we can express Natalie's strawberries in terms of Matthew's: Matthew's strawberries = 2 \u00d7 Natalie's strawberries To find Natalie's strawberries, we rearrange the equation: Natalie's strawberries = Matthew's strawberries / 2 Natalie's strawberries = 36 / 2 = 18 strawberries.",
+          "Next, we will calculate the total number of strawberries they picked together. We add the strawberries from all three: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries.",
+          "Now that we know the total number of strawberries, we can determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars, we divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars.",
+          "Finally, we need to calculate how much money they made from selling the jars of jam. Each jar is sold for $4. Therefore, we multiply the number of jars by the price per jar: Total earnings = Number of jars \u00d7 Price per jar Total earnings = 10 \u00d7 $4 = $40."
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_204",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 5,
+      "edges": 4,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "The problem states that the stack of books is 12 inches thick, and I know that 80 pages are equivalent to 1 inch in thickness.",
+          "To find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch. So, I calculate: 80 pages/inch \u00d7 12 inches = 960 pages.",
+          "Now that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average.",
+          "To do this, I will divide the total number of pages by the number of books: 960 pages \u00f7 6 books = 160 pages/book.",
+          "Thus, on average, each book contains 160 pages."
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_6074",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 6,
+      "edges": 5,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "texts": [
+          "To solve the problem, I start with the total number of Legos James has, which is 500.",
+          "Next, I need to determine how many Legos he uses to build the castle. The problem states that he uses half of his collection. So, I calculate half of 500: 500 / 2 = 250.",
+          "Now, I need to find out how many Legos are left after he puts the unused ones away. Since he started with 500 Legos and used 250, the number of Legos he has left is also 250.",
+          "However, the problem mentions that he can't find 5 of the leftover pieces. This means that when he goes to put the unused Legos back in the box, he is missing 5 pieces.",
+          "Therefore, the number of Legos he actually puts away is: 250 (the unused Legos) - 5 (the missing pieces) = 245.",
+          "Thus, at the end, the number of Legos that are in the box is 245."
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_2253",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 4,
+      "edges": 3,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s5"
+        ],
+        "texts": [
+          "The problem states that peaches cost $2 per pound and that Ines bought 3 pounds",
+          "To find the total cost of the peaches, I multiply the number of pounds by the cost per pound: 3 pounds \u00d7 $2 per pound = $6",
+          "Now that I know Ines spent $6 on the peaches, I can calculate how much money she has left after her purchase",
+          "To find the remaining amount, I subtract the cost of the peaches from her initial amount: $20 - $6 = $14"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_2006",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 7,
+      "edges": 6,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "texts": [
+          "To determine how much Aaron's membership fee will be in the sixth year, we start with the information given: he pays $80 in the first year, and the fee increases by $10 each subsequent year.",
+          "First, let's calculate the fee for the second year. Since the fee increases by $10 from the first year, we have: Year 2: $80 + $10 = $90.",
+          "Next, we calculate the fee for the third year. Again, we add $10 to the fee from the second year: Year 3: $90 + $10 = $100.",
+          "Now, we move on to the fourth year. We continue the pattern of adding $10: Year 4: $100 + $10 = $110.",
+          "For the fifth year, we again add $10 to the fee from the fourth year: Year 5: $110 + $10 = $120.",
+          "Finally, we calculate the fee for the sixth year by adding $10 to the fee from the fifth year: Year 6: $120 + $10 = $130.",
+          "Thus, the membership cost in the sixth year is $130."
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_1828",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 6,
+      "edges": 5,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 1,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6"
+        ],
+        "texts": [
+          "Joseph starts with an initial investment of $1000. Additionally, he deposits $100 every month. Over the course of one year, he will make 12 monthly deposits. Therefore, the total amount he invests in the first year is calculated as follows: Initial investment: $1000 Monthly contributions for one year: $100 * 12 = $1200 Total investment after one year: $1000 + $1200 = $2200",
+          "Next, we need to calculate the interest earned on this total investment after the first year. The fund offers a yearly interest rate of 10%. So, the interest for the first year can be calculated as: Interest for the first year: $2200 * 10% = $220",
+          "Now, we add this interest to the total investment to find out how much Joseph has at the end of the first year: Total value after the first year: $2200 + $220 = $2420",
+          "Moving on to the second year, we need to consider the new total investment, which includes the amount from the end of the first year plus the new monthly contributions. The calculation for the second year is as follows: Total investment at the start of the second year: $2420 Monthly contributions for the second year: $100 * 12 = $1200 Total investment after the second year: $2420 + $1200 = $3620",
+          "Next, we calculate the interest earned during the second year based on this new total investment: Interest for the second year: $3620 * 10% = $362",
+          "Finally, we add this interest to the total investment at the end of the second year to find out how much Joseph has in the fund after two years: Total value after the second year: $3620 + $362 = $3982"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_1143",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 5,
+      "edges": 4,
+      "constraint_ratio": 1.0,
+      "source_nodes": 2,
+      "sink_nodes": 1,
+      "source_sink_pairs": 2,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 2,
+    "paths": [
+      {
+        "sequence": [
+          "s2",
+          "s1",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "Next, Kendra also bought three hats, with each hat costing $10. The total cost for the hats is: 3 hats \u00d7 10 dollars/hat = 30 dollars",
+          "Kendra bought two wooden toys, and each wooden toy costs $20. Therefore, the total cost for the wooden toys is calculated as follows: 2 toys \u00d7 20 dollars/toy = 40 dollars",
+          "Now, I will add the total costs of the wooden toys and the hats together to find the overall amount Kendra spent: 40 dollars (toys) + 30 dollars (hats) = 70 dollars",
+          "Kendra went to the shop with a $100 bill. To find out how much change she received after her purchases, I will subtract the total amount spent from the amount she had: 100 dollars - 70 dollars = 30 dollars",
+          "Thus, the change Kendra received is $30"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "texts": [
+          "Kendra bought two wooden toys, and each wooden toy costs $20. Therefore, the total cost for the wooden toys is calculated as follows: 2 toys \u00d7 20 dollars/toy = 40 dollars",
+          "Next, Kendra also bought three hats, with each hat costing $10. The total cost for the hats is: 3 hats \u00d7 10 dollars/hat = 30 dollars",
+          "Now, I will add the total costs of the wooden toys and the hats together to find the overall amount Kendra spent: 40 dollars (toys) + 30 dollars (hats) = 70 dollars",
+          "Kendra went to the shop with a $100 bill. To find out how much change she received after her purchases, I will subtract the total amount spent from the amount she had: 100 dollars - 70 dollars = 30 dollars",
+          "Thus, the change Kendra received is $30"
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_6033",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 7,
+      "edges": 6,
+      "constraint_ratio": 1.0,
+      "source_nodes": 1,
+      "sink_nodes": 2,
+      "source_sink_pairs": 2,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 5,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s5",
+          "s6",
+          "s7",
+          "s3"
+        ],
+        "texts": [
+          "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm.",
+          "First, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula: 25% of 16 cm = 0.25 * 16 cm = 4 cm.",
+          "Next, I will add this length to the first generation's tail length to find the second generation's tail length: Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm.",
+          "Now that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm: 25% of 20 cm = 0.25 * 20 cm = 5 cm.",
+          "This means that the third generation's tails are 5 cm longer than the second generation's tails.",
+          "Finally, I will add this increase to the second generation's tail length to find the third generation's tail length: Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm.",
+          "This means that the second generation's tails are 4 cm longer than the first generation's tails."
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s5",
+          "s6",
+          "s3",
+          "s7"
+        ],
+        "texts": [
+          "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm.",
+          "First, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula: 25% of 16 cm = 0.25 * 16 cm = 4 cm.",
+          "Next, I will add this length to the first generation's tail length to find the second generation's tail length: Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm.",
+          "Now that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm: 25% of 20 cm = 0.25 * 20 cm = 5 cm.",
+          "This means that the third generation's tails are 5 cm longer than the second generation's tails.",
+          "This means that the second generation's tails are 4 cm longer than the first generation's tails.",
+          "Finally, I will add this increase to the second generation's tail length to find the third generation's tail length: Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm."
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s5",
+          "s3",
+          "s6",
+          "s7"
+        ],
+        "texts": [
+          "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm.",
+          "First, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula: 25% of 16 cm = 0.25 * 16 cm = 4 cm.",
+          "Next, I will add this length to the first generation's tail length to find the second generation's tail length: Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm.",
+          "Now that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm: 25% of 20 cm = 0.25 * 20 cm = 5 cm.",
+          "This means that the second generation's tails are 4 cm longer than the first generation's tails.",
+          "This means that the third generation's tails are 5 cm longer than the second generation's tails.",
+          "Finally, I will add this increase to the second generation's tail length to find the third generation's tail length: Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm."
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s3",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "texts": [
+          "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm.",
+          "First, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula: 25% of 16 cm = 0.25 * 16 cm = 4 cm.",
+          "Next, I will add this length to the first generation's tail length to find the second generation's tail length: Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm.",
+          "This means that the second generation's tails are 4 cm longer than the first generation's tails.",
+          "Now that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm: 25% of 20 cm = 0.25 * 20 cm = 5 cm.",
+          "This means that the third generation's tails are 5 cm longer than the second generation's tails.",
+          "Finally, I will add this increase to the second generation's tail length to find the third generation's tail length: Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm."
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "texts": [
+          "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm.",
+          "First, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula: 25% of 16 cm = 0.25 * 16 cm = 4 cm.",
+          "This means that the second generation's tails are 4 cm longer than the first generation's tails.",
+          "Next, I will add this length to the first generation's tail length to find the second generation's tail length: Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm.",
+          "Now that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm: 25% of 20 cm = 0.25 * 20 cm = 5 cm.",
+          "This means that the third generation's tails are 5 cm longer than the second generation's tails.",
+          "Finally, I will add this increase to the second generation's tail length to find the third generation's tail length: Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm."
+        ]
+      }
+    ]
+  },
+  {
+    "example_id": "gsm8k_train_839",
+    "complexity_estimate": {
+      "complexity": "MEDIUM",
+      "estimated_paths": "10\u20131,000",
+      "nodes": 8,
+      "edges": 10,
+      "constraint_ratio": 1.43,
+      "source_nodes": 1,
+      "sink_nodes": 1,
+      "source_sink_pairs": 1,
+      "use_sampling": false
+    },
+    "method": "exhaustive",
+    "total_paths": 24,
+    "paths": [
+      {
+        "sequence": [
+          "s1",
+          "s5",
+          "s4",
+          "s3",
+          "s2",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s5",
+          "s4",
+          "s2",
+          "s3",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s5",
+          "s3",
+          "s2",
+          "s4",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s5",
+          "s3",
+          "s4",
+          "s2",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s5",
+          "s2",
+          "s4",
+          "s3",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s5",
+          "s2",
+          "s3",
+          "s4",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s3",
+          "s2",
+          "s5",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s3",
+          "s5",
+          "s2",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s2",
+          "s5",
+          "s3",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s2",
+          "s3",
+          "s5",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s5",
+          "s3",
+          "s2",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s4",
+          "s5",
+          "s2",
+          "s3",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s2",
+          "s5",
+          "s4",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s2",
+          "s4",
+          "s5",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s5",
+          "s4",
+          "s2",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s5",
+          "s2",
+          "s4",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s4",
+          "s2",
+          "s5",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s3",
+          "s4",
+          "s5",
+          "s2",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s5",
+          "s4",
+          "s3",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s5",
+          "s3",
+          "s4",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s3",
+          "s5",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s4",
+          "s5",
+          "s3",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s5",
+          "s4",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      },
+      {
+        "sequence": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7",
+          "s8"
+        ],
+        "texts": [
+          "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+          "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 \u00d7 53 = 26.5 omelets",
+          "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 \u00d7 35 = 35 omelets",
+          "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 \u00d7 75 = 150 omelets",
+          "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 \u00d7 37 = 55.5 omelets",
+          "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+          "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+          "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 \u00d7 292 = 584 eggs"
+        ]
+      }
+    ]
+  }
+]

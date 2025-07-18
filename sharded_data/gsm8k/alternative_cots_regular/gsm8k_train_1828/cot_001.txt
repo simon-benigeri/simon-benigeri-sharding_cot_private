@@ -1,0 +1,13 @@
+# Alternative COT 1
+# Sequence: s6 → s3 → s2 → s4 → s5 → s7 → s8 → s10 → s12 → s13
+
+The fund promises a yearly interest rate of 10%
+He also deposits an additional $100 every month
+Joseph starts with an initial investment of $1000
+Over the course of one year, he will make 12 monthly deposits, which totals to $100 * 12 = $1200
+Therefore, at the end of the first year, the total amount he has invested is: Initial investment + Total monthly contributions = $1000 + $1200 = $2200
+So, the interest for the first year is calculated as: Interest = Total amount at the end of the year * Interest rate = $2200 * 10% = $220
+Now, I will add this interest to the total amount invested to find out how much Joseph has at the end of the first year: Total value at the end of the first year = Total invested + Interest = $2200 + $220 = $2420
+He will again contribute $1200 over the year, so the total invested at the start of the second year is: Total at the end of the first year + Total monthly contributions for the second year = $2420 + $1200 = $3620
+Using the same interest rate of 10%, the interest for the second year is: Interest = Total amount at the end of the second year * Interest rate = $3620 * 10% = $362
+Finally, I will add this interest to the total amount invested at the end of the second year to find out how much Joseph has after two years: Total value at the end of the second year = Total invested + Interest = $3620 + $362 = $3982

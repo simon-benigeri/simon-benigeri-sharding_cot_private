@@ -4,119 +4,120 @@
     "question": "For every 12 cans you recycle, you receive $0.50, and for every 5 kilograms of newspapers, you receive $1.50. If your family collected 144 cans and 20 kilograms of newspapers, how much money would you receive?",
     "answer": "There are 144/12 = <<144/12=12>>12 sets of 12 cans that the family collected.\nSo, the family would receive $0.50 x 12 = $<<0.50*12=6>>6 for the cans.\nThere are 20/5 = <<20/5=4>>4 sets of 5 kilograms of newspapers that the family collected.\nSo, the family would receive $1.50 x 4 = $<<1.50*4=6>>6 for the newspapers.\nTherefore, the family would receive a total of $6 + $6 = $<<6+6=12>>12.\n#### 12",
     "final_answer": "12",
-    "cot": "To determine how much money the family would receive from recycling cans and newspapers, I will break down the problem into two parts: the earnings from the cans and the earnings from the newspapers.\n\nFirst, let's calculate the earnings from the cans. The family collected a total of 144 cans. According to the problem, for every 12 cans recycled, they receive $0.50. To find out how many sets of 12 cans are in 144, I divide 144 by 12:\n\n144 ÷ 12 = 12 sets of 12 cans.\n\nNow, since they receive $0.50 for each set of 12 cans, I can calculate the total amount they earn from the cans:\n\n$0.50 × 12 = $6.\n\nNext, I will calculate the earnings from the newspapers. The family collected 20 kilograms of newspapers. The problem states that for every 5 kilograms of newspapers, they receive $1.50. To find out how many sets of 5 kilograms are in 20 kilograms, I divide 20 by 5:\n\n20 ÷ 5 = 4 sets of 5 kilograms.\n\nNow, since they receive $1.50 for each set of 5 kilograms, I can calculate the total amount they earn from the newspapers:\n\n$1.50 × 4 = $6.\n\nFinally, to find the total amount of money the family receives from both the cans and the newspapers, I add the two amounts together:\n\n$6 (from cans) + $6 (from newspapers) = $12.\n\nThus, the total amount of money the family would receive is $12.",
+    "cot": "To solve the problem, I need to calculate how much money the family will receive from recycling both cans and newspapers.\n\nFirst, let's start with the cans. The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12:\n\n144 cans ÷ 12 = 12 sets of 12 cans.\n\nNow that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set:\n\n12 sets × $0.50 = $6.\n\nNext, I will calculate the earnings from the newspapers. The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have:\n\n20 kilograms ÷ 5 = 4 sets of 5 kilograms.\n\nNow, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set:\n\n4 sets × $1.50 = $6.\n\nFinally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together:\n\n$6 (from cans) + $6 (from newspapers) = $12.\n\nTherefore, the total amount of money the family would receive is $12.",
     "segments": [
       {
         "id": "s1",
-        "text": "To determine how much money the family would receive from recycling cans and newspapers, I will break down the problem into two parts: the earnings from the cans and the earnings from the newspapers.",
-        "is_required": 0
+        "text": "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans ÷ 12 = 12 sets of 12 cans.",
+        "is_required": 1
       },
       {
         "id": "s2",
-        "text": "The family collected a total of 144 cans. According to the problem, for every 12 cans recycled, they receive $0.50. To find out how many sets of 12 cans are in 144, I divide 144 by 12: 144 ÷ 12 = 12 sets of 12 cans.",
+        "text": "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets × $0.50 = $6.",
         "is_required": 1
       },
       {
         "id": "s3",
-        "text": "Now, since they receive $0.50 for each set of 12 cans, I can calculate the total amount they earn from the cans: $0.50 × 12 = $6.",
+        "text": "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms ÷ 5 = 4 sets of 5 kilograms.",
         "is_required": 1
       },
       {
         "id": "s4",
-        "text": "The family collected 20 kilograms of newspapers. The problem states that for every 5 kilograms of newspapers, they receive $1.50. To find out how many sets of 5 kilograms are in 20 kilograms, I divide 20 by 5: 20 ÷ 5 = 4 sets of 5 kilograms.",
+        "text": "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets × $1.50 = $6.",
         "is_required": 1
       },
       {
         "id": "s5",
-        "text": "Now, since they receive $1.50 for each set of 5 kilograms, I can calculate the total amount they earn from the newspapers: $1.50 × 4 = $6.",
+        "text": "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12.",
         "is_required": 1
       },
       {
         "id": "s6",
-        "text": "Finally, to find the total amount of money the family receives from both the cans and the newspapers, I add the two amounts together: $6 (from cans) + $6 (from newspapers) = $12.",
-        "is_required": 1
+        "text": "To solve the problem, I need to calculate how much money the family will receive from recycling both cans and newspapers.",
+        "is_required": 0
       },
       {
         "id": "s7",
-        "text": "Thus, the total amount of money the family would receive is $12.",
+        "text": "Therefore, the total amount of money the family would receive is $12.",
         "is_required": 0
       }
     ],
     "required_segments": [
       {
+        "id": "s1",
+        "text": "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans ÷ 12 = 12 sets of 12 cans.",
+        "is_required": 1
+      },
+      {
         "id": "s2",
-        "text": "The family collected a total of 144 cans. According to the problem, for every 12 cans recycled, they receive $0.50. To find out how many sets of 12 cans are in 144, I divide 144 by 12: 144 ÷ 12 = 12 sets of 12 cans.",
+        "text": "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets × $0.50 = $6.",
         "is_required": 1
       },
       {
         "id": "s3",
-        "text": "Now, since they receive $0.50 for each set of 12 cans, I can calculate the total amount they earn from the cans: $0.50 × 12 = $6.",
+        "text": "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms ÷ 5 = 4 sets of 5 kilograms.",
         "is_required": 1
       },
       {
         "id": "s4",
-        "text": "The family collected 20 kilograms of newspapers. The problem states that for every 5 kilograms of newspapers, they receive $1.50. To find out how many sets of 5 kilograms are in 20 kilograms, I divide 20 by 5: 20 ÷ 5 = 4 sets of 5 kilograms.",
+        "text": "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets × $1.50 = $6.",
         "is_required": 1
       },
       {
         "id": "s5",
-        "text": "Now, since they receive $1.50 for each set of 5 kilograms, I can calculate the total amount they earn from the newspapers: $1.50 × 4 = $6.",
-        "is_required": 1
-      },
-      {
-        "id": "s6",
-        "text": "Finally, to find the total amount of money the family receives from both the cans and the newspapers, I add the two amounts together: $6 (from cans) + $6 (from newspapers) = $12.",
+        "text": "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12.",
         "is_required": 1
       }
     ],
     "nodes": [
       {
+        "id": "s1",
+        "text": "The problem states that for every 12 cans recycled, the family receives $0.50. The family collected a total of 144 cans. To find out how many sets of 12 cans they have, I divide the total number of cans by 12: 144 cans ÷ 12 = 12 sets of 12 cans."
+      },
+      {
         "id": "s2",
-        "text": "The family collected a total of 144 cans. According to the problem, for every 12 cans recycled, they receive $0.50. To find out how many sets of 12 cans are in 144, I divide 144 by 12: 144 ÷ 12 = 12 sets of 12 cans."
+        "text": "Now that I know they have 12 sets, I can calculate how much money they will receive for the cans. Since each set earns them $0.50, I multiply the number of sets by the amount earned per set: 12 sets × $0.50 = $6."
       },
       {
         "id": "s3",
-        "text": "Now, since they receive $0.50 for each set of 12 cans, I can calculate the total amount they earn from the cans: $0.50 × 12 = $6."
+        "text": "The problem states that for every 5 kilograms of newspapers, the family receives $1.50. They collected 20 kilograms of newspapers, so I need to find out how many sets of 5 kilograms they have: 20 kilograms ÷ 5 = 4 sets of 5 kilograms."
       },
       {
         "id": "s4",
-        "text": "The family collected 20 kilograms of newspapers. The problem states that for every 5 kilograms of newspapers, they receive $1.50. To find out how many sets of 5 kilograms are in 20 kilograms, I divide 20 by 5: 20 ÷ 5 = 4 sets of 5 kilograms."
+        "text": "Now, I can calculate how much money they will receive for the newspapers. Since each set earns them $1.50, I multiply the number of sets by the amount earned per set: 4 sets × $1.50 = $6."
       },
       {
         "id": "s5",
-        "text": "Now, since they receive $1.50 for each set of 5 kilograms, I can calculate the total amount they earn from the newspapers: $1.50 × 4 = $6."
-      },
-      {
-        "id": "s6",
-        "text": "Finally, to find the total amount of money the family receives from both the cans and the newspapers, I add the two amounts together: $6 (from cans) + $6 (from newspapers) = $12."
+        "text": "Finally, to find the total amount of money the family will receive, I add the earnings from the cans and the newspapers together: $6 (from cans) + $6 (from newspapers) = $12."
       }
     ],
     "edges": [
       [
+        "s1",
+        "s2"
+      ],
+      [
+        "s3",
+        "s4"
+      ],
+      [
         "s2",
-        "s3"
+        "s5"
       ],
       [
         "s4",
         "s5"
-      ],
-      [
-        "s3",
-        "s6"
-      ],
-      [
-        "s5",
-        "s6"
       ]
     ],
-    "success": true
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
   },
   {
     "example_id": "gsm8k_train_912",
     "question": "Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?",
     "answer": "Matthew picked 16 + 20 = <<16+20=36>>36 strawberries.\nNatalie picked 36/2 = <<36/2=18>>18 strawberries.\nAll together, they have 16 + 36 + 18 = <<16+36+18=70>>70 strawberries.\nThey can make 70/7 = <<70/7=10>>10 jars of strawberries.\nThey earn 10 x $4 = $<<10*4=40>>40 from the strawberries they picked.\n#### 40",
     "final_answer": "40",
-    "cot": "To solve the problem, I will break it down step by step, starting with the information given about the strawberries picked by Betty, Matthew, and Natalie.\n\nFirst, we know that Betty picked 16 strawberries. \n\nNext, we need to determine how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty. Therefore, I can calculate Matthew's strawberries as follows:\nMatthew's strawberries = Betty's strawberries + 20\nMatthew's strawberries = 16 + 20 = 36 strawberries.\n\nNow that I have the number of strawberries Matthew picked, I need to find out how many strawberries Natalie picked. The problem indicates that Matthew picked twice as many strawberries as Natalie. To find Natalie's strawberries, I can set up the equation:\nMatthew's strawberries = 2 × Natalie's strawberries\nThis means:\n36 = 2 × Natalie's strawberries\nTo find Natalie's strawberries, I divide both sides by 2:\nNatalie's strawberries = 36 / 2 = 18 strawberries.\n\nNow I have the number of strawberries picked by all three individuals:\n- Betty: 16 strawberries\n- Matthew: 36 strawberries\n- Natalie: 18 strawberries\n\nNext, I will calculate the total number of strawberries they picked together:\nTotal strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries\nTotal strawberries = 16 + 36 + 18 = 70 strawberries.\n\nNow that I know the total number of strawberries, I need to determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars they can make, I divide the total number of strawberries by the number of strawberries needed for one jar:\nNumber of jars = Total strawberries / Strawberries per jar\nNumber of jars = 70 / 7 = 10 jars.\n\nFinally, I need to calculate how much money they earned from selling the jam. They sold each jar for $4. Therefore, the total earnings can be calculated as:\nTotal earnings = Number of jars × Price per jar\nTotal earnings = 10 × $4 = $40.\n\nThus, the final answer is that they were able to make $40 from the strawberries they picked.",
+    "cot": "To solve the problem, I will break it down step by step, starting with the information given about how many strawberries each person picked.\n\nFirst, we know that Betty picked 16 strawberries. \n\nNext, we need to determine how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty. Since Betty picked 16 strawberries, we can calculate Matthew's total as follows:\nMatthew's strawberries = Betty's strawberries + 20\nMatthew's strawberries = 16 + 20 = 36 strawberries.\n\nNow that we know how many strawberries Matthew picked, we need to find out how many strawberries Natalie picked. The problem indicates that Matthew picked twice as many strawberries as Natalie. Therefore, we can express Natalie's strawberries in terms of Matthew's:\nMatthew's strawberries = 2 × Natalie's strawberries\nTo find Natalie's strawberries, we rearrange the equation:\nNatalie's strawberries = Matthew's strawberries / 2\nNatalie's strawberries = 36 / 2 = 18 strawberries.\n\nNow we have the number of strawberries picked by each person:\n- Betty: 16 strawberries\n- Matthew: 36 strawberries\n- Natalie: 18 strawberries\n\nNext, we will calculate the total number of strawberries they picked together. We add the strawberries from all three:\nTotal strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries\nTotal strawberries = 16 + 36 + 18 = 70 strawberries.\n\nNow that we know the total number of strawberries, we can determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars, we divide the total number of strawberries by the number of strawberries needed for one jar:\nNumber of jars = Total strawberries / Strawberries per jar\nNumber of jars = 70 / 7 = 10 jars.\n\nFinally, we need to calculate how much money they made from selling the jars of jam. Each jar is sold for $4. Therefore, we multiply the number of jars by the price per jar:\nTotal earnings = Number of jars × Price per jar\nTotal earnings = 10 × $4 = $40.\n\nThus, the total amount of money they were able to make from the strawberries they picked is $40.",
     "segments": [
       {
         "id": "s1",
@@ -125,37 +126,37 @@
       },
       {
         "id": "s2",
-        "text": "The problem states that Matthew picked 20 more strawberries than Betty. Therefore, I can calculate Matthew's strawberries as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries.",
+        "text": "Next, we need to determine how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty. Since Betty picked 16 strawberries, we can calculate Matthew's total as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries.",
         "is_required": 1
       },
       {
         "id": "s3",
-        "text": "The problem indicates that Matthew picked twice as many strawberries as Natalie. To find Natalie's strawberries, I can set up the equation: Matthew's strawberries = 2 × Natalie's strawberries This means: 36 = 2 × Natalie's strawberries To find Natalie's strawberries, I divide both sides by 2: Natalie's strawberries = 36 / 2 = 18 strawberries.",
+        "text": "Now that we know how many strawberries Matthew picked, we need to find out how many strawberries Natalie picked. The problem indicates that Matthew picked twice as many strawberries as Natalie. Therefore, we can express Natalie's strawberries in terms of Matthew's: Matthew's strawberries = 2 × Natalie's strawberries To find Natalie's strawberries, we rearrange the equation: Natalie's strawberries = Matthew's strawberries / 2 Natalie's strawberries = 36 / 2 = 18 strawberries.",
         "is_required": 1
       },
       {
         "id": "s4",
-        "text": "Now I have the number of strawberries picked by all three individuals: - Betty: 16 strawberries - Matthew: 36 strawberries - Natalie: 18 strawberries",
+        "text": "Now we have the number of strawberries picked by each person: - Betty: 16 strawberries - Matthew: 36 strawberries - Natalie: 18 strawberries",
         "is_required": 0
       },
       {
         "id": "s5",
-        "text": "Next, I will calculate the total number of strawberries they picked together: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries.",
+        "text": "Next, we will calculate the total number of strawberries they picked together. We add the strawberries from all three: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries.",
         "is_required": 1
       },
       {
         "id": "s6",
-        "text": "Now that I know the total number of strawberries, I need to determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars they can make, I divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars.",
+        "text": "Now that we know the total number of strawberries, we can determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars, we divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars.",
         "is_required": 1
       },
       {
         "id": "s7",
-        "text": "Finally, I need to calculate how much money they earned from selling the jam. They sold each jar for $4. Therefore, the total earnings can be calculated as: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40.",
+        "text": "Finally, we need to calculate how much money they made from selling the jars of jam. Each jar is sold for $4. Therefore, we multiply the number of jars by the price per jar: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40.",
         "is_required": 1
       },
       {
         "id": "s8",
-        "text": "Thus, the final answer is that they were able to make $40 from the strawberries they picked.",
+        "text": "Thus, the total amount of money they were able to make from the strawberries they picked is $40.",
         "is_required": 0
       }
     ],
@@ -167,27 +168,27 @@
       },
       {
         "id": "s2",
-        "text": "The problem states that Matthew picked 20 more strawberries than Betty. Therefore, I can calculate Matthew's strawberries as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries.",
+        "text": "Next, we need to determine how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty. Since Betty picked 16 strawberries, we can calculate Matthew's total as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries.",
         "is_required": 1
       },
       {
         "id": "s3",
-        "text": "The problem indicates that Matthew picked twice as many strawberries as Natalie. To find Natalie's strawberries, I can set up the equation: Matthew's strawberries = 2 × Natalie's strawberries This means: 36 = 2 × Natalie's strawberries To find Natalie's strawberries, I divide both sides by 2: Natalie's strawberries = 36 / 2 = 18 strawberries.",
+        "text": "Now that we know how many strawberries Matthew picked, we need to find out how many strawberries Natalie picked. The problem indicates that Matthew picked twice as many strawberries as Natalie. Therefore, we can express Natalie's strawberries in terms of Matthew's: Matthew's strawberries = 2 × Natalie's strawberries To find Natalie's strawberries, we rearrange the equation: Natalie's strawberries = Matthew's strawberries / 2 Natalie's strawberries = 36 / 2 = 18 strawberries.",
         "is_required": 1
       },
       {
         "id": "s5",
-        "text": "Next, I will calculate the total number of strawberries they picked together: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries.",
+        "text": "Next, we will calculate the total number of strawberries they picked together. We add the strawberries from all three: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries.",
         "is_required": 1
       },
       {
         "id": "s6",
-        "text": "Now that I know the total number of strawberries, I need to determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars they can make, I divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars.",
+        "text": "Now that we know the total number of strawberries, we can determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars, we divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars.",
         "is_required": 1
       },
       {
         "id": "s7",
-        "text": "Finally, I need to calculate how much money they earned from selling the jam. They sold each jar for $4. Therefore, the total earnings can be calculated as: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40.",
+        "text": "Finally, we need to calculate how much money they made from selling the jars of jam. Each jar is sold for $4. Therefore, we multiply the number of jars by the price per jar: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40.",
         "is_required": 1
       }
     ],
@@ -198,23 +199,23 @@
       },
       {
         "id": "s2",
-        "text": "The problem states that Matthew picked 20 more strawberries than Betty. Therefore, I can calculate Matthew's strawberries as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries."
+        "text": "Next, we need to determine how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty. Since Betty picked 16 strawberries, we can calculate Matthew's total as follows: Matthew's strawberries = Betty's strawberries + 20 Matthew's strawberries = 16 + 20 = 36 strawberries."
       },
       {
         "id": "s3",
-        "text": "The problem indicates that Matthew picked twice as many strawberries as Natalie. To find Natalie's strawberries, I can set up the equation: Matthew's strawberries = 2 × Natalie's strawberries This means: 36 = 2 × Natalie's strawberries To find Natalie's strawberries, I divide both sides by 2: Natalie's strawberries = 36 / 2 = 18 strawberries."
+        "text": "Now that we know how many strawberries Matthew picked, we need to find out how many strawberries Natalie picked. The problem indicates that Matthew picked twice as many strawberries as Natalie. Therefore, we can express Natalie's strawberries in terms of Matthew's: Matthew's strawberries = 2 × Natalie's strawberries To find Natalie's strawberries, we rearrange the equation: Natalie's strawberries = Matthew's strawberries / 2 Natalie's strawberries = 36 / 2 = 18 strawberries."
       },
       {
         "id": "s5",
-        "text": "Next, I will calculate the total number of strawberries they picked together: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries."
+        "text": "Next, we will calculate the total number of strawberries they picked together. We add the strawberries from all three: Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries Total strawberries = 16 + 36 + 18 = 70 strawberries."
       },
       {
         "id": "s6",
-        "text": "Now that I know the total number of strawberries, I need to determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars they can make, I divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars."
+        "text": "Now that we know the total number of strawberries, we can determine how many jars of jam they can make. Each jar of jam requires 7 strawberries. To find the number of jars, we divide the total number of strawberries by the number of strawberries needed for one jar: Number of jars = Total strawberries / Strawberries per jar Number of jars = 70 / 7 = 10 jars."
       },
       {
         "id": "s7",
-        "text": "Finally, I need to calculate how much money they earned from selling the jam. They sold each jar for $4. Therefore, the total earnings can be calculated as: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40."
+        "text": "Finally, we need to calculate how much money they made from selling the jars of jam. Each jar is sold for $4. Therefore, we multiply the number of jars by the price per jar: Total earnings = Number of jars × Price per jar Total earnings = 10 × $4 = $40."
       }
     ],
     "edges": [
@@ -225,10 +226,6 @@
       [
         "s2",
         "s3"
-      ],
-      [
-        "s2",
-        "s5"
       ],
       [
         "s3",
@@ -243,74 +240,1041 @@
         "s7"
       ]
     ],
-    "success": true
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
   },
   {
     "example_id": "gsm8k_train_204",
     "question": "Jack has a stack of books that is 12 inches thick. He knows from experience that 80 pages is one inch thick. If he has 6 books, how many pages is each one on average?",
     "answer": "There are 960 pages because 80 x 12 = <<80*12=960>>960\nEach book is 160 pages because 960 / 6 = <<960/6=160>>160\n#### 160",
     "final_answer": "160",
-    "cot": "To solve the problem, I first need to determine the total number of pages in Jack's stack of books. The problem states that the stack is 12 inches thick and that 80 pages equal one inch. \n\nTo find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch. So, I calculate:\n80 pages/inch × 12 inches = 960 pages.\n\nNow that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average. To do this, I will divide the total number of pages by the number of books:\n960 pages ÷ 6 books = 160 pages/book.\n\nThus, on average, each book contains 160 pages.",
+    "cot": "To solve the problem, I first need to determine the total number of pages in the stack of books. The problem states that the stack of books is 12 inches thick, and I know that 80 pages are equivalent to 1 inch in thickness. \n\nTo find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch. So, I calculate:\n80 pages/inch × 12 inches = 960 pages.\n\nNow that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average. To do this, I will divide the total number of pages by the number of books:\n960 pages ÷ 6 books = 160 pages/book.\n\nThus, on average, each book contains 160 pages.",
     "segments": [
       {
         "id": "s1",
-        "text": "The problem states that the stack is 12 inches thick and that 80 pages equal one inch",
-        "is_required": 0
+        "text": "The problem states that the stack of books is 12 inches thick, and I know that 80 pages are equivalent to 1 inch in thickness.",
+        "is_required": 1
       },
       {
         "id": "s2",
-        "text": "To find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch",
-        "is_required": 0
+        "text": "To find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch. So, I calculate: 80 pages/inch × 12 inches = 960 pages.",
+        "is_required": 1
       },
       {
         "id": "s3",
-        "text": "So, I calculate: 80 pages/inch × 12 inches = 960 pages",
+        "text": "Now that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average.",
         "is_required": 1
       },
       {
         "id": "s4",
-        "text": "Now that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average",
-        "is_required": 0
+        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book.",
+        "is_required": 1
       },
       {
         "id": "s5",
-        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book",
+        "text": "Thus, on average, each book contains 160 pages.",
         "is_required": 1
       },
       {
         "id": "s6",
-        "text": "Thus, on average, each book contains 160 pages",
+        "text": "To solve the problem, I first need to determine the total number of pages in the stack of books.",
+        "is_required": 0
+      },
+      {
+        "id": "s7",
+        "text": "So, I calculate:",
         "is_required": 0
       }
     ],
     "required_segments": [
       {
+        "id": "s1",
+        "text": "The problem states that the stack of books is 12 inches thick, and I know that 80 pages are equivalent to 1 inch in thickness.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "To find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch. So, I calculate: 80 pages/inch × 12 inches = 960 pages.",
+        "is_required": 1
+      },
+      {
         "id": "s3",
-        "text": "So, I calculate: 80 pages/inch × 12 inches = 960 pages",
+        "text": "Now that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book.",
         "is_required": 1
       },
       {
         "id": "s5",
-        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book",
+        "text": "Thus, on average, each book contains 160 pages.",
         "is_required": 1
       }
     ],
     "nodes": [
       {
+        "id": "s1",
+        "text": "The problem states that the stack of books is 12 inches thick, and I know that 80 pages are equivalent to 1 inch in thickness."
+      },
+      {
+        "id": "s2",
+        "text": "To find the total number of pages, I can multiply the thickness of the stack by the number of pages per inch. So, I calculate: 80 pages/inch × 12 inches = 960 pages."
+      },
+      {
         "id": "s3",
-        "text": "So, I calculate: 80 pages/inch × 12 inches = 960 pages"
+        "text": "Now that I know there are 960 pages in total, I need to find out how many pages are in each of the 6 books on average."
+      },
+      {
+        "id": "s4",
+        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book."
       },
       {
         "id": "s5",
-        "text": "To do this, I will divide the total number of pages by the number of books: 960 pages ÷ 6 books = 160 pages/book"
+        "text": "Thus, on average, each book contains 160 pages."
       }
     ],
     "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s3",
+        "s4"
+      ],
+      [
+        "s4",
+        "s5"
+      ]
+    ],
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
+  },
+  {
+    "example_id": "gsm8k_train_6074",
+    "question": "James dumps his whole collection of 500 Legos on the floor and starts building a castle out of them.  He uses half the pieces before finishing and is told to put the rest away.  He puts all of the leftover pieces back in the box they came from, except for 5 missing pieces that he can't find.  How many Legos are in the box at the end?",
+    "answer": "James starts with 500 Legos and uses half of them, leaving 500/2=<<500/2=250>>250 Legos unused.\nHe puts those unused Legos away but since he's missing 5 he only puts 250-5=<<250-5=245>>245 Legos away.\n#### 245",
+    "final_answer": "245",
+    "cot": "To solve the problem, I start with the total number of Legos James has, which is 500. \n\nNext, I need to determine how many Legos he uses to build the castle. The problem states that he uses half of his collection. So, I calculate half of 500: \n\n500 / 2 = 250. \n\nThis means James has used 250 Legos to build the castle, leaving him with the same amount of Legos unused.\n\nNow, I need to find out how many Legos are left after he puts the unused ones away. Since he started with 500 Legos and used 250, the number of Legos he has left is also 250. \n\nHowever, the problem mentions that he can't find 5 of the leftover pieces. This means that when he goes to put the unused Legos back in the box, he is missing 5 pieces. Therefore, the number of Legos he actually puts away is:\n\n250 (the unused Legos) - 5 (the missing pieces) = 245.\n\nThus, at the end, the number of Legos that are in the box is 245.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "To solve the problem, I start with the total number of Legos James has, which is 500.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "Next, I need to determine how many Legos he uses to build the castle. The problem states that he uses half of his collection. So, I calculate half of 500: 500 / 2 = 250.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "This means James has used 250 Legos to build the castle, leaving him with the same amount of Legos unused.",
+        "is_required": 0
+      },
+      {
+        "id": "s4",
+        "text": "Now, I need to find out how many Legos are left after he puts the unused ones away. Since he started with 500 Legos and used 250, the number of Legos he has left is also 250.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "However, the problem mentions that he can't find 5 of the leftover pieces. This means that when he goes to put the unused Legos back in the box, he is missing 5 pieces.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Therefore, the number of Legos he actually puts away is: 250 (the unused Legos) - 5 (the missing pieces) = 245.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Thus, at the end, the number of Legos that are in the box is 245.",
+        "is_required": 1
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s1",
+        "text": "To solve the problem, I start with the total number of Legos James has, which is 500.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "Next, I need to determine how many Legos he uses to build the castle. The problem states that he uses half of his collection. So, I calculate half of 500: 500 / 2 = 250.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Now, I need to find out how many Legos are left after he puts the unused ones away. Since he started with 500 Legos and used 250, the number of Legos he has left is also 250.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "However, the problem mentions that he can't find 5 of the leftover pieces. This means that when he goes to put the unused Legos back in the box, he is missing 5 pieces.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Therefore, the number of Legos he actually puts away is: 250 (the unused Legos) - 5 (the missing pieces) = 245.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Thus, at the end, the number of Legos that are in the box is 245.",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s1",
+        "text": "To solve the problem, I start with the total number of Legos James has, which is 500."
+      },
+      {
+        "id": "s2",
+        "text": "Next, I need to determine how many Legos he uses to build the castle. The problem states that he uses half of his collection. So, I calculate half of 500: 500 / 2 = 250."
+      },
+      {
+        "id": "s4",
+        "text": "Now, I need to find out how many Legos are left after he puts the unused ones away. Since he started with 500 Legos and used 250, the number of Legos he has left is also 250."
+      },
+      {
+        "id": "s5",
+        "text": "However, the problem mentions that he can't find 5 of the leftover pieces. This means that when he goes to put the unused Legos back in the box, he is missing 5 pieces."
+      },
+      {
+        "id": "s6",
+        "text": "Therefore, the number of Legos he actually puts away is: 250 (the unused Legos) - 5 (the missing pieces) = 245."
+      },
+      {
+        "id": "s7",
+        "text": "Thus, at the end, the number of Legos that are in the box is 245."
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s4"
+      ],
+      [
+        "s4",
+        "s5"
+      ],
+      [
+        "s5",
+        "s6"
+      ],
+      [
+        "s6",
+        "s7"
+      ]
+    ],
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
+  },
+  {
+    "example_id": "gsm8k_train_2253",
+    "question": "Ines had $20 in her purse. She bought 3 pounds of peaches, which are $2 per pound at the local farmers’ market. How much did she have left?",
+    "answer": "Ines bought 3 pounds of peaches for 3 peaches * $2/peach = $<<3*2=6>>6.\nInes has $20 - $6 = $<<20-6=14>>14 left.\n#### 14",
+    "final_answer": "14",
+    "cot": "To solve the problem, I first need to determine how much Ines spent on the peaches. The problem states that peaches cost $2 per pound and that Ines bought 3 pounds. \n\nTo find the total cost of the peaches, I multiply the number of pounds by the cost per pound:\n3 pounds × $2 per pound = $6.\n\nNow that I know Ines spent $6 on the peaches, I can calculate how much money she has left after her purchase. Initially, Ines had $20 in her purse. \n\nTo find the remaining amount, I subtract the cost of the peaches from her initial amount:\n$20 - $6 = $14.\n\nThus, after buying the peaches, Ines has $14 left in her purse.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "The problem states that peaches cost $2 per pound and that Ines bought 3 pounds",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "To find the total cost of the peaches, I multiply the number of pounds by the cost per pound: 3 pounds × $2 per pound = $6",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Now that I know Ines spent $6 on the peaches, I can calculate how much money she has left after her purchase",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Initially, Ines had $20 in her purse",
+        "is_required": 0
+      },
+      {
+        "id": "s5",
+        "text": "To find the remaining amount, I subtract the cost of the peaches from her initial amount: $20 - $6 = $14",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Thus, after buying the peaches, Ines has $14 left in her purse",
+        "is_required": 0
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s1",
+        "text": "The problem states that peaches cost $2 per pound and that Ines bought 3 pounds",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "To find the total cost of the peaches, I multiply the number of pounds by the cost per pound: 3 pounds × $2 per pound = $6",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Now that I know Ines spent $6 on the peaches, I can calculate how much money she has left after her purchase",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "To find the remaining amount, I subtract the cost of the peaches from her initial amount: $20 - $6 = $14",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s1",
+        "text": "The problem states that peaches cost $2 per pound and that Ines bought 3 pounds"
+      },
+      {
+        "id": "s2",
+        "text": "To find the total cost of the peaches, I multiply the number of pounds by the cost per pound: 3 pounds × $2 per pound = $6"
+      },
+      {
+        "id": "s3",
+        "text": "Now that I know Ines spent $6 on the peaches, I can calculate how much money she has left after her purchase"
+      },
+      {
+        "id": "s5",
+        "text": "To find the remaining amount, I subtract the cost of the peaches from her initial amount: $20 - $6 = $14"
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
       [
         "s3",
         "s5"
       ]
     ],
-    "success": true
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
+  },
+  {
+    "example_id": "gsm8k_train_2006",
+    "question": "Aaron pays his actuary membership fees each year. The membership fee increases yearly by $10. If he pays $80 in the first year, how much does his membership cost, in dollars, in the sixth year?",
+    "answer": "In year 2 he pays 80+10=$<<80+10=90>>90.\nIn year 3 he pays 90+10=$<<90+10=100>>100.\nIn year 4 he pays 100+10=$<<100+10=110>>110.\nIn year 5 he pays 110+10=$<<110+10=120>>120.\nIn year 6 he pays 120+10=$<<120+10=130>>130.\n#### 130",
+    "final_answer": "130",
+    "cot": "To determine how much Aaron's membership fee will be in the sixth year, we start with the information given: he pays $80 in the first year, and the fee increases by $10 each subsequent year.\n\nFirst, let's calculate the fee for the second year. Since the fee increases by $10 from the first year, we have:\n- Year 2: $80 + $10 = $90.\n\nNext, we calculate the fee for the third year. Again, we add $10 to the fee from the second year:\n- Year 3: $90 + $10 = $100.\n\nNow, we move on to the fourth year. We continue the pattern of adding $10:\n- Year 4: $100 + $10 = $110.\n\nFor the fifth year, we again add $10 to the fee from the fourth year:\n- Year 5: $110 + $10 = $120.\n\nFinally, we calculate the fee for the sixth year by adding $10 to the fee from the fifth year:\n- Year 6: $120 + $10 = $130.\n\nThus, the membership cost in the sixth year is $130.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "To determine how much Aaron's membership fee will be in the sixth year, we start with the information given: he pays $80 in the first year, and the fee increases by $10 each subsequent year.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "First, let's calculate the fee for the second year. Since the fee increases by $10 from the first year, we have: Year 2: $80 + $10 = $90.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Next, we calculate the fee for the third year. Again, we add $10 to the fee from the second year: Year 3: $90 + $10 = $100.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Now, we move on to the fourth year. We continue the pattern of adding $10: Year 4: $100 + $10 = $110.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "For the fifth year, we again add $10 to the fee from the fourth year: Year 5: $110 + $10 = $120.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Finally, we calculate the fee for the sixth year by adding $10 to the fee from the fifth year: Year 6: $120 + $10 = $130.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Thus, the membership cost in the sixth year is $130.",
+        "is_required": 1
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s1",
+        "text": "To determine how much Aaron's membership fee will be in the sixth year, we start with the information given: he pays $80 in the first year, and the fee increases by $10 each subsequent year.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "First, let's calculate the fee for the second year. Since the fee increases by $10 from the first year, we have: Year 2: $80 + $10 = $90.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Next, we calculate the fee for the third year. Again, we add $10 to the fee from the second year: Year 3: $90 + $10 = $100.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Now, we move on to the fourth year. We continue the pattern of adding $10: Year 4: $100 + $10 = $110.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "For the fifth year, we again add $10 to the fee from the fourth year: Year 5: $110 + $10 = $120.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Finally, we calculate the fee for the sixth year by adding $10 to the fee from the fifth year: Year 6: $120 + $10 = $130.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Thus, the membership cost in the sixth year is $130.",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s1",
+        "text": "To determine how much Aaron's membership fee will be in the sixth year, we start with the information given: he pays $80 in the first year, and the fee increases by $10 each subsequent year."
+      },
+      {
+        "id": "s2",
+        "text": "First, let's calculate the fee for the second year. Since the fee increases by $10 from the first year, we have: Year 2: $80 + $10 = $90."
+      },
+      {
+        "id": "s3",
+        "text": "Next, we calculate the fee for the third year. Again, we add $10 to the fee from the second year: Year 3: $90 + $10 = $100."
+      },
+      {
+        "id": "s4",
+        "text": "Now, we move on to the fourth year. We continue the pattern of adding $10: Year 4: $100 + $10 = $110."
+      },
+      {
+        "id": "s5",
+        "text": "For the fifth year, we again add $10 to the fee from the fourth year: Year 5: $110 + $10 = $120."
+      },
+      {
+        "id": "s6",
+        "text": "Finally, we calculate the fee for the sixth year by adding $10 to the fee from the fifth year: Year 6: $120 + $10 = $130."
+      },
+      {
+        "id": "s7",
+        "text": "Thus, the membership cost in the sixth year is $130."
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s3",
+        "s4"
+      ],
+      [
+        "s4",
+        "s5"
+      ],
+      [
+        "s5",
+        "s6"
+      ],
+      [
+        "s6",
+        "s7"
+      ]
+    ],
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
+  },
+  {
+    "example_id": "gsm8k_train_1828",
+    "question": "Joseph invested $1000 into a hedge fund. The fund promised a yearly interest rate of 10%. If he deposited an additional $100 every month into the account to add to his initial investment of $1000, how much money will he have in the fund after two years?",
+    "answer": "For the first year, Joseph will have invested $1000 + ($100 * 12) = $<<1000+100*12=2200>>2200.\nThe interest calculated for the first year will be $2200 * 10% = $<<2200*10*.01=220>>220.\nThe total value of the investment for the first year will be $2200 + $220 = $<<2200+220=2420>>2420.\nFor the second year, the total invested will be $2420 + ($100 * 12) = $<<2420+100*12=3620>>3620.\nThe interest calculated after the second year will be $3620 * 10% = $<<3620*10*.01=362>>362.\nTherefore, Joseph's investment in the mutual fund will be worth $3620 + $362 = $<<3620+362=3982>>3982.\n#### 3982",
+    "final_answer": "3982",
+    "cot": "To determine how much money Joseph will have in the hedge fund after two years, we need to break down the calculations year by year.\n\nFirst, let's look at the initial investment and the monthly contributions. Joseph starts with an initial investment of $1000. Additionally, he deposits $100 every month. Over the course of one year, he will make 12 monthly deposits. Therefore, the total amount he invests in the first year is calculated as follows:\n\nInitial investment: $1000  \nMonthly contributions for one year: $100 * 12 = $1200  \nTotal investment after one year: $1000 + $1200 = $2200\n\nNext, we need to calculate the interest earned on this total investment after the first year. The fund offers a yearly interest rate of 10%. So, the interest for the first year can be calculated as:\n\nInterest for the first year: $2200 * 10% = $220\n\nNow, we add this interest to the total investment to find out how much Joseph has at the end of the first year:\n\nTotal value after the first year: $2200 + $220 = $2420\n\nMoving on to the second year, we need to consider the new total investment, which includes the amount from the end of the first year plus the new monthly contributions. The calculation for the second year is as follows:\n\nTotal investment at the start of the second year: $2420  \nMonthly contributions for the second year: $100 * 12 = $1200  \nTotal investment after the second year: $2420 + $1200 = $3620\n\nNext, we calculate the interest earned during the second year based on this new total investment:\n\nInterest for the second year: $3620 * 10% = $362\n\nFinally, we add this interest to the total investment at the end of the second year to find out how much Joseph has in the fund after two years:\n\nTotal value after the second year: $3620 + $362 = $3982\n\nThus, after two years, Joseph's investment in the hedge fund will be worth $3982.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "Joseph starts with an initial investment of $1000. Additionally, he deposits $100 every month. Over the course of one year, he will make 12 monthly deposits. Therefore, the total amount he invests in the first year is calculated as follows: Initial investment: $1000 Monthly contributions for one year: $100 * 12 = $1200 Total investment after one year: $1000 + $1200 = $2200",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "Next, we need to calculate the interest earned on this total investment after the first year. The fund offers a yearly interest rate of 10%. So, the interest for the first year can be calculated as: Interest for the first year: $2200 * 10% = $220",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Now, we add this interest to the total investment to find out how much Joseph has at the end of the first year: Total value after the first year: $2200 + $220 = $2420",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Moving on to the second year, we need to consider the new total investment, which includes the amount from the end of the first year plus the new monthly contributions. The calculation for the second year is as follows: Total investment at the start of the second year: $2420 Monthly contributions for the second year: $100 * 12 = $1200 Total investment after the second year: $2420 + $1200 = $3620",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Next, we calculate the interest earned during the second year based on this new total investment: Interest for the second year: $3620 * 10% = $362",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Finally, we add this interest to the total investment at the end of the second year to find out how much Joseph has in the fund after two years: Total value after the second year: $3620 + $362 = $3982",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "To determine how much money Joseph will have in the hedge fund after two years, we need to break down the calculations year by year.",
+        "is_required": 0
+      },
+      {
+        "id": "s8",
+        "text": "Thus, after two years, Joseph's investment in the hedge fund will be worth $3982.",
+        "is_required": 0
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s1",
+        "text": "Joseph starts with an initial investment of $1000. Additionally, he deposits $100 every month. Over the course of one year, he will make 12 monthly deposits. Therefore, the total amount he invests in the first year is calculated as follows: Initial investment: $1000 Monthly contributions for one year: $100 * 12 = $1200 Total investment after one year: $1000 + $1200 = $2200",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "Next, we need to calculate the interest earned on this total investment after the first year. The fund offers a yearly interest rate of 10%. So, the interest for the first year can be calculated as: Interest for the first year: $2200 * 10% = $220",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Now, we add this interest to the total investment to find out how much Joseph has at the end of the first year: Total value after the first year: $2200 + $220 = $2420",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Moving on to the second year, we need to consider the new total investment, which includes the amount from the end of the first year plus the new monthly contributions. The calculation for the second year is as follows: Total investment at the start of the second year: $2420 Monthly contributions for the second year: $100 * 12 = $1200 Total investment after the second year: $2420 + $1200 = $3620",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Next, we calculate the interest earned during the second year based on this new total investment: Interest for the second year: $3620 * 10% = $362",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Finally, we add this interest to the total investment at the end of the second year to find out how much Joseph has in the fund after two years: Total value after the second year: $3620 + $362 = $3982",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s1",
+        "text": "Joseph starts with an initial investment of $1000. Additionally, he deposits $100 every month. Over the course of one year, he will make 12 monthly deposits. Therefore, the total amount he invests in the first year is calculated as follows: Initial investment: $1000 Monthly contributions for one year: $100 * 12 = $1200 Total investment after one year: $1000 + $1200 = $2200"
+      },
+      {
+        "id": "s2",
+        "text": "Next, we need to calculate the interest earned on this total investment after the first year. The fund offers a yearly interest rate of 10%. So, the interest for the first year can be calculated as: Interest for the first year: $2200 * 10% = $220"
+      },
+      {
+        "id": "s3",
+        "text": "Now, we add this interest to the total investment to find out how much Joseph has at the end of the first year: Total value after the first year: $2200 + $220 = $2420"
+      },
+      {
+        "id": "s4",
+        "text": "Moving on to the second year, we need to consider the new total investment, which includes the amount from the end of the first year plus the new monthly contributions. The calculation for the second year is as follows: Total investment at the start of the second year: $2420 Monthly contributions for the second year: $100 * 12 = $1200 Total investment after the second year: $2420 + $1200 = $3620"
+      },
+      {
+        "id": "s5",
+        "text": "Next, we calculate the interest earned during the second year based on this new total investment: Interest for the second year: $3620 * 10% = $362"
+      },
+      {
+        "id": "s6",
+        "text": "Finally, we add this interest to the total investment at the end of the second year to find out how much Joseph has in the fund after two years: Total value after the second year: $3620 + $362 = $3982"
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s3",
+        "s4"
+      ],
+      [
+        "s4",
+        "s5"
+      ],
+      [
+        "s5",
+        "s6"
+      ]
+    ],
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
+  },
+  {
+    "example_id": "gsm8k_train_1143",
+    "question": "The price of buying a wooden toy at the new Craftee And Best store is $20, and the cost of buying a hat is $10. If Kendra went to the shop with a $100 bill and bought two wooden toys and three hats, calculate the change she received.",
+    "answer": "When Kendra bought 2 toys, she paid 2*$20 = $<<2*20=40>>40\nSince the price of a hat is $10, when Kendra bought 3 hats, she paid 3*$10 = $<<3*10=30>>30\nThe total costs for the hats and wooden toys Kendra bought is $40+$30 = $<<40+30=70>>70\nFrom the $100 bill, Kendra received change worth $100-$70 =$<<100-70=30>>30\n#### 30",
+    "final_answer": "30",
+    "cot": "To determine how much change Kendra received after her purchases, I will first calculate the total cost of the items she bought.\n\nKendra bought two wooden toys, and each wooden toy costs $20. Therefore, the total cost for the wooden toys is calculated as follows:\n\\[ \n2 \\text{ toys} \\times 20 \\text{ dollars/toy} = 40 \\text{ dollars} \n\\]\n\nNext, Kendra also bought three hats, with each hat costing $10. The total cost for the hats is:\n\\[ \n3 \\text{ hats} \\times 10 \\text{ dollars/hat} = 30 \\text{ dollars} \n\\]\n\nNow, I will add the total costs of the wooden toys and the hats together to find the overall amount Kendra spent:\n\\[ \n40 \\text{ dollars (toys)} + 30 \\text{ dollars (hats)} = 70 \\text{ dollars} \n\\]\n\nKendra went to the shop with a $100 bill. To find out how much change she received after her purchases, I will subtract the total amount spent from the amount she had:\n\\[ \n100 \\text{ dollars} - 70 \\text{ dollars} = 30 \\text{ dollars} \n\\]\n\nThus, the change Kendra received is $30.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "Kendra bought two wooden toys, and each wooden toy costs $20. Therefore, the total cost for the wooden toys is calculated as follows: 2 toys × 20 dollars/toy = 40 dollars",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "Next, Kendra also bought three hats, with each hat costing $10. The total cost for the hats is: 3 hats × 10 dollars/hat = 30 dollars",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Now, I will add the total costs of the wooden toys and the hats together to find the overall amount Kendra spent: 40 dollars (toys) + 30 dollars (hats) = 70 dollars",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Kendra went to the shop with a $100 bill. To find out how much change she received after her purchases, I will subtract the total amount spent from the amount she had: 100 dollars - 70 dollars = 30 dollars",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Thus, the change Kendra received is $30",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "To determine how much change Kendra received after her purchases, I will first calculate the total cost of the items she bought",
+        "is_required": 0
+      },
+      {
+        "id": "s7",
+        "text": "Now, I will add the total costs of the wooden toys and the hats together to find the overall amount Kendra spent",
+        "is_required": 0
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s1",
+        "text": "Kendra bought two wooden toys, and each wooden toy costs $20. Therefore, the total cost for the wooden toys is calculated as follows: 2 toys × 20 dollars/toy = 40 dollars",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "Next, Kendra also bought three hats, with each hat costing $10. The total cost for the hats is: 3 hats × 10 dollars/hat = 30 dollars",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "Now, I will add the total costs of the wooden toys and the hats together to find the overall amount Kendra spent: 40 dollars (toys) + 30 dollars (hats) = 70 dollars",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Kendra went to the shop with a $100 bill. To find out how much change she received after her purchases, I will subtract the total amount spent from the amount she had: 100 dollars - 70 dollars = 30 dollars",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Thus, the change Kendra received is $30",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s1",
+        "text": "Kendra bought two wooden toys, and each wooden toy costs $20. Therefore, the total cost for the wooden toys is calculated as follows: 2 toys × 20 dollars/toy = 40 dollars"
+      },
+      {
+        "id": "s2",
+        "text": "Next, Kendra also bought three hats, with each hat costing $10. The total cost for the hats is: 3 hats × 10 dollars/hat = 30 dollars"
+      },
+      {
+        "id": "s3",
+        "text": "Now, I will add the total costs of the wooden toys and the hats together to find the overall amount Kendra spent: 40 dollars (toys) + 30 dollars (hats) = 70 dollars"
+      },
+      {
+        "id": "s4",
+        "text": "Kendra went to the shop with a $100 bill. To find out how much change she received after her purchases, I will subtract the total amount spent from the amount she had: 100 dollars - 70 dollars = 30 dollars"
+      },
+      {
+        "id": "s5",
+        "text": "Thus, the change Kendra received is $30"
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s3"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s3",
+        "s4"
+      ],
+      [
+        "s4",
+        "s5"
+      ]
+    ],
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
+  },
+  {
+    "example_id": "gsm8k_train_6033",
+    "question": "James is trying to create a new breed of kittens with extra-long tails. Each generation of kittens he breeds has a tail 25% longer than the last generation. If the first generation has tails 16 cm long, how long are the third generation's tails?",
+    "answer": "First find how much longer the second generation's tails are: 25% * 16 cm = <<25*.01*16=4>>4 cm\nThen add that length to the first generation's tail length to find the second generation's tail length: 4 cm + 16 cm = <<4+16=20>>20 cm\nThen find how much longer the third generation's tails are: 25% * 20 cm = <<25*.01*20=5>>5 cm\nThen add that length to the second generation's tail length to find the third generation's tail length: 5 cm + 20 cm = <<5+20=25>>25 cm\n#### 25",
+    "final_answer": "25",
+    "cot": "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm. \n\nFirst, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula:\n\n25% of 16 cm = 0.25 * 16 cm = 4 cm.\n\nThis means that the second generation's tails are 4 cm longer than the first generation's tails. \n\nNext, I will add this length to the first generation's tail length to find the second generation's tail length:\n\nSecond generation's tail length = First generation's tail length + Increase\n= 16 cm + 4 cm = 20 cm.\n\nNow that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm:\n\n25% of 20 cm = 0.25 * 20 cm = 5 cm.\n\nThis means that the third generation's tails are 5 cm longer than the second generation's tails.\n\nFinally, I will add this increase to the second generation's tail length to find the third generation's tail length:\n\nThird generation's tail length = Second generation's tail length + Increase\n= 20 cm + 5 cm = 25 cm.\n\nThus, the length of the third generation's tails is 25 cm.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "First, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula: 25% of 16 cm = 0.25 * 16 cm = 4 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "This means that the second generation's tails are 4 cm longer than the first generation's tails.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Next, I will add this length to the first generation's tail length to find the second generation's tail length: Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Now that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm: 25% of 20 cm = 0.25 * 20 cm = 5 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "This means that the third generation's tails are 5 cm longer than the second generation's tails.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Finally, I will add this increase to the second generation's tail length to find the third generation's tail length: Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s8",
+        "text": "Thus, the length of the third generation's tails is 25 cm.",
+        "is_required": 0
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s1",
+        "text": "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "First, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula: 25% of 16 cm = 0.25 * 16 cm = 4 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "This means that the second generation's tails are 4 cm longer than the first generation's tails.",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "Next, I will add this length to the first generation's tail length to find the second generation's tail length: Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "Now that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm: 25% of 20 cm = 0.25 * 20 cm = 5 cm.",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "This means that the third generation's tails are 5 cm longer than the second generation's tails.",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Finally, I will add this increase to the second generation's tail length to find the third generation's tail length: Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm.",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s1",
+        "text": "To determine the length of the third generation's tails, I will start with the first generation's tail length, which is given as 16 cm."
+      },
+      {
+        "id": "s2",
+        "text": "First, I need to calculate how much longer the second generation's tails are compared to the first generation. The problem states that each generation's tails are 25% longer than the previous generation. To find 25% of 16 cm, I can use the formula: 25% of 16 cm = 0.25 * 16 cm = 4 cm."
+      },
+      {
+        "id": "s3",
+        "text": "This means that the second generation's tails are 4 cm longer than the first generation's tails."
+      },
+      {
+        "id": "s4",
+        "text": "Next, I will add this length to the first generation's tail length to find the second generation's tail length: Second generation's tail length = First generation's tail length + Increase = 16 cm + 4 cm = 20 cm."
+      },
+      {
+        "id": "s5",
+        "text": "Now that I have the second generation's tail length, I will calculate how much longer the third generation's tails are compared to the second generation. Again, I will find 25% of the second generation's tail length, which is 20 cm: 25% of 20 cm = 0.25 * 20 cm = 5 cm."
+      },
+      {
+        "id": "s6",
+        "text": "This means that the third generation's tails are 5 cm longer than the second generation's tails."
+      },
+      {
+        "id": "s7",
+        "text": "Finally, I will add this increase to the second generation's tail length to find the third generation's tail length: Third generation's tail length = Second generation's tail length + Increase = 20 cm + 5 cm = 25 cm."
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s2",
+        "s4"
+      ],
+      [
+        "s3",
+        "4"
+      ],
+      [
+        "s4",
+        "s5"
+      ],
+      [
+        "s5",
+        "s6"
+      ],
+      [
+        "s6",
+        "s7"
+      ]
+    ],
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
+  },
+  {
+    "example_id": "gsm8k_train_839",
+    "question": "The Rotary Club is holding its annual fundraising Omelet Breakfast, with tickets sold in advance. The tickets come in different price levels, for young children, older children, adults, and seniors. This year they sold 53 small children tickets, 35 older children tickets, 75 adult tickets, and 37 senior tickets. To figure out how many eggs they need to buy, the club estimates that small children can eat a half omelet, older children can eat a whole omelet, adults will eat two omelets, and seniors will eat one and a half omelets. Just to be on the safe side, they get enough eggs to make 25 extra omelets. If they use 2 eggs for each omelet, how many eggs will they need to buy?",
+    "answer": "They'll need to make an estimated 0.5 * 53 = <<0.5*53=26.5>>26.5 omelets for small children.\nThey'll need to make an estimated 1 * 35 = <<1*35=35>>35 omelets for older children.\nThey'll need to make an estimated 2 * 75 = <<2*75=150>>150 omelets for the adults.\nAnd they'll need to make an estimated 1.5 * 37 = <<1.5*37=55.5>>55.5 omelets for the seniors.\nAlong with the 25 extra omelets they'll make as a buffer, they will need enough eggs for 26.5 + 35 + 150 + 55.5 + 25 = <<26.5+35+150+55.5+25=292>>292 omelets.\nSo they will need 2 * 292 = <<2*292=584>>584 eggs.\n#### 584",
+    "final_answer": "584",
+    "cot": "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.\n\n1. **Small Children**: They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is:\n   \\[\n   0.5 \\times 53 = 26.5 \\text{ omelets}\n   \\]\n\n2. **Older Children**: They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is:\n   \\[\n   1 \\times 35 = 35 \\text{ omelets}\n   \\]\n\n3. **Adults**: They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is:\n   \\[\n   2 \\times 75 = 150 \\text{ omelets}\n   \\]\n\n4. **Seniors**: They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is:\n   \\[\n   1.5 \\times 37 = 55.5 \\text{ omelets}\n   \\]\n\nNext, I will sum all the omelets needed for each group:\n\\[\n26.5 + 35 + 150 + 55.5 = 267 \\text{ omelets}\n\\]\n\nAdditionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is:\n\\[\n267 + 25 = 292 \\text{ omelets}\n\\]\n\nSince each omelet requires 2 eggs, I will now calculate the total number of eggs needed:\n\\[\n2 \\times 292 = 584 \\text{ eggs}\n\\]\n\nThus, the Rotary Club will need to buy a total of 584 eggs for the Omelet Breakfast.",
+    "segments": [
+      {
+        "id": "s1",
+        "text": "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 × 53 = 26.5 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 × 35 = 35 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 × 75 = 150 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 × 37 = 55.5 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s8",
+        "text": "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 × 292 = 584 eggs",
+        "is_required": 1
+      }
+    ],
+    "required_segments": [
+      {
+        "id": "s1",
+        "text": "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption.",
+        "is_required": 1
+      },
+      {
+        "id": "s2",
+        "text": "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 × 53 = 26.5 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s3",
+        "text": "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 × 35 = 35 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s4",
+        "text": "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 × 75 = 150 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s5",
+        "text": "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 × 37 = 55.5 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s6",
+        "text": "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s7",
+        "text": "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets",
+        "is_required": 1
+      },
+      {
+        "id": "s8",
+        "text": "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 × 292 = 584 eggs",
+        "is_required": 1
+      }
+    ],
+    "nodes": [
+      {
+        "id": "s1",
+        "text": "To determine how many eggs the Rotary Club needs to buy for their Omelet Breakfast, I will first calculate the number of omelets required for each group based on the ticket sales and their estimated consumption."
+      },
+      {
+        "id": "s2",
+        "text": "They sold 53 small children tickets, and each small child is estimated to eat half an omelet. Therefore, the total number of omelets needed for small children is: 0.5 × 53 = 26.5 omelets"
+      },
+      {
+        "id": "s3",
+        "text": "They sold 35 older children tickets, and each older child is estimated to eat one whole omelet. Thus, the total number of omelets needed for older children is: 1 × 35 = 35 omelets"
+      },
+      {
+        "id": "s4",
+        "text": "They sold 75 adult tickets, and each adult is estimated to eat two omelets. Therefore, the total number of omelets needed for adults is: 2 × 75 = 150 omelets"
+      },
+      {
+        "id": "s5",
+        "text": "They sold 37 senior tickets, and each senior is estimated to eat one and a half omelets. Thus, the total number of omelets needed for seniors is: 1.5 × 37 = 55.5 omelets"
+      },
+      {
+        "id": "s6",
+        "text": "Next, I will sum all the omelets needed for each group: 26.5 + 35 + 150 + 55.5 = 267 omelets"
+      },
+      {
+        "id": "s7",
+        "text": "Additionally, the club plans to make 25 extra omelets as a buffer. Therefore, the total number of omelets they need to prepare is: 267 + 25 = 292 omelets"
+      },
+      {
+        "id": "s8",
+        "text": "Since each omelet requires 2 eggs, I will now calculate the total number of eggs needed: 2 × 292 = 584 eggs"
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s1",
+        "s3"
+      ],
+      [
+        "s1",
+        "s4"
+      ],
+      [
+        "s1",
+        "s5"
+      ],
+      [
+        "s2",
+        "s6"
+      ],
+      [
+        "s3",
+        "s6"
+      ],
+      [
+        "s4",
+        "s6"
+      ],
+      [
+        "s5",
+        "s6"
+      ],
+      [
+        "s6",
+        "s7"
+      ],
+      [
+        "s7",
+        "s8"
+      ]
+    ],
+    "success": true,
+    "pipeline_type": "normal_with_cot_generation"
   }
 ]

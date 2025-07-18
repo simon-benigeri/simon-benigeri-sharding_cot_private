@@ -1,0 +1,9 @@
+# Alternative COT 4
+# Sequence: s1 → s4 → s6 → s9 → s12 → s16
+
+The price of each wooden toy is $20, and she bought 2 of them
+Cost for wooden toys = 2 × $20 = $40
+The price of each hat is $10, and she bought 3 hats
+Cost for hats = 3 × $10 = $30
+Total cost = $40 + $30 = $70
+Change received = $100 - $70 = $30

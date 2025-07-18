@@ -1,0 +1,20 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_6074
+Total Paths Generated: 1 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 1
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6 → s7 → s8
+
+I start with the total number of Legos that James has, which is 500
+The problem states that James uses half of his Legos to build a castle
+To find out how many Legos he used, I calculate half of 500: 500 / 2 = 250
+This means James used 250 Legos for his castle
+Since he started with 500 Legos and used 250, the number of Legos that remain unused is also 250
+According to the problem, James puts all of the leftover pieces back in the box, but he can't find 5 pieces
+To find out how many Legos he actually puts back in the box, I subtract the 5 missing pieces from the 250 leftover Legos: 250 - 5 = 245
+Thus, the total number of Legos that are in the box at the end is 245
+
+------------------------------------------------------------
+
