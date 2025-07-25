@@ -32,8 +32,8 @@ def path_to_cot_text(path: Dict[str, Any], path_number: int) -> str:
     return "\n".join(cot_lines)
 
 
-def save_example_cots(example: Dict[str, Any], output_dir: Path, max_cots: int = 10) -> Dict[str, Any]:
-    """Save alternative COTs for a single example."""
+def save_example_cots(example: Dict[str, Any], output_dir: Path, max_cots: int = 10, original_data: Dict[str, Any] = None) -> Dict[str, Any]:
+    """Save alternative COTs for a single example as JSONL format."""
     example_id = example.get('example_id', 'unknown')
     
     # Handle errors
@@ -62,7 +62,12 @@ def save_example_cots(example: Dict[str, Any], output_dir: Path, max_cots: int =
         paths_to_save = paths
         sampling_note = ""
     
-    # Save individual COT files
+    # Get original question and answer from original_data if available
+    question = original_data.get('question', '') if original_data else ''
+    answer = original_data.get('answer', '') if original_data else ''
+    final_answer = original_data.get('final_answer', '') if original_data else ''
+    
+    # Save individual COT files (human-readable format)
     for i, path in enumerate(paths_to_save, 1):
         cot_text = path_to_cot_text(path, i)
         cot_file = example_dir / f"cot_{i:03d}.txt"
@@ -70,7 +75,7 @@ def save_example_cots(example: Dict[str, Any], output_dir: Path, max_cots: int =
         with open(cot_file, 'w', encoding='utf-8') as f:
             f.write(cot_text)
     
-    # Save combined file with all COTs
+    # Save combined file with all COTs (human-readable format)
     combined_file = example_dir / "all_cots.txt"
     with open(combined_file, 'w', encoding='utf-8') as f:
         f.write(f"Alternative Chain-of-Thought Reasoning Paths\n")
@@ -84,18 +89,43 @@ def save_example_cots(example: Dict[str, Any], output_dir: Path, max_cots: int =
             f.write(cot_text)
             f.write("\n" + "-"*60 + "\n\n")
     
+    # Save JSONL file with alternative COTs (machine-readable format)
+    jsonl_file = example_dir / "alternative_cots.jsonl"
+    cots_saved = 0
+    
+    with open(jsonl_file, 'w', encoding='utf-8') as f:
+        for i, path in enumerate(paths_to_save, 1):
+            # Convert path to COT text
+            texts = path.get('texts', [])
+            if not texts:
+                continue
+                
+            # Create the COT text by joining the reasoning steps
+            cot_text = '\n'.join(texts)
+            
+            # Create JSONL entry
+            jsonl_entry = {
+                "question": question,
+                "answer": answer + f"\n#### {final_answer}" if answer and final_answer else answer
+            }
+            
+            # Write to JSONL file
+            f.write(json.dumps(jsonl_entry, ensure_ascii=False) + '\n')
+            cots_saved += 1
+    
     # Save metadata
     metadata = {
         'example_id': example_id,
         'total_paths_generated': total_paths,
-        'cots_saved': len(paths_to_save),
+        'cots_saved': cots_saved,
         'sampling_applied': len(paths) > max_cots,
         'max_cots_limit': max_cots,
         'method': method,
         'complexity_estimate': example.get('complexity_estimate', {}),
         'files_created': {
             'individual_cots': [f"cot_{i:03d}.txt" for i in range(1, len(paths_to_save) + 1)],
-            'combined_file': "all_cots.txt"
+            'combined_file': "all_cots.txt",
+            'jsonl_file': "alternative_cots.jsonl"
         }
     }
     
@@ -103,7 +133,7 @@ def save_example_cots(example: Dict[str, Any], output_dir: Path, max_cots: int =
     with open(metadata_file, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, indent=2)
     
-    return {'example_id': example_id, 'cots_saved': len(paths_to_save), 'path': str(example_dir)}
+    return {'example_id': example_id, 'cots_saved': cots_saved, 'path': str(example_dir)}
 
 
 def preview_example_cots(example: Dict[str, Any], max_preview: int = 3):
@@ -248,6 +278,32 @@ def save_alternative_cots(paths_file: str, output_dir: str = None,
     else:
         output_dir = Path(output_dir)
     
+    # Try to load original pipeline data to get question/answer information
+    original_data_map = {}
+    try:
+        # Construct the original pipeline results filename
+        paths_path = Path(paths_file)
+        if "_reasoning_paths" in paths_path.stem:
+            base_name = paths_path.stem.replace("_reasoning_paths", "")
+            original_file = paths_path.parent / f"{base_name}.json"
+            
+            if original_file.exists():
+                print(f"📁 Loading original pipeline data from: {original_file}")
+                with open(original_file, 'r') as f:
+                    original_data = json.load(f)
+                
+                # Create a map from example_id to original data
+                for item in original_data:
+                    if 'example_id' in item:
+                        original_data_map[item['example_id']] = item
+                print(f"✅ Loaded {len(original_data_map)} original examples")
+            else:
+                print(f"⚠️  Original pipeline data not found: {original_file}")
+        else:
+            print("⚠️  Could not determine original pipeline data filename")
+    except Exception as e:
+        print(f"⚠️  Error loading original pipeline data: {e}")
+    
     # Filter examples if requested
     if example_filter:
         filtered_data = [ex for ex in paths_data if example_filter.lower() in ex.get('example_id', '').lower()]
@@ -274,7 +330,10 @@ def save_alternative_cots(paths_file: str, output_dir: str = None,
     total_cots_saved = 0
     
     for example in paths_data:
-        result = save_example_cots(example, output_dir, max_cots)
+        example_id = example.get('example_id', 'unknown')
+        original_data = original_data_map.get(example_id)
+        
+        result = save_example_cots(example, output_dir, max_cots, original_data)
         results.append(result)
         
         if 'error' not in result:
@@ -296,9 +355,10 @@ def save_alternative_cots(paths_file: str, output_dir: str = None,
         'successful_examples': len([r for r in results if 'error' not in r]),
         'total_cots_saved': total_cots_saved,
         'output_structure': {
-            'description': 'Each example has its own directory with individual COT files and combined file',
-            'individual_files': 'cot_001.txt, cot_002.txt, etc.',
-            'combined_file': 'all_cots.txt',
+            'description': 'Each example has its own directory with both human-readable and machine-readable formats',
+            'individual_files': 'cot_001.txt, cot_002.txt, etc. - individual alternative COTs',
+            'combined_file': 'all_cots.txt - all COTs combined in readable format',
+            'jsonl_file': 'alternative_cots.jsonl - contains question/answer pairs with alternative reasoning paths',
             'metadata_file': 'metadata.json'
         },
         'results': results
@@ -324,34 +384,39 @@ def main():
         epilog="""
 Examples:
   # Save all alternative COTs to organized directory structure
-  python display_reasoning_paths.py results_reasoning_paths.json
+  python generate_alternative_cots.py results_reasoning_paths.json
   
   # Preview COTs without saving
-  python display_reasoning_paths.py results_reasoning_paths.json --preview-only
+  python generate_alternative_cots.py results_reasoning_paths.json --preview-only
   
   # Save to specific output directory
-  python display_reasoning_paths.py results_reasoning_paths.json --output /path/to/output
+  python generate_alternative_cots.py results_reasoning_paths.json --output /path/to/output
   
   # Filter to specific example
-  python display_reasoning_paths.py results_reasoning_paths.json --filter train_123
+  python generate_alternative_cots.py results_reasoning_paths.json --filter train_123
   
   # Preview with more COTs shown per example
-  python display_reasoning_paths.py results_reasoning_paths.json --preview-only --max-preview 5
+  python generate_alternative_cots.py results_reasoning_paths.json --preview-only --max-preview 5
   
   # Save up to 20 COTs per example (instead of default 10)
-  python display_reasoning_paths.py results_reasoning_paths.json --max-cots 20
+  python generate_alternative_cots.py results_reasoning_paths.json --max-cots 20
 
 Output Structure:
   sharded_data/gsm8k/alternative_cots_{segmentation}/
   ├── summary.json                    # Overall summary and metadata
   ├── gsm8k_train_123/               # Example directory
-  │   ├── cot_001.txt                # Individual COT files
+  │   ├── cot_001.txt                # Individual COT files (human-readable)
   │   ├── cot_002.txt
   │   ├── ...
-  │   ├── all_cots.txt               # All COTs combined
+  │   ├── all_cots.txt               # All COTs combined (human-readable)
+  │   ├── alternative_cots.jsonl     # JSONL file with question/answer pairs (machine-readable)
   │   └── metadata.json              # Example metadata
   └── gsm8k_train_456/               # Another example
       └── ...
+
+Formats:
+  Human-readable: Individual .txt files and combined all_cots.txt
+  Machine-readable: JSONL format with {"question": "...", "answer": "...\\n#### final_answer"}
         """
     )
     
