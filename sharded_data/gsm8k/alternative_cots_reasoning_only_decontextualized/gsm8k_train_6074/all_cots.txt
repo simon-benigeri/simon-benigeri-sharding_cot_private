@@ -1,0 +1,16 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_6074
+Total Paths Generated: 1 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 1
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4
+
+James starts with 500 Legos
+He uses half of his collection, which is 500 / 2 = 250 Legos
+The number of Legos that remain after using half is 500 - 250 = 250 Legos
+The number of Legos he actually puts back in the box is 250 - 5 = 245 Legos
+
+------------------------------------------------------------
+

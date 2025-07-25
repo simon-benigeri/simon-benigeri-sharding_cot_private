@@ -1,0 +1,18 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_1828
+Total Paths Generated: 1 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 1
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6
+
+Joseph will have invested $1000 + ($100 * 12) = 2200 after the first year
+The interest calculated for the first year will be $2200 * 10% = 220
+The total value of the investment for the first year will be $2200 + $220 = 2420
+The total invested for the second year will be $2420 + ($100 * 12) = 3620
+The interest calculated after the second year will be $3620 * 10% = 362
+Joseph's investment in the mutual fund will be worth $3620 + $362 = 3982
+
+------------------------------------------------------------
+

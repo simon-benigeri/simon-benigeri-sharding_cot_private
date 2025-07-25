@@ -1,0 +1,26 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_1143
+Total Paths Generated: 2 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 2
+================================================================================
+
+# Alternative COT 1
+# Sequence: s2 → s1 → s3 → s4
+
+Kendra paid 3 * $10 = $30 for three hats
+Kendra paid 2 * $20 = $40 for two wooden toys
+The total cost for the wooden toys and hats is $40 + $30 = $70
+Kendra received change of $100 - $70 = $30
+
+------------------------------------------------------------
+
+# Alternative COT 2
+# Sequence: s1 → s2 → s3 → s4
+
+Kendra paid 2 * $20 = $40 for two wooden toys
+Kendra paid 3 * $10 = $30 for three hats
+The total cost for the wooden toys and hats is $40 + $30 = $70
+Kendra received change of $100 - $70 = $30
+
+------------------------------------------------------------
+

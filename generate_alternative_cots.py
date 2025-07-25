@@ -225,13 +225,17 @@ def save_alternative_cots(paths_file: str, output_dir: str = None,
             # Remove the _reasoning_paths suffix
             base_name = filename.replace("_reasoning_paths", "")
             
-            # Check for segmentation patterns
-            if base_name.endswith("_direct"):
-                segmentation = "direct"
+            # Check for segmentation patterns (check longer patterns first)
+            if base_name.endswith("_reasoning_only_decontextualized"):
+                segmentation = "reasoning_only_decontextualized"
+            elif base_name.endswith("_reasoning_only_direct"):
+                segmentation = "reasoning_only_direct"
             elif base_name.endswith("_decontextualized"):
                 segmentation = "decontextualized"
             elif base_name.endswith("_consolidated"):
                 segmentation = "consolidated"
+            elif base_name.endswith("_direct"):
+                segmentation = "direct"
             elif base_name.endswith("_regular"):
                 segmentation = "regular"
             # If no specific segmentation found in filename, check for direct pipeline results

@@ -1,0 +1,5 @@
+# Alternative COT 1
+# Sequence: s1 → s2
+
+The total number of pages is 80 pages/inch × 12 inches = 960 pages
+The average number of pages per book is 960 pages ÷ 6 books = 160 pages/book

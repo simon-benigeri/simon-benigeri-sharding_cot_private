@@ -2,7 +2,7 @@
   "source_file": "sharded_data/gsm8k/gsm8k_pipeline_results_direct_reasoning_paths.json",
   "total_examples": 10,
   "successful_examples": 10,
-  "total_cots_saved": 48,
+  "total_cots_saved": 34,
   "output_structure": {
     "description": "Each example has its own directory with individual COT files and combined file",
     "individual_files": "cot_001.txt, cot_002.txt, etc.",
@@ -57,7 +57,7 @@
     },
     {
       "example_id": "gsm8k_train_839",
-      "cots_saved": 24,
+      "cots_saved": 10,
       "path": "sharded_data/gsm8k/alternative_cots_direct/gsm8k_train_839"
     }
   ]

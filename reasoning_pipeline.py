@@ -46,7 +46,9 @@ class ReasoningPipeline:
             model: OpenAI model to use (default: gpt-4o-mini-2024-07-18)
             delay: Delay between API calls to avoid rate limits
             segmentation_style: "regular" for micro-segments, "consolidated" for substantial segments, 
-                              "decontextualized" for self-contained segments, or "direct" for direct answer segmentation
+                              "decontextualized" for self-contained segments, "direct" for direct answer segmentation,
+                              "reasoning_only_decontextualized" for reasoning-only CoT segmentation,
+                              "reasoning_only_direct" for reasoning-only solution segmentation
         """
         # Load environment variables
         load_dotenv()
@@ -81,6 +83,12 @@ class ReasoningPipeline:
             graph_file = "create_graph_decontextualized.txt"
         elif self.segmentation_style == "direct":
             segment_file = "segment_cot_direct.txt"
+            graph_file = "create_graph_direct.txt"
+        elif self.segmentation_style == "reasoning_only_decontextualized":
+            segment_file = "segment_cot_reasoning_only_decontextualized.txt"
+            graph_file = "create_graph_decontextualized.txt"
+        elif self.segmentation_style == "reasoning_only_direct":
+            segment_file = "segment_cot_reasoning_only_direct.txt"
             graph_file = "create_graph_direct.txt"
         else:  # regular
             segment_file = "segment_cot.txt"
@@ -343,7 +351,7 @@ class ReasoningPipeline:
         
         try:
             # Step 1: Generate CoT (skip if using direct segmentation)
-            if self.segmentation_style == "direct":
+            if self.segmentation_style == "direct" or self.segmentation_style == "reasoning_only_direct":
                 # Use answer directly as CoT for direct segmentation
                 cot = answer
                 result['cot'] = cot
@@ -549,7 +557,9 @@ def run_pipeline(dataset: str, n_samples: int = 3,
         delay: Delay between API calls
         seed: Random seed for sampling
         segmentation_style: "regular" for micro-segments, "consolidated" for substantial segments, 
-                          "decontextualized" for self-contained segments, or "direct" for direct answer segmentation
+                          "decontextualized" for self-contained segments, "direct" for direct answer segmentation,
+                          "reasoning_only_decontextualized" for reasoning-only CoT segmentation,
+                          "reasoning_only_direct" for reasoning-only solution segmentation
         
     Returns:
         List of pipeline results (each with example_id)
@@ -594,7 +604,8 @@ def run_direct_pipeline(dataset: str, n_samples: int = 3,
         model: OpenAI model to use
         delay: Delay between API calls
         seed: Random seed for sampling
-        segmentation_style: "regular", "consolidated", or "decontextualized" for segments
+        segmentation_style: "regular", "consolidated", "decontextualized", "reasoning_only_decontextualized", 
+                          or "reasoning_only_direct" for segments
         
     Returns:
         List of pipeline results (each with example_id)
@@ -651,8 +662,8 @@ def main():
     parser.add_argument("--seed", type=int, default=42,
                        help="Random seed for sampling")
     parser.add_argument("--segmentation", type=str, default="regular", 
-                       choices=["regular", "consolidated", "decontextualized", "direct"],
-                       help="Segmentation style: 'regular' for micro-segments, 'consolidated' for substantial segments, 'decontextualized' for self-contained segments, 'direct' for direct answer segmentation")
+                       choices=["regular", "consolidated", "decontextualized", "direct", "reasoning_only_decontextualized", "reasoning_only_direct"],
+                       help="Segmentation style: 'regular' for micro-segments, 'consolidated' for substantial segments, 'decontextualized' for self-contained segments, 'direct' for direct answer segmentation, 'reasoning_only_decontextualized' for reasoning-only CoT segmentation, 'reasoning_only_direct' for reasoning-only solution segmentation")
     parser.add_argument("--pipeline", type=str, default="normal",
                        choices=["normal", "direct"],
                        help="Pipeline type: 'normal' generates CoT then segments, 'direct' segments existing answer")

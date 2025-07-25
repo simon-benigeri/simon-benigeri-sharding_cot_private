@@ -1,0 +1,71 @@
+You are a reasoning analysis expert. Your task is to segment the provided step-by-step mathematical solution into non-overlapping, atomic reasoning steps that are DECONTEXTUALIZED and contain ONLY the actual reasoning work, calculations, and logical conclusions. You must NOT include segments that merely repeat facts already stated in the question.
+
+You will be given a math problem, its step-by-step solution (answer), and the final numerical answer.
+
+You must output a list of segments between <segments> tags in the following JSON format:
+<segments>
+[
+  {{"id": "s1", "text": "[decontextualized reasoning step]", "is_required": 1|0}},
+  {{"id": "s2", "text": "[decontextualized reasoning step]", "is_required": 1|0}},
+  ...
+]
+</segments>
+
+Rules:
+- **[Sequential IDs]** Assign sequential IDs (s1, s2, s3, ...) to each segment in order of appearance.
+- **[is_required]** For each segment, you must specify whether this particular reasoning step is required (1) or not strictly necessary (0) to reach the final answer.
+- **[Non-overlapping]** The segments must be non-overlapping and cover the reasoning portions of the solution. You can optionally leave some gaps for non-essential portions (headers, final answer markers like "#### 40").
+- **[Reasoning Only]** CRITICAL: Only extract segments that contain actual reasoning work:
+  - Mathematical calculations and operations
+  - Logical deductions and conclusions
+  - Intermediate results and derived values
+  - Problem-solving insights and connections
+- **[No Question Facts]** Do NOT include segments that merely restate information given in the question:
+  - Direct quotes of numerical values from the problem
+  - Repetition of relationships explicitly stated in the question
+  - Restatement of given conditions or constraints
+- **[Atomic Steps]** Each segment must contain exactly one calculation, logical deduction, or reasoning insight.
+- **[Handle GSM8K format]** Process calculations in format like "16 + 20 = <<16+20=36>>36" as single calculation steps.
+- **[Clean calculations]** Remove calculation markup like <<...>> when creating segments, keep just the clean calculation: "16 + 20 = 36".
+- **[DECONTEXTUALIZED]** Each segment must be self-contained and understandable without previous context:
+  - Remove pronouns that refer to previous steps ("it", "this", "that", "these", "them")
+  - Remove transition words that reference previous context ("so", "then", "therefore", "thus", "next")
+  - Replace ambiguous references with explicit values ("this number" → "36", "the result" → "the calculated value 18")
+  - Include necessary context within the segment itself
+  - Each segment should read as a standalone, complete statement
+- **[Segment Count]** The number of segments should not be more than 12.
+
+Example:
+
+Question: Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?
+
+Answer: Matthew picked 16 + 20 = <<16+20=36>>36 strawberries.
+Natalie picked 36/2 = <<36/2=18>>18 strawberries.
+All together, they have 16 + 36 + 18 = <<16+36+18=70>>70 strawberries.
+They can make 70/7 = <<70/7=10>>10 jars of strawberries.
+They earn 10 x $4 = $<<10*4=40>>40 from the strawberries they picked.
+#### 40
+
+Final Answer: 40
+
+<segments>
+[
+  {{"id": "s1", "text": "Matthew picked 16 + 20 = 36 strawberries", "is_required": 1}},
+  {{"id": "s2", "text": "Natalie picked 36/2 = 18 strawberries", "is_required": 1}},
+  {{"id": "s3", "text": "Betty, Matthew, and Natalie have 16 + 36 + 18 = 70 strawberries in total", "is_required": 1}},
+  {{"id": "s4", "text": "Betty, Matthew, and Natalie can make 70/7 = 10 jars of strawberries", "is_required": 1}},
+  {{"id": "s5", "text": "Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam", "is_required": 1}}
+]
+</segments>
+
+Note: Each segment focuses only on computational steps and derived conclusions. Question facts like "Betty picked 16 strawberries" or constraints like "One jar uses 7 strawberries" are not included as separate segments since they restate given information rather than showing reasoning work.
+
+---USER---
+
+Please segment the following step-by-step mathematical solution into decontextualized, reasoning-only steps:
+
+Question: {question}
+Answer: {answer}
+Final Answer: {final_answer}
+
+Provide your JSON segmentation below: 

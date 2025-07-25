@@ -1,0 +1,7 @@
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4
+
+The second generation's tails are 25% * 16 cm = 4 cm longer than the first generation
+The second generation's tail length is 4 cm + 16 cm = 20 cm
+The third generation's tails are 25% * 20 cm = 5 cm longer than the second generation
+The third generation's tail length is 5 cm + 20 cm = 25 cm

@@ -1,0 +1,136 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_839
+Total Paths Generated: 24 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 10 (sampled 10 of 24 paths)
+================================================================================
+
+# Alternative COT 1
+# Sequence: s4 → s3 → s1 → s2 → s5 → s6 → s7
+
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 2
+# Sequence: s3 → s2 → s1 → s4 → s5 → s6 → s7
+
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 3
+# Sequence: s1 → s4 → s3 → s2 → s5 → s6 → s7
+
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 4
+# Sequence: s3 → s2 → s4 → s1 → s5 → s6 → s7
+
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 5
+# Sequence: s1 → s3 → s2 → s4 → s5 → s6 → s7
+
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 6
+# Sequence: s2 → s4 → s1 → s3 → s5 → s6 → s7
+
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 7
+# Sequence: s1 → s3 → s4 → s2 → s5 → s6 → s7
+
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 8
+# Sequence: s2 → s4 → s3 → s1 → s5 → s6 → s7
+
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 9
+# Sequence: s1 → s2 → s4 → s3 → s5 → s6 → s7
+
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+
+# Alternative COT 10
+# Sequence: s4 → s2 → s1 → s3 → s5 → s6 → s7
+
+The total number of omelets needed for seniors is 1.5 * 37 = 55.5 omelets
+The total number of omelets needed for older children is 1 * 35 = 35 omelets
+The total number of omelets needed for small children is 0.5 * 53 = 26.5 omelets
+The total number of omelets needed for adults is 2 * 75 = 150 omelets
+The total number of omelets needed is 26.5 + 35 + 150 + 55.5 = 267 omelets
+The total number of omelets including the extra buffer is 267 + 25 = 292 omelets
+The total number of eggs needed is 2 * 292 = 584 eggs
+
+------------------------------------------------------------
+

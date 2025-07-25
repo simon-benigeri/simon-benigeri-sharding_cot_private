@@ -1,9 +1,9 @@
 # Alternative COT 9
-# Sequence: s1 → s3 → s2 → s4 → s5 → s6 → s7 → s8
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6 → s7 → s8
 
 Ines had $20 in her purse
-Ines bought 3 pounds of peaches
 Peaches cost $2 per pound
+Ines bought 3 pounds of peaches
 The total cost of the peaches is 3 pounds * $2 per pound = $6
 Ines spent $6 on the peaches
 Initially, Ines had $20

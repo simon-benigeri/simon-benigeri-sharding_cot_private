@@ -1,12 +1,12 @@
 # Alternative COT 7
-# Sequence: s4 → s1 → s3 → s5 → s6 → s2 → s7 → s8 → s9 → s10 → s11 → s12 → s13
+# Sequence: s2 → s4 → s1 → s3 → s5 → s6 → s7 → s8 → s9 → s10 → s11 → s12 → s13
 
+The fund promised a yearly interest rate of 10%
 Over the course of a year, Joseph will make 12 monthly deposits
 Joseph invested $1000 into a hedge fund
 Joseph deposits $100 every month into the account
 The total of monthly deposits for one year is $100 * 12 = $1200
 At the end of the first year, the total amount invested is $1000 + $1200 = $2200
-The fund promised a yearly interest rate of 10%
 The interest for the first year is calculated as $2200 * 10% = $220
 The total value of the investment at the end of the first year is $2200 + $220 = $2420
 At the beginning of the second year, Joseph's investment is worth $2420

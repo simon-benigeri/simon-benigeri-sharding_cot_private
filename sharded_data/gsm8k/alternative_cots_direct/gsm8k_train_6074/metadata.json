@@ -1,6 +1,9 @@
 {
   "example_id": "gsm8k_train_6074",
-  "total_paths": 3,
+  "total_paths_generated": 3,
+  "cots_saved": 3,
+  "sampling_applied": false,
+  "max_cots_limit": 10,
   "method": "exhaustive",
   "complexity_estimate": {
     "complexity": "MEDIUM",

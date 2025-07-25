@@ -1,0 +1,8 @@
+# Alternative COT 2
+# Sequence: s3 → s1 → s2 → s4 → s5
+
+The family collected 20 kilograms of newspapers, which results in 20/5 = 4 sets of 5 kilograms
+The family collected 144 cans, which results in 144/12 = 12 sets of 12 cans
+The family earns $0.50 for each set of 12 cans, so they receive $0.50 x 12 = $6 for the cans
+The family earns $1.50 for each set of 5 kilograms of newspapers, so they receive $1.50 x 4 = $6 for the newspapers
+The total amount of money the family receives is $6 (from cans) + $6 (from newspapers) = $12

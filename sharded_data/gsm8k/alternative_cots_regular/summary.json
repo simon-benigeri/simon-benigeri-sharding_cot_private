@@ -1,8 +1,8 @@
 {
-  "source_file": "sharded_data/gsm8k/gsm8k_pipeline_results_regular_reasoning_paths.json",
+  "source_file": "sharded_data/gsm8k/gsm8k_pipeline_results_reasoning_only_direct.json",
   "total_examples": 10,
-  "successful_examples": 10,
-  "total_cots_saved": 46,
+  "successful_examples": 0,
+  "total_cots_saved": 0,
   "output_structure": {
     "description": "Each example has its own directory with individual COT files and combined file",
     "individual_files": "cot_001.txt, cot_002.txt, etc.",
@@ -12,53 +12,53 @@
   "results": [
     {
       "example_id": "gsm8k_train_5238",
-      "cots_saved": 10,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_5238"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_912",
-      "cots_saved": 1,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_912"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_204",
-      "cots_saved": 1,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_204"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_6074",
-      "cots_saved": 1,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_6074"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_2253",
-      "cots_saved": 5,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_2253"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_2006",
-      "cots_saved": 1,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_2006"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_1828",
-      "cots_saved": 10,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_1828"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_1143",
-      "cots_saved": 6,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_1143"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_6033",
-      "cots_saved": 1,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_6033"
+      "error": "No paths found",
+      "cots_saved": 0
     },
     {
       "example_id": "gsm8k_train_839",
-      "cots_saved": 10,
-      "path": "sharded_data/gsm8k/alternative_cots_regular/gsm8k_train_839"
+      "error": "No paths found",
+      "cots_saved": 0
     }
   ]
 }

@@ -1,0 +1,81 @@
+You are a reasoning analysis expert. Your task is to segment chain-of-thought explanations into non-overlapping, atomic reasoning steps that are DECONTEXTUALIZED and contain ONLY the actual reasoning work, calculations, and logical conclusions. You must NOT include segments that merely repeat facts already stated in the question.
+
+You will be given a math problem, its answer, the final numerical answer, and a step-by-step chain-of-thought explanation.
+
+You must output a list of segments between <segments> tags in the following JSON format:
+<segments>
+[
+  {{"id": "s1", "text": "[decontextualized reasoning step]", "is_required": 1|0}},
+  {{"id": "s2", "text": "[decontextualized reasoning step]", "is_required": 1|0}},
+  ...
+]
+</segments>
+
+Rules:
+- **[Sequential IDs]** Assign sequential IDs (s1, s2, s3, ...) to each segment in order of appearance.
+- **[is_required]** For each segment, you must specify whether this particular reasoning step is required (1) or not strictly necessary (0) to reach the final answer.
+- **[Non-overlapping]** The segments must be non-overlapping and cover the reasoning portions of the chain-of-thought explanation. You can optionally leave some gaps for non-essential portions (transition words, headers, etc.)
+- **[Reasoning Only]** CRITICAL: Only extract segments that contain actual reasoning work:
+  - Mathematical calculations and operations
+  - Logical deductions and conclusions
+  - Intermediate results and derived values
+  - Problem-solving insights and connections
+- **[No Question Facts]** Do NOT include segments that merely restate information given in the question:
+  - Direct quotes of numerical values from the problem
+  - Repetition of relationships explicitly stated in the question
+  - Restatement of given conditions or constraints
+- **[Atomic Steps]** Each segment must contain exactly one calculation, logical deduction, or reasoning insight.
+- **[DECONTEXTUALIZED]** Each segment must be self-contained and understandable without previous context:
+  - Remove pronouns that refer to previous steps ("it", "this", "that", "these", "them")
+  - Remove transition words that reference previous context ("so", "then", "therefore", "thus", "next")
+  - Replace ambiguous references with explicit values ("this number" → "36", "the result" → "the calculated value 18")
+  - Include necessary context within the segment itself
+  - Each segment should read as a standalone, complete statement
+- **[Segment Count]** The number of segments should not be more than 12.
+
+Example:
+
+Question: Betty picked 16 strawberries. Matthew picked 20 more strawberries than Betty and twice as many as Natalie. They used their strawberries to make jam. One jar of jam used 7 strawberries and they sold each jar at $4. How much money were they able to make from the strawberries they picked?
+
+Answer: Matthew picked 16 + 20 = <<16+20=36>>36 strawberries.
+Natalie picked 36/2 = <<36/2=18>>18 strawberries.
+All together, they have 16 + 36 + 18 = <<16+36+18=70>>70 strawberries.
+They can make 70/7 = <<70/7=10>>10 jars of strawberries.
+They earn 10 x $4 = $<<10*4=40>>40 from the strawberries they picked.
+#### 40
+
+Final Answer: 40
+
+Chain-of-thought: First, I need to find how many strawberries Matthew picked. The problem states that Matthew picked 20 more strawberries than Betty, and Betty picked 16 strawberries. So Matthew picked 16 + 20 = 36 strawberries.
+
+Next, I need to find how many strawberries Natalie picked. The problem says Matthew picked twice as many as Natalie. Since Matthew picked 36 strawberries, Natalie must have picked 36/2 = 18 strawberries.
+
+Now I can calculate the total number of strawberries they all picked together. Betty picked 16, Matthew picked 36, and Natalie picked 18. So the total is 16 + 36 + 18 = 70 strawberries.
+
+Next, I need to figure out how many jars of jam they can make. Each jar uses 7 strawberries, and they have 70 strawberries total. So they can make 70/7 = 10 jars of jam.
+
+Finally, I need to calculate how much money they earned. They sold each jar for $4, and they made 10 jars. So they earned 10 × $4 = $40 from selling the jam.
+
+<segments>
+[
+  {{"id": "s1", "text": "Matthew picked 16 + 20 = 36 strawberries", "is_required": 1}},
+  {{"id": "s2", "text": "Natalie picked 36/2 = 18 strawberries", "is_required": 1}},
+  {{"id": "s3", "text": "The total strawberries is 16 + 36 + 18 = 70 strawberries", "is_required": 1}},
+  {{"id": "s4", "text": "They can make 70/7 = 10 jars of jam", "is_required": 1}},
+  {{"id": "s5", "text": "They earned 10 × $4 = $40 from selling the jam", "is_required": 1}}
+]
+</segments>
+
+Note: Segments that restate question facts like "Betty picked 16 strawberries", "Matthew picked 20 more strawberries than Betty", "Each jar uses 7 strawberries", or transition phrases like "First, I need to find" are NOT included because they either repeat given information or don't contain actual reasoning work.
+
+---USER---
+
+Please segment the following chain-of-thought explanation into decontextualized, reasoning-only steps:
+
+Question: {question}
+Answer: {answer}
+Final Answer: {final_answer}
+Chain-of-thought:
+{cot_output_from_prompt_1}
+
+Provide your JSON segmentation below: 

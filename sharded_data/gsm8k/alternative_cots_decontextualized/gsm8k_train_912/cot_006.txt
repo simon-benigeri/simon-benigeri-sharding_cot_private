@@ -1,14 +1,14 @@
 # Alternative COT 6
-# Sequence: s11 → s1 → s2 → s14 → s3 → s4 → s5 → s6 → s7 → s8 → s9 → s10 → s12 → s13 → s15 → s16
+# Sequence: s11 → s1 → s14 → s2 → s5 → s6 → s3 → s4 → s7 → s8 → s9 → s10 → s12 → s13 → s15 → s16
 
 Each jar of jam requires 7 strawberries
 Betty picked 16 strawberries
-Matthew picked 20 more strawberries than Betty
 Each jar is sold for $4
-Matthew's strawberries = Betty's strawberries + 20
-Matthew's strawberries = 16 + 20 = 36 strawberries
+Matthew picked 20 more strawberries than Betty
 Matthew picked twice as many strawberries as Natalie
 Matthew's strawberries = 2 × Natalie's strawberries
+Matthew's strawberries = Betty's strawberries + 20
+Matthew's strawberries = 16 + 20 = 36 strawberries
 Natalie's strawberries = 36 / 2 = 18 strawberries
 Betty picked 16 strawberries, Matthew picked 36 strawberries, and Natalie picked 18 strawberries
 Total strawberries = Betty's strawberries + Matthew's strawberries + Natalie's strawberries

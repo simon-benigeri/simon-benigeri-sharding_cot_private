@@ -1,6 +1,7 @@
 Alternative Chain-of-Thought Reasoning Paths
 Example: gsm8k_train_204
-Total Paths: 8 (method: exhaustive, complexity: MEDIUM)
+Total Paths Generated: 8 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 8
 ================================================================================
 
 # Alternative COT 1

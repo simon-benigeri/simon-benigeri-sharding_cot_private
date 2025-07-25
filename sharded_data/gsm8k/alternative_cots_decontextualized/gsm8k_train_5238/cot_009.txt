@@ -1,16 +1,16 @@
 # Alternative COT 9
-# Sequence: s11 → s8 → s7 → s1 → s2 → s3 → s9 → s5 → s4 → s10 → s12 → s6 → s13 → s14 → s15
+# Sequence: s11 → s8 → s7 → s2 → s9 → s10 → s1 → s3 → s4 → s5 → s12 → s6 → s13 → s14 → s15
 
 Each set earns $1.50
 The family collected 20 kilograms of newspapers
 For every 5 kilograms of newspapers, the family receives $1.50
-For every 12 cans recycled, the family receives $0.50
 The family collected a total of 144 cans
-To find out how many sets of 12 cans, divide 144 cans by 12
 To find out how many sets of 5 kilograms, divide 20 kilograms by 5
-Each set earns $0.50
-144 cans ÷ 12 = 12 sets of 12 cans
 20 kilograms ÷ 5 = 4 sets of 5 kilograms
+For every 12 cans recycled, the family receives $0.50
+To find out how many sets of 12 cans, divide 144 cans by 12
+144 cans ÷ 12 = 12 sets of 12 cans
+Each set earns $0.50
 The earnings from the newspapers is 4 sets × $1.50 = $6
 The earnings from the cans is 12 sets × $0.50 = $6
 To find the total amount of money, add the earnings from the cans and newspapers

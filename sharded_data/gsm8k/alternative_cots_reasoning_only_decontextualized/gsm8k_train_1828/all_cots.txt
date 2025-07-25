@@ -1,0 +1,19 @@
+Alternative Chain-of-Thought Reasoning Paths
+Example: gsm8k_train_1828
+Total Paths Generated: 1 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 1
+================================================================================
+
+# Alternative COT 1
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6 → s7
+
+Joseph will make 12 monthly deposits totaling $100 * 12 = $1200
+The total amount invested at the end of the first year is $1000 + $1200 = $2200
+The interest for the first year is $2200 * 10% = $220
+The total value after the first year is $2200 + $220 = $2420
+The total amount at the beginning of the second year is $2420 + $1200 = $3620
+The interest for the second year is $3620 * 10% = $362
+The total value after the second year is $3620 + $362 = $3982
+
+------------------------------------------------------------
+
