@@ -10,6 +10,7 @@ import json
 import sys
 from pathlib import Path
 from typing import List, Dict, Any
+from tqdm import tqdm
 
 
 def path_to_cot_text(path: Dict[str, Any], path_number: int) -> str:
@@ -104,9 +105,12 @@ def save_example_cots(example: Dict[str, Any], output_dir: Path, max_cots: int =
             cot_text = '\n'.join(texts)
             
             # Create JSONL entry
+            # The alternative COT should be a complete reasoning path that leads to the same final answer
+            # Always include the final answer in the standard format, plus as a separate key for easy access
             jsonl_entry = {
                 "question": question,
-                "answer": answer + f"\n#### {final_answer}" if answer and final_answer else answer
+                "answer": cot_text + f"\n#### {final_answer}" if final_answer else cot_text,
+                "final_answer": final_answer if final_answer else ""
             }
             
             # Write to JSONL file
@@ -317,7 +321,7 @@ def save_alternative_cots(paths_file: str, output_dir: str = None,
     if preview_only:
         print(f"\n📋 PREVIEW MODE - showing first {max_preview} COTs per example")
         # Just preview, don't save
-        for example in paths_data:
+        for example in tqdm(paths_data, desc="Previewing examples"):
             preview_example_cots(example, max_preview)
         return
     
@@ -329,7 +333,7 @@ def save_alternative_cots(paths_file: str, output_dir: str = None,
     results = []
     total_cots_saved = 0
     
-    for example in paths_data:
+    for example in tqdm(paths_data, desc="Saving COTs"):
         example_id = example.get('example_id', 'unknown')
         original_data = original_data_map.get(example_id)
         

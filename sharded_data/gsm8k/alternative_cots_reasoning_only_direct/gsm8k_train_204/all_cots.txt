@@ -7,8 +7,8 @@ COTs Saved: 1
 # Alternative COT 1
 # Sequence: s1 → s2
 
-The total number of pages is calculated as 80 x 12 = 960
-The average number of pages per book is calculated as 960 / 6 = 160
+The total number of pages is 80 x 12 = 960
+The average number of pages per book is 960 / 6 = 160
 
 ------------------------------------------------------------
 

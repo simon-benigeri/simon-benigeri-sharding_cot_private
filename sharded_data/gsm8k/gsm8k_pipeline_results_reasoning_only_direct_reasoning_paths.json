@@ -24,11 +24,11 @@
           "s5"
         ],
         "texts": [
-          "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms",
+          "The family collected 20/5 = 4 sets of 5 kilograms of newspapers",
           "The family would receive $1.50 x 4 = $6 for the newspapers",
-          "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans",
+          "The family collected 144/12 = 12 sets of 12 cans",
           "The family would receive $0.50 x 12 = $6 for the cans",
-          "The total amount received by the family is $6 + $6 = $12"
+          "The family would receive a total of $6 + $6 = $12"
         ]
       },
       {
@@ -40,11 +40,11 @@
           "s5"
         ],
         "texts": [
-          "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms",
-          "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans",
+          "The family collected 20/5 = 4 sets of 5 kilograms of newspapers",
+          "The family collected 144/12 = 12 sets of 12 cans",
           "The family would receive $0.50 x 12 = $6 for the cans",
           "The family would receive $1.50 x 4 = $6 for the newspapers",
-          "The total amount received by the family is $6 + $6 = $12"
+          "The family would receive a total of $6 + $6 = $12"
         ]
       },
       {
@@ -56,11 +56,11 @@
           "s5"
         ],
         "texts": [
-          "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms",
-          "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans",
+          "The family collected 20/5 = 4 sets of 5 kilograms of newspapers",
+          "The family collected 144/12 = 12 sets of 12 cans",
           "The family would receive $1.50 x 4 = $6 for the newspapers",
           "The family would receive $0.50 x 12 = $6 for the cans",
-          "The total amount received by the family is $6 + $6 = $12"
+          "The family would receive a total of $6 + $6 = $12"
         ]
       },
       {
@@ -72,11 +72,11 @@
           "s5"
         ],
         "texts": [
-          "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans",
+          "The family collected 144/12 = 12 sets of 12 cans",
           "The family would receive $0.50 x 12 = $6 for the cans",
-          "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms",
+          "The family collected 20/5 = 4 sets of 5 kilograms of newspapers",
           "The family would receive $1.50 x 4 = $6 for the newspapers",
-          "The total amount received by the family is $6 + $6 = $12"
+          "The family would receive a total of $6 + $6 = $12"
         ]
       },
       {
@@ -88,11 +88,11 @@
           "s5"
         ],
         "texts": [
-          "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans",
-          "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms",
+          "The family collected 144/12 = 12 sets of 12 cans",
+          "The family collected 20/5 = 4 sets of 5 kilograms of newspapers",
           "The family would receive $1.50 x 4 = $6 for the newspapers",
           "The family would receive $0.50 x 12 = $6 for the cans",
-          "The total amount received by the family is $6 + $6 = $12"
+          "The family would receive a total of $6 + $6 = $12"
         ]
       },
       {
@@ -104,11 +104,11 @@
           "s5"
         ],
         "texts": [
-          "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans",
-          "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms",
+          "The family collected 144/12 = 12 sets of 12 cans",
+          "The family collected 20/5 = 4 sets of 5 kilograms of newspapers",
           "The family would receive $0.50 x 12 = $6 for the cans",
           "The family would receive $1.50 x 4 = $6 for the newspapers",
-          "The total amount received by the family is $6 + $6 = $12"
+          "The family would receive a total of $6 + $6 = $12"
         ]
       }
     ]
@@ -142,7 +142,7 @@
           "Natalie picked 36/2 = 18 strawberries",
           "Betty, Matthew, and Natalie have 16 + 36 + 18 = 70 strawberries in total",
           "Betty, Matthew, and Natalie can make 70/7 = 10 jars of strawberries",
-          "Betty, Matthew, and Natalie earn 10 x $4 = 40 from selling the jam"
+          "Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam"
         ]
       }
     ]
@@ -169,8 +169,8 @@
           "s2"
         ],
         "texts": [
-          "The total number of pages is calculated as 80 x 12 = 960",
-          "The average number of pages per book is calculated as 960 / 6 = 160"
+          "The total number of pages is 80 x 12 = 960",
+          "The average number of pages per book is 960 / 6 = 160"
         ]
       }
     ]
@@ -198,7 +198,7 @@
         ],
         "texts": [
           "James uses half of 500 Legos, leaving 500/2 = 250 Legos unused",
-          "James puts away 250 Legos but is missing 5, so he puts away 250 - 5 = 245 Legos"
+          "James puts away 250 Legos but is missing 5, so he only puts 250 - 5 = 245 Legos away"
         ]
       }
     ]
@@ -256,11 +256,11 @@
           "s5"
         ],
         "texts": [
-          "In year 2 he pays 80 + 10 = 90",
-          "In year 3 he pays 90 + 10 = 100",
-          "In year 4 he pays 100 + 10 = 110",
-          "In year 5 he pays 110 + 10 = 120",
-          "In year 6 he pays 120 + 10 = 130"
+          "In year 2, the membership fee is 80 + 10 = 90",
+          "In year 3, the membership fee is 90 + 10 = 100",
+          "In year 4, the membership fee is 100 + 10 = 110",
+          "In year 5, the membership fee is 110 + 10 = 120",
+          "In year 6, the membership fee is 120 + 10 = 130"
         ]
       }
     ]
@@ -409,8 +409,8 @@
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -427,8 +427,8 @@
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -445,8 +445,8 @@
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -463,8 +463,8 @@
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -481,8 +481,8 @@
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -499,8 +499,8 @@
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -517,8 +517,8 @@
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -535,8 +535,8 @@
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -553,8 +553,8 @@
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -571,8 +571,8 @@
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -589,8 +589,8 @@
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -607,8 +607,8 @@
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -625,8 +625,8 @@
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -643,8 +643,8 @@
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -661,8 +661,8 @@
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -679,8 +679,8 @@
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -697,8 +697,8 @@
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -715,8 +715,8 @@
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 0.5 * 53 = 26.5 omelets are needed for small children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -733,8 +733,8 @@
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -751,8 +751,8 @@
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -769,8 +769,8 @@
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -787,8 +787,8 @@
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 1 * 35 = 35 omelets are needed for older children",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -805,8 +805,8 @@
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       },
       {
@@ -823,8 +823,8 @@
           "An estimated 1 * 35 = 35 omelets are needed for older children",
           "An estimated 2 * 75 = 150 omelets are needed for adults",
           "An estimated 1.5 * 37 = 55.5 omelets are needed for seniors",
-          "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
-          "2 * 292 = 584 eggs are needed"
+          "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
+          "The total number of eggs needed is 2 * 292 = 584"
         ]
       }
     ]

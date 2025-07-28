@@ -7,11 +7,11 @@ COTs Saved: 1
 # Alternative COT 1
 # Sequence: s1 → s2 → s3 → s4 → s5
 
-In year 2 he pays 80 + 10 = 90
-In year 3 he pays 90 + 10 = 100
-In year 4 he pays 100 + 10 = 110
-In year 5 he pays 110 + 10 = 120
-In year 6 he pays 120 + 10 = 130
+In year 2, the membership fee is 80 + 10 = 90
+In year 3, the membership fee is 90 + 10 = 100
+In year 4, the membership fee is 100 + 10 = 110
+In year 5, the membership fee is 110 + 10 = 120
+In year 6, the membership fee is 120 + 10 = 130
 
 ------------------------------------------------------------
 

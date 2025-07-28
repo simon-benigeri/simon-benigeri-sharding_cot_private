@@ -9,8 +9,8 @@
     "complexity": "MEDIUM",
     "estimated_paths": "10\u20131,000",
     "nodes": 4,
-    "edges": 4,
-    "constraint_ratio": 1.33,
+    "edges": 3,
+    "constraint_ratio": 1.0,
     "source_nodes": 1,
     "sink_nodes": 1,
     "source_sink_pairs": 1,
@@ -20,6 +20,7 @@
     "individual_cots": [
       "cot_001.txt"
     ],
-    "combined_file": "all_cots.txt"
+    "combined_file": "all_cots.txt",
+    "jsonl_file": "alternative_cots.jsonl"
   }
 }

@@ -1,19 +1,76 @@
 Alternative Chain-of-Thought Reasoning Paths
 Example: gsm8k_train_1828
-Total Paths Generated: 1 (method: exhaustive, complexity: MEDIUM)
-COTs Saved: 1
+Total Paths Generated: 5 (method: exhaustive, complexity: MEDIUM)
+COTs Saved: 5
 ================================================================================
 
 # Alternative COT 1
-# Sequence: s1 → s2 → s3 → s4 → s5 → s6 → s7
+# Sequence: s5 → s1 → s2 → s3 → s4 → s6 → s7 → s8
 
-Joseph will make 12 monthly deposits totaling $100 * 12 = $1200
-The total amount invested at the end of the first year is $1000 + $1200 = $2200
-The interest for the first year is $2200 * 10% = $220
-The total value after the first year is $2200 + $220 = $2420
-The total amount at the beginning of the second year is $2420 + $1200 = $3620
-The interest for the second year is $3620 * 10% = $362
-The total value after the second year is $3620 + $362 = $3982
+The total amount deposited in the second year is 100 * 12 = 1200
+The total amount deposited in one year is 100 * 12 = 1200
+The total amount invested after the first year is 1000 + 1200 = 2200
+The interest earned on the total amount of 2200 is 2200 * 0.10 = 220
+The total amount at the end of the first year is 2200 + 220 = 2420
+The total amount invested at the beginning of the second year is 2420 + 1200 = 3620
+The interest earned during the second year on 3620 is 3620 * 0.10 = 362
+The total amount at the end of the second year is 3620 + 362 = 3982
+
+------------------------------------------------------------
+
+# Alternative COT 2
+# Sequence: s1 → s2 → s3 → s4 → s5 → s6 → s7 → s8
+
+The total amount deposited in one year is 100 * 12 = 1200
+The total amount invested after the first year is 1000 + 1200 = 2200
+The interest earned on the total amount of 2200 is 2200 * 0.10 = 220
+The total amount at the end of the first year is 2200 + 220 = 2420
+The total amount deposited in the second year is 100 * 12 = 1200
+The total amount invested at the beginning of the second year is 2420 + 1200 = 3620
+The interest earned during the second year on 3620 is 3620 * 0.10 = 362
+The total amount at the end of the second year is 3620 + 362 = 3982
+
+------------------------------------------------------------
+
+# Alternative COT 3
+# Sequence: s1 → s2 → s3 → s5 → s4 → s6 → s7 → s8
+
+The total amount deposited in one year is 100 * 12 = 1200
+The total amount invested after the first year is 1000 + 1200 = 2200
+The interest earned on the total amount of 2200 is 2200 * 0.10 = 220
+The total amount deposited in the second year is 100 * 12 = 1200
+The total amount at the end of the first year is 2200 + 220 = 2420
+The total amount invested at the beginning of the second year is 2420 + 1200 = 3620
+The interest earned during the second year on 3620 is 3620 * 0.10 = 362
+The total amount at the end of the second year is 3620 + 362 = 3982
+
+------------------------------------------------------------
+
+# Alternative COT 4
+# Sequence: s1 → s2 → s5 → s3 → s4 → s6 → s7 → s8
+
+The total amount deposited in one year is 100 * 12 = 1200
+The total amount invested after the first year is 1000 + 1200 = 2200
+The total amount deposited in the second year is 100 * 12 = 1200
+The interest earned on the total amount of 2200 is 2200 * 0.10 = 220
+The total amount at the end of the first year is 2200 + 220 = 2420
+The total amount invested at the beginning of the second year is 2420 + 1200 = 3620
+The interest earned during the second year on 3620 is 3620 * 0.10 = 362
+The total amount at the end of the second year is 3620 + 362 = 3982
+
+------------------------------------------------------------
+
+# Alternative COT 5
+# Sequence: s1 → s5 → s2 → s3 → s4 → s6 → s7 → s8
+
+The total amount deposited in one year is 100 * 12 = 1200
+The total amount deposited in the second year is 100 * 12 = 1200
+The total amount invested after the first year is 1000 + 1200 = 2200
+The interest earned on the total amount of 2200 is 2200 * 0.10 = 220
+The total amount at the end of the first year is 2200 + 220 = 2420
+The total amount invested at the beginning of the second year is 2420 + 1200 = 3620
+The interest earned during the second year on 3620 is 3620 * 0.10 = 362
+The total amount at the end of the second year is 3620 + 362 = 3982
 
 ------------------------------------------------------------
 

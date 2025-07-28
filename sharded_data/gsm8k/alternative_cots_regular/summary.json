@@ -4,9 +4,10 @@
   "successful_examples": 0,
   "total_cots_saved": 0,
   "output_structure": {
-    "description": "Each example has its own directory with individual COT files and combined file",
-    "individual_files": "cot_001.txt, cot_002.txt, etc.",
-    "combined_file": "all_cots.txt",
+    "description": "Each example has its own directory with both human-readable and machine-readable formats",
+    "individual_files": "cot_001.txt, cot_002.txt, etc. - individual alternative COTs",
+    "combined_file": "all_cots.txt - all COTs combined in readable format",
+    "jsonl_file": "alternative_cots.jsonl - contains question/answer pairs with alternative reasoning paths",
     "metadata_file": "metadata.json"
   },
   "results": [

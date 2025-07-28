@@ -8,7 +8,7 @@ COTs Saved: 1
 # Sequence: s1 → s2
 
 James uses half of 500 Legos, leaving 500/2 = 250 Legos unused
-James puts away 250 Legos but is missing 5, so he puts away 250 - 5 = 245 Legos
+James puts away 250 Legos but is missing 5, so he only puts 250 - 5 = 245 Legos away
 
 ------------------------------------------------------------
 

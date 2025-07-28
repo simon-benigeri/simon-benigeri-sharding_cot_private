@@ -25,6 +25,7 @@
       "cot_005.txt",
       "cot_006.txt"
     ],
-    "combined_file": "all_cots.txt"
+    "combined_file": "all_cots.txt",
+    "jsonl_file": "alternative_cots.jsonl"
   }
 }

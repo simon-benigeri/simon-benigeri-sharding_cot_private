@@ -8,7 +8,7 @@
     "segments": [
       {
         "id": "s1",
-        "text": "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans",
+        "text": "The family collected 144/12 = 12 sets of 12 cans",
         "is_required": 1
       },
       {
@@ -18,7 +18,7 @@
       },
       {
         "id": "s3",
-        "text": "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms",
+        "text": "The family collected 20/5 = 4 sets of 5 kilograms of newspapers",
         "is_required": 1
       },
       {
@@ -28,14 +28,14 @@
       },
       {
         "id": "s5",
-        "text": "The total amount received by the family is $6 + $6 = $12",
+        "text": "The family would receive a total of $6 + $6 = $12",
         "is_required": 1
       }
     ],
     "required_segments": [
       {
         "id": "s1",
-        "text": "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans",
+        "text": "The family collected 144/12 = 12 sets of 12 cans",
         "is_required": 1
       },
       {
@@ -45,7 +45,7 @@
       },
       {
         "id": "s3",
-        "text": "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms",
+        "text": "The family collected 20/5 = 4 sets of 5 kilograms of newspapers",
         "is_required": 1
       },
       {
@@ -55,14 +55,14 @@
       },
       {
         "id": "s5",
-        "text": "The total amount received by the family is $6 + $6 = $12",
+        "text": "The family would receive a total of $6 + $6 = $12",
         "is_required": 1
       }
     ],
     "nodes": [
       {
         "id": "s1",
-        "text": "The family collected 144 cans, resulting in 144/12 = 12 sets of 12 cans"
+        "text": "The family collected 144/12 = 12 sets of 12 cans"
       },
       {
         "id": "s2",
@@ -70,7 +70,7 @@
       },
       {
         "id": "s3",
-        "text": "The family collected 20 kilograms of newspapers, resulting in 20/5 = 4 sets of 5 kilograms"
+        "text": "The family collected 20/5 = 4 sets of 5 kilograms of newspapers"
       },
       {
         "id": "s4",
@@ -78,7 +78,7 @@
       },
       {
         "id": "s5",
-        "text": "The total amount received by the family is $6 + $6 = $12"
+        "text": "The family would receive a total of $6 + $6 = $12"
       }
     ],
     "edges": [
@@ -131,7 +131,7 @@
       },
       {
         "id": "s5",
-        "text": "Betty, Matthew, and Natalie earn 10 x $4 = 40 from selling the jam",
+        "text": "Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam",
         "is_required": 1
       }
     ],
@@ -158,7 +158,7 @@
       },
       {
         "id": "s5",
-        "text": "Betty, Matthew, and Natalie earn 10 x $4 = 40 from selling the jam",
+        "text": "Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam",
         "is_required": 1
       }
     ],
@@ -181,7 +181,7 @@
       },
       {
         "id": "s5",
-        "text": "Betty, Matthew, and Natalie earn 10 x $4 = 40 from selling the jam"
+        "text": "Betty, Matthew, and Natalie earn 10 x $4 = $40 from selling the jam"
       }
     ],
     "edges": [
@@ -218,35 +218,35 @@
     "segments": [
       {
         "id": "s1",
-        "text": "The total number of pages is calculated as 80 x 12 = 960",
+        "text": "The total number of pages is 80 x 12 = 960",
         "is_required": 1
       },
       {
         "id": "s2",
-        "text": "The average number of pages per book is calculated as 960 / 6 = 160",
+        "text": "The average number of pages per book is 960 / 6 = 160",
         "is_required": 1
       }
     ],
     "required_segments": [
       {
         "id": "s1",
-        "text": "The total number of pages is calculated as 80 x 12 = 960",
+        "text": "The total number of pages is 80 x 12 = 960",
         "is_required": 1
       },
       {
         "id": "s2",
-        "text": "The average number of pages per book is calculated as 960 / 6 = 160",
+        "text": "The average number of pages per book is 960 / 6 = 160",
         "is_required": 1
       }
     ],
     "nodes": [
       {
         "id": "s1",
-        "text": "The total number of pages is calculated as 80 x 12 = 960"
+        "text": "The total number of pages is 80 x 12 = 960"
       },
       {
         "id": "s2",
-        "text": "The average number of pages per book is calculated as 960 / 6 = 160"
+        "text": "The average number of pages per book is 960 / 6 = 160"
       }
     ],
     "edges": [
@@ -272,7 +272,7 @@
       },
       {
         "id": "s2",
-        "text": "James puts away 250 Legos but is missing 5, so he puts away 250 - 5 = 245 Legos",
+        "text": "James puts away 250 Legos but is missing 5, so he only puts 250 - 5 = 245 Legos away",
         "is_required": 1
       }
     ],
@@ -284,7 +284,7 @@
       },
       {
         "id": "s2",
-        "text": "James puts away 250 Legos but is missing 5, so he puts away 250 - 5 = 245 Legos",
+        "text": "James puts away 250 Legos but is missing 5, so he only puts 250 - 5 = 245 Legos away",
         "is_required": 1
       }
     ],
@@ -295,7 +295,7 @@
       },
       {
         "id": "s2",
-        "text": "James puts away 250 Legos but is missing 5, so he puts away 250 - 5 = 245 Legos"
+        "text": "James puts away 250 Legos but is missing 5, so he only puts 250 - 5 = 245 Legos away"
       }
     ],
     "edges": [
@@ -365,77 +365,77 @@
     "segments": [
       {
         "id": "s1",
-        "text": "In year 2 he pays 80 + 10 = 90",
+        "text": "In year 2, the membership fee is 80 + 10 = 90",
         "is_required": 1
       },
       {
         "id": "s2",
-        "text": "In year 3 he pays 90 + 10 = 100",
+        "text": "In year 3, the membership fee is 90 + 10 = 100",
         "is_required": 1
       },
       {
         "id": "s3",
-        "text": "In year 4 he pays 100 + 10 = 110",
+        "text": "In year 4, the membership fee is 100 + 10 = 110",
         "is_required": 1
       },
       {
         "id": "s4",
-        "text": "In year 5 he pays 110 + 10 = 120",
+        "text": "In year 5, the membership fee is 110 + 10 = 120",
         "is_required": 1
       },
       {
         "id": "s5",
-        "text": "In year 6 he pays 120 + 10 = 130",
+        "text": "In year 6, the membership fee is 120 + 10 = 130",
         "is_required": 1
       }
     ],
     "required_segments": [
       {
         "id": "s1",
-        "text": "In year 2 he pays 80 + 10 = 90",
+        "text": "In year 2, the membership fee is 80 + 10 = 90",
         "is_required": 1
       },
       {
         "id": "s2",
-        "text": "In year 3 he pays 90 + 10 = 100",
+        "text": "In year 3, the membership fee is 90 + 10 = 100",
         "is_required": 1
       },
       {
         "id": "s3",
-        "text": "In year 4 he pays 100 + 10 = 110",
+        "text": "In year 4, the membership fee is 100 + 10 = 110",
         "is_required": 1
       },
       {
         "id": "s4",
-        "text": "In year 5 he pays 110 + 10 = 120",
+        "text": "In year 5, the membership fee is 110 + 10 = 120",
         "is_required": 1
       },
       {
         "id": "s5",
-        "text": "In year 6 he pays 120 + 10 = 130",
+        "text": "In year 6, the membership fee is 120 + 10 = 130",
         "is_required": 1
       }
     ],
     "nodes": [
       {
         "id": "s1",
-        "text": "In year 2 he pays 80 + 10 = 90"
+        "text": "In year 2, the membership fee is 80 + 10 = 90"
       },
       {
         "id": "s2",
-        "text": "In year 3 he pays 90 + 10 = 100"
+        "text": "In year 3, the membership fee is 90 + 10 = 100"
       },
       {
         "id": "s3",
-        "text": "In year 4 he pays 100 + 10 = 110"
+        "text": "In year 4, the membership fee is 100 + 10 = 110"
       },
       {
         "id": "s4",
-        "text": "In year 5 he pays 110 + 10 = 120"
+        "text": "In year 5, the membership fee is 110 + 10 = 120"
       },
       {
         "id": "s5",
-        "text": "In year 6 he pays 120 + 10 = 130"
+        "text": "In year 6, the membership fee is 120 + 10 = 130"
       }
     ],
     "edges": [
@@ -783,12 +783,12 @@
       },
       {
         "id": "s5",
-        "text": "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
+        "text": "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
         "is_required": 1
       },
       {
         "id": "s6",
-        "text": "2 * 292 = 584 eggs are needed",
+        "text": "The total number of eggs needed is 2 * 292 = 584",
         "is_required": 1
       }
     ],
@@ -815,12 +815,12 @@
       },
       {
         "id": "s5",
-        "text": "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed",
+        "text": "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292",
         "is_required": 1
       },
       {
         "id": "s6",
-        "text": "2 * 292 = 584 eggs are needed",
+        "text": "The total number of eggs needed is 2 * 292 = 584",
         "is_required": 1
       }
     ],
@@ -843,11 +843,11 @@
       },
       {
         "id": "s5",
-        "text": "A total of 26.5 + 35 + 150 + 55.5 + 25 = 292 omelets are needed"
+        "text": "The total number of omelets needed is 26.5 + 35 + 150 + 55.5 + 25 = 292"
       },
       {
         "id": "s6",
-        "text": "2 * 292 = 584 eggs are needed"
+        "text": "The total number of eggs needed is 2 * 292 = 584"
       }
     ],
     "edges": [

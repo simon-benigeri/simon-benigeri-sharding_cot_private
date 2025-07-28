@@ -21,6 +21,7 @@ from typing import List, Dict, Optional, Tuple, Any
 from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
+from tqdm import tqdm
 
 # Import the abstract base class and dataset loaders
 from dataset_loader import DatasetLoader
@@ -474,23 +475,18 @@ class ReasoningPipeline:
         results = []
         successful = 0
         
-        for i, sample in enumerate(samples, 1):
+        for sample in tqdm(samples, desc="Processing samples"):
             result = self.process_sample(sample)
             results.append(result)
             
             if result['success']:
                 successful += 1
-                status = "✅"
-            else:
-                status = "❌"
             
-            print(f"{status} {i}/{len(samples)}: {sample.get('example_id', f'sample_{i}')}")
-            
-            # Save intermediate results
-            if i % 5 == 0 or i == len(samples):
+            # Save intermediate results every 5 samples
+            if len(results) % 5 == 0 or len(results) == len(samples):
                 with open(output_file, 'w', encoding='utf-8') as f:
                     json.dump(results, f, indent=2, ensure_ascii=False)
-                print(f"💾 Saved ({successful}/{i} successful)")
+                tqdm.write(f"💾 Saved ({successful}/{len(results)} successful)")
         
         print(f"🎯 Complete: {successful}/{len(samples)} successful ({successful/len(samples)*100:.1f}%)")
         
@@ -521,23 +517,18 @@ class ReasoningPipeline:
         results = []
         successful = 0
         
-        for i, sample in enumerate(samples, 1):
+        for sample in tqdm(samples, desc="Processing samples (direct)"):
             result = self.process_sample_direct(sample)
             results.append(result)
             
             if result['success']:
                 successful += 1
-                status = "✅"
-            else:
-                status = "❌"
             
-            print(f"{status} {i}/{len(samples)}: {sample.get('example_id', f'sample_{i}')}")
-            
-            # Save intermediate results
-            if i % 5 == 0 or i == len(samples):
+            # Save intermediate results every 5 samples
+            if len(results) % 5 == 0 or len(results) == len(samples):
                 with open(output_file, 'w', encoding='utf-8') as f:
                     json.dump(results, f, indent=2, ensure_ascii=False)
-                print(f"💾 Saved ({successful}/{i} successful)")
+                tqdm.write(f"💾 Saved ({successful}/{len(results)} successful)")
         
         print(f"🎯 Complete: {successful}/{len(samples)} successful ({successful/len(samples)*100:.1f}%)")
         

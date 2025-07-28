@@ -12,6 +12,7 @@ import random
 from typing import List, Dict, Tuple
 from pathlib import Path
 import networkx as nx
+from tqdm import tqdm
 
 
 def estimate_complexity(G: nx.DiGraph) -> Dict:
@@ -193,7 +194,7 @@ def generate_paths_for_file(input_file: str, output_file: str = None, for_cots: 
     
     # Process examples
     results = []
-    for result in pipeline_results:
+    for result in tqdm(pipeline_results, desc="Processing examples"):
         processed = process_example(result, for_cots)
         results.append(processed)
     

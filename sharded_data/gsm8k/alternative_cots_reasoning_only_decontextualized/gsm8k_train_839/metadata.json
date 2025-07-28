@@ -8,8 +8,8 @@
   "complexity_estimate": {
     "complexity": "MEDIUM",
     "estimated_paths": "10\u20131,000",
-    "nodes": 7,
-    "edges": 6,
+    "nodes": 6,
+    "edges": 5,
     "constraint_ratio": 1.0,
     "source_nodes": 4,
     "sink_nodes": 1,
@@ -29,6 +29,7 @@
       "cot_009.txt",
       "cot_010.txt"
     ],
-    "combined_file": "all_cots.txt"
+    "combined_file": "all_cots.txt",
+    "jsonl_file": "alternative_cots.jsonl"
   }
 }

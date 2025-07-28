@@ -7,10 +7,10 @@ COTs Saved: 1
 # Alternative COT 1
 # Sequence: s1 → s2 → s3 → s4
 
-25% of 16 cm can be calculated as 0.25 × 16 cm = 4 cm
-The second generation's tail length is 16 cm + 4 cm = 20 cm
-25% of 20 cm is calculated as 0.25 × 20 cm = 5 cm
-The third generation's tail length is 20 cm + 5 cm = 25 cm
+25% of 16 cm = 0.25 * 16 cm = 4 cm
+Second generation's tail length = 16 cm + 4 cm = 20 cm
+25% of 20 cm = 0.25 * 20 cm = 5 cm
+Third generation's tail length = 20 cm + 5 cm = 25 cm
 
 ------------------------------------------------------------
 
