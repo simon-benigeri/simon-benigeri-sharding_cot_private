@@ -253,6 +253,7 @@ def save_alternative_cots(paths_file: str, output_dir: str = None,
         # Expected patterns: gsm8k_pipeline_results_{segmentation}_reasoning_paths.json
         filename = paths_path.stem
         segmentation = "regular"  # default
+        filedir = paths_path.parent
         
         # Try to extract segmentation from filename
         if "_reasoning_paths" in filename:
@@ -277,7 +278,8 @@ def save_alternative_cots(paths_file: str, output_dir: str = None,
                 segmentation = "direct"
         
         # Save to sharded_data/gsm8k/alternative_cots_{segmentation}
-        output_dir = Path("sharded_data/gsm8k") / f"alternative_cots_{segmentation}"
+        # output_dir = Path("sharded_data/gsm8k") / f"alternative_cots_{segmentation}"
+        output_dir = filedir / f"alternative_cots_{segmentation}"
         print(f"🔍 Detected segmentation style: {segmentation}")
     else:
         output_dir = Path(output_dir)

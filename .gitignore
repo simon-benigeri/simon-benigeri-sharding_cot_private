@@ -26,6 +26,7 @@ Thumbs.db
 # Project specific
 hotpot_qa/
 lost_in_conversation/
+sharded_data_sra/
 
 # Environment variables
 .env
