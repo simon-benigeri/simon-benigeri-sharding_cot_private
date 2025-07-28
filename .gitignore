@@ -27,6 +27,7 @@ Thumbs.db
 hotpot_qa/
 lost_in_conversation/
 sharded_data_sra/
+sft_data/gsm8k/1000/
 
 # Environment variables
 .env
