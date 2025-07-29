@@ -26,6 +26,9 @@ import gc
 import time
 import psutil
 
+# Fix tokenizer parallelism warning
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 
 def load_jsonl_dataset(file_path: str) -> Dict[str, Dataset]:
     """
@@ -209,13 +212,16 @@ def main():
    # Use a different model
    python hf_sft_train.py --dataset sft_data/gsm8k/10/original.jsonl --model gpt2
    
+   # Enable mixed precision for faster training
+   python hf_sft_train.py --dataset sft_data/gsm8k/10/original.jsonl --enable-mixed-precision
+   
    # Resume training from checkpoint
    python hf_sft_train.py --dataset sft_data/gsm8k/10/original.jsonl --resume-from-checkpoint ./hf_sft_output/checkpoint-1000
    
    # Advanced training with custom parameters
    python hf_sft_train.py --dataset sft_data/gsm8k/10/original.jsonl \
        --epochs 5 --lr 1e-4 --auto-batch-size --max-batch-size 32 \
-       --weight-decay 0.01 --gradient-clip 1.0 --lr-scheduler cosine
+       --weight-decay 0.01 --gradient-clip 1.0 --lr-scheduler cosine --enable-mixed-precision
         """
     )
     
@@ -260,8 +266,8 @@ def main():
     parser.add_argument("--lr-scheduler", type=str, default="linear",
                        choices=["linear", "cosine", "constant"],
                        help="Learning rate scheduler type")
-    parser.add_argument("--disable-mixed-precision", action="store_true",
-                       help="Disable mixed precision training")
+    parser.add_argument("--enable-mixed-precision", action="store_true",
+                       help="Enable mixed precision training (bf16/fp16)")
     
     args = parser.parse_args()
     
@@ -370,17 +376,18 @@ def main():
         prediction_loss_only=True,
         remove_unused_columns=False,
         dataloader_pin_memory=False,
-        bf16=torch.cuda.is_available() and torch.cuda.is_bf16_supported() and not args.disable_mixed_precision,
-        fp16=torch.cuda.is_available() and not torch.cuda.is_bf16_supported() and not args.disable_mixed_precision,
+        bf16=args.enable_mixed_precision and torch.cuda.is_available() and torch.cuda.is_bf16_supported(),
+        fp16=args.enable_mixed_precision and torch.cuda.is_available() and not torch.cuda.is_bf16_supported(),
         gradient_checkpointing=True,
         report_to=None,  # Disable wandb/tensorboard for simplicity
+        eval_strategy="steps",
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
         greater_is_better=False,
         weight_decay=args.weight_decay,
         max_grad_norm=args.gradient_clip,
         lr_scheduler_type=args.lr_scheduler,
-        dataloader_num_workers=4,
+        dataloader_num_workers=0,  # Disable multiprocessing to avoid fork warnings
     )
     
     # Trainer
@@ -390,7 +397,7 @@ def main():
         train_dataset=tokenized_train_dataset,
         eval_dataset=tokenized_validation_dataset,
         data_collator=data_collator,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,  # Use processing_class instead of tokenizer to avoid deprecation warning
     )
     
     # Train with MLflow tracking
@@ -447,8 +454,15 @@ def main():
             
             mlflow.log_metrics(final_metrics)
             
-            # Log model
-            mlflow.pytorch.log_model(trainer.model, "model")
+            # Log model with descriptive name
+            model_name = args.model.split('/')[-1]  # Get model name without org prefix
+            dataset_name = Path(args.dataset).stem  # Get dataset filename without extension
+            descriptive_name = f"{model_name}_{dataset_name}"
+            
+            mlflow.pytorch.log_model(
+                pytorch_model=trainer.model,
+                name=descriptive_name
+            )
             
             print(f"📊 Training completed! Final metrics: {final_metrics}")
             
@@ -487,6 +501,11 @@ def main():
     test_prompt = f"Question: {test_question}\nAnswer:"
     
     inputs = test_tokenizer(test_prompt, return_tensors="pt")
+    
+    # Move inputs to same device as model
+    device = next(test_model.parameters()).device
+    inputs = {k: v.to(device) for k, v in inputs.items()}
+    
     with torch.no_grad():
         outputs = test_model.generate(
             **inputs,
