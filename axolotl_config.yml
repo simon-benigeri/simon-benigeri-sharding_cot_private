@@ -1,0 +1,73 @@
+base_model: HuggingFaceTB/SmolLM-135M
+model_type: AutoModelForCausalLM
+tokenizer_type: AutoTokenizer
+
+load_in_8bit: false
+load_in_4bit: false
+strict: false
+
+datasets:
+  - path: sft_data/gsm8k/10/original.jsonl
+    type:
+      system_prompt: ""
+      field_system: system
+      field_instruction: question
+      field_output: answer
+      format: "Question: {instruction}\nAnswer: {output}"
+      no_input_format: "Question: {instruction}\nAnswer: {output}"
+
+dataset_prepared_path:
+val_set_size: 0.1
+output_dir: ./axolotl_outputs
+
+sequence_len: 512
+sample_packing: false
+pad_to_sequence_len: true
+
+adapter:
+lora_model_dir:
+lora_r:
+lora_alpha:
+lora_dropout:
+lora_target_linear:
+lora_target_modules:
+
+wandb_project:
+wandb_entity:
+wandb_watch:
+wandb_name:
+wandb_log_model:
+
+gradient_accumulation_steps: 4
+micro_batch_size: 1
+num_epochs: 3
+optimizer: adamw_bnb_8bit
+lr_scheduler: cosine
+learning_rate: 2e-5
+
+train_on_inputs: false
+group_by_length: false
+bf16: auto
+fp16:
+tf32: false
+
+gradient_checkpointing: true
+early_stopping_patience:
+resume_from_checkpoint:
+local_rank:
+
+logging_steps: 1
+xformers_attention:
+flash_attention: true
+
+warmup_steps: 10
+evals_per_epoch: 4
+eval_table_size:
+eval_max_new_tokens: 128
+saves_per_epoch: 1
+debug:
+deepspeed:
+weight_decay: 0.0
+fsdp:
+fsdp_config:
+special_tokens: 

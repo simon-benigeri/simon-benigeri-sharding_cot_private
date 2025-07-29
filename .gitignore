@@ -30,6 +30,8 @@ sharded_data_sra/
 sft_data/gsm8k/1000/
 hf_sft_output/
 mlruns/
+models/
+eval/
 
 # Environment variables
 .env

@@ -21,6 +21,10 @@ from tqdm import tqdm
 import mlflow
 import mlflow.pytorch
 
+# Answer extraction regex - matches numbers after ####
+ANS_RE = re.compile(r"#### (\-?[0-9,]+\.?[0-9]*)\s*$", re.MULTILINE)
+INVALID_ANS = "[invalid]"
+
 
 def load_gsm8k_test() -> List[Dict]:
     """
@@ -55,22 +59,14 @@ def extract_final_answer(text: str) -> str:
     Returns:
         Final numerical answer as string
     """
-    # Look for #### pattern
-    match = re.search(r'####\s*([0-9,.-]+)', text)
+    match = ANS_RE.search(text)
     if match:
-        # Clean up the number (remove commas, etc.)
-        answer = match.group(1).replace(',', '').strip()
+        answer = match.group(1).strip().replace(',', '')
         return answer
-    
-    # Fallback: look for numbers at the end
-    numbers = re.findall(r'[0-9,.-]+', text)
-    if numbers:
-        return numbers[-1].replace(',', '').strip()
-    
-    return ""
+    return INVALID_ANS
 
 
-def generate_answer(model, tokenizer, question: str, max_length: int = 512) -> str:
+def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 256) -> str:
     """
     Generate answer for a given question using the trained model.
     
@@ -78,16 +74,23 @@ def generate_answer(model, tokenizer, question: str, max_length: int = 512) -> s
         model: Trained model
         tokenizer: Model tokenizer
         question: Question to answer
-        max_length: Maximum generation length
+        max_new_tokens: Maximum new tokens to generate
         
     Returns:
         Generated answer text
     """
-    # Format prompt
+    # Format prompt to match training format exactly
     prompt = f"Question: {question}\nAnswer:"
     
     # Tokenize
-    inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=256)
+    inputs = tokenizer(
+        prompt,
+        return_tensors="pt",
+        padding=False,
+        add_special_tokens=True,
+        truncation=True,
+        max_length=512
+    )
     
     # Move to model device
     device = next(model.parameters()).device
@@ -96,27 +99,23 @@ def generate_answer(model, tokenizer, question: str, max_length: int = 512) -> s
     # Generate
     with torch.no_grad():
         outputs = model.generate(
-            **inputs,
-            max_length=max_length,
-            temperature=0.7,
+            input_ids=inputs["input_ids"],
+            attention_mask=inputs["attention_mask"],
+            max_new_tokens=max_new_tokens,
+            temperature=0.3,
             do_sample=True,
             pad_token_id=tokenizer.eos_token_id,
-            eos_token_id=tokenizer.eos_token_id
+            eos_token_id=tokenizer.eos_token_id,
         )
     
-    # Decode and extract just the answer part
-    full_response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    # Decode only the new tokens (the generated answer)
+    generated_tokens = outputs[0][inputs["input_ids"].shape[1]:]
+    answer = tokenizer.decode(generated_tokens, skip_special_tokens=True)
     
-    # Remove the original prompt to get just the generated answer
-    if "Answer:" in full_response:
-        answer = full_response.split("Answer:", 1)[1].strip()
-    else:
-        answer = full_response
-    
-    return answer
+    return answer.strip()
 
 
-def evaluate_model(model, tokenizer, test_examples: List[Dict], max_length: int = 512) -> Dict:
+def evaluate_model(model, tokenizer, test_examples: List[Dict], max_new_tokens: int = 256) -> Dict:
     """
     Evaluate model on test examples.
     
@@ -124,7 +123,7 @@ def evaluate_model(model, tokenizer, test_examples: List[Dict], max_length: int 
         model: Trained model
         tokenizer: Model tokenizer
         test_examples: List of test examples
-        max_length: Maximum generation length
+        max_new_tokens: Maximum new tokens to generate
         
     Returns:
         Evaluation results dictionary
@@ -137,14 +136,15 @@ def evaluate_model(model, tokenizer, test_examples: List[Dict], max_length: int 
     
     for example in tqdm(test_examples, desc="Evaluating"):
         # Generate answer
-        generated_answer = generate_answer(model, tokenizer, example["question"], max_length)
+        generated_answer = generate_answer(model, tokenizer, example["question"], max_new_tokens)
         
         # Extract final answer from generation
         predicted_answer = extract_final_answer(generated_answer)
         true_answer = example["final_answer"]
         
-        # Check if correct (normalize for comparison)
-        is_correct = normalize_number(predicted_answer) == normalize_number(true_answer)
+        # Check if correct
+        is_correct = (predicted_answer != INVALID_ANS and 
+                     normalize_number(predicted_answer) == normalize_number(true_answer))
         
         if is_correct:
             correct += 1
@@ -158,19 +158,14 @@ def evaluate_model(model, tokenizer, test_examples: List[Dict], max_length: int 
             "correct": is_correct
         })
     
-    accuracy = correct / total
+    accuracy = correct / total if total > 0 else 0.0
     
-    eval_results = {
+    return {
         "accuracy": accuracy,
         "correct": correct,
         "total": total,
-        "detailed_results": results
+        "results": results
     }
-    
-    print(f"✅ Evaluation completed!")
-    print(f"   Accuracy: {accuracy:.4f} ({correct}/{total})")
-    
-    return eval_results
 
 
 def normalize_number(num_str: str) -> str:
@@ -183,7 +178,7 @@ def normalize_number(num_str: str) -> str:
     Returns:
         Normalized number string
     """
-    if not num_str:
+    if not num_str or num_str == INVALID_ANS:
         return ""
     
     # Remove commas and spaces
@@ -191,18 +186,22 @@ def normalize_number(num_str: str) -> str:
     
     # Try to convert to float and back to handle different formats
     try:
+        num = float(normalized)
+        
+        # Handle special cases
+        if num == 0:
+            return "0"
+        
         # Handle integers vs floats
-        if '.' in normalized:
-            num = float(normalized)
-            # If it's actually an integer, format as int
-            if num.is_integer():
-                return str(int(num))
-            else:
-                return str(num)
+        if num.is_integer():
+            return str(int(num))
         else:
-            return str(int(normalized))
+            # For decimals, limit to reasonable precision
+            return f"{num:.6f}".rstrip('0').rstrip('.')
+            
     except (ValueError, TypeError):
-        return normalized
+        # If we can't convert to float, return empty string
+        return ""
 
 
 def save_results(results: Dict, output_file: str):
@@ -230,7 +229,7 @@ Examples:
   python evaluate_gsm8k.py --model ./hf_sft_output
 
   # Evaluate with custom settings
-  python evaluate_gsm8k.py --model ./hf_sft_output --max-length 256 --output eval_results.json
+  python evaluate_gsm8k.py --model ./hf_sft_output --max-new-tokens 128 --output eval_results.json
 
   # Evaluate subset for quick testing
   python evaluate_gsm8k.py --model ./hf_sft_output --num-examples 100
@@ -239,12 +238,12 @@ Examples:
     
     parser.add_argument("--model", type=str, required=True,
                        help="Path to trained model directory")
-    parser.add_argument("--max-length", type=int, default=512,
-                       help="Maximum generation length")
+    parser.add_argument("--max-new-tokens", type=int, default=256,
+                       help="Maximum new tokens to generate")
     parser.add_argument("--num-examples", type=int, default=None,
                        help="Number of examples to evaluate (default: all)")
-    parser.add_argument("--output", type=str, default="gsm8k_eval_results.json",
-                       help="Output file for results")
+    parser.add_argument("--output", type=str, default=None,
+                       help="Output file for results (auto-generated if not provided)")
     parser.add_argument("--experiment-name", type=str, default="gsm8k_evaluation",
                        help="MLflow experiment name")
     parser.add_argument("--run-name", type=str, default=None,
@@ -257,66 +256,93 @@ Examples:
         print(f"❌ Model not found: {args.model}")
         return
     
-    print(f"🚀 Starting GSM8K Evaluation")
+    # Auto-generate output path if not provided
+    if args.output is None:
+        # Extract model directory name and create eval directory structure
+        model_path = Path(args.model)
+        model_dir_name = model_path.name
+        
+        # Create eval directory structure: ./eval/model_name/
+        eval_dir = Path("./eval") / model_dir_name
+        eval_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Create filename with number of examples
+        if args.num_examples:
+            filename = f"gsm8k_eval_{args.num_examples}examples.json"
+        else:
+            filename = "gsm8k_eval_full.json"
+        
+        args.output = str(eval_dir / filename)
+    
+    print(f"🚀 Starting GSM8K evaluation")
     print(f"   Model: {args.model}")
-    print(f"   Max Length: {args.max_length}")
     print(f"   Output: {args.output}")
+    print(f"   Max new tokens: {args.max_new_tokens}")
     
-    # Setup MLflow
-    mlflow.set_experiment(args.experiment_name)
-    
-    if args.run_name is None:
-        model_name = Path(args.model).name
-        args.run_name = f"eval_{model_name}"
-    
-    # Load model and tokenizer
-    print("🤖 Loading model and tokenizer...")
-    tokenizer = AutoTokenizer.from_pretrained(args.model)
-    model = AutoModelForCausalLM.from_pretrained(args.model)
-    
-    # Set pad token if not set
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-    
-    # Move to GPU if available
-    if torch.cuda.is_available():
-        model = model.cuda()
-        print(f"   Model moved to GPU: {torch.cuda.get_device_name()}")
-    
-    # Load test dataset
+    # Load test data
     test_examples = load_gsm8k_test()
     
     # Limit examples if specified
     if args.num_examples:
         test_examples = test_examples[:args.num_examples]
-        print(f"   Limited to {len(test_examples)} examples")
+        print(f"   Evaluating on {len(test_examples)} examples")
     
-    # Run evaluation with MLflow tracking
+    # Load model
+    print(f"🤖 Loading model from {args.model}")
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(args.model)
+        model = AutoModelForCausalLM.from_pretrained(
+            args.model,
+            torch_dtype=torch.float16,
+            device_map="auto"
+        )
+        
+        # Set pad token if not set
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
+        
+        model.eval()
+        print(f"   ✅ Model loaded successfully")
+        
+    except Exception as e:
+        print(f"❌ Error loading model: {e}")
+        return
+    
+    # Start MLflow tracking
+    mlflow.set_experiment(args.experiment_name)
+    
+    # Generate run name
+    if args.run_name is None:
+        model_name = Path(args.model).name
+        num_examples_str = f"{args.num_examples}ex" if args.num_examples else "full"
+        args.run_name = f"eval_{model_name}_{num_examples_str}"
+    
     with mlflow.start_run(run_name=args.run_name):
         # Log parameters
-        mlflow.log_params({
-            "model_path": args.model,
-            "max_length": args.max_length,
-            "num_examples": len(test_examples),
-            "total_test_examples": len(load_gsm8k_test()) if not args.num_examples else args.num_examples
-        })
+        mlflow.log_param("model_path", args.model)
+        mlflow.log_param("max_new_tokens", args.max_new_tokens)
+        mlflow.log_param("num_examples", args.num_examples or len(test_examples))
         
-        # Evaluate
-        results = evaluate_model(model, tokenizer, test_examples, args.max_length)
+        # Run evaluation
+        eval_results = evaluate_model(model, tokenizer, test_examples, args.max_new_tokens)
         
         # Log metrics
-        mlflow.log_metrics({
-            "accuracy": results["accuracy"],
-            "correct_answers": results["correct"],
-            "total_examples": results["total"]
-        })
+        mlflow.log_metric("accuracy", eval_results["accuracy"])
+        mlflow.log_metric("correct", eval_results["correct"])
+        mlflow.log_metric("total", eval_results["total"])
+        
+        # Print results
+        print(f"🎯 Evaluation Results:")
+        print(f"   Accuracy: {eval_results['accuracy']:.4f}")
+        print(f"   Correct: {eval_results['correct']}/{eval_results['total']}")
         
         # Save results
-        save_results(results, args.output)
+        save_results(eval_results, args.output)
         
-        print(f"📊 MLflow experiment: {args.experiment_name}")
-        print(f"   Run: {args.run_name}")
-        print(f"   Final Accuracy: {results['accuracy']:.4f}")
+        # Log results file as artifact
+        mlflow.log_artifact(args.output)
+        
+        print(f"✅ Evaluation complete!")
 
 
 if __name__ == "__main__":

@@ -63,14 +63,13 @@ def format_prompt(example: Dict[str, Any]) -> str:
         example: Dictionary with 'question' and 'answer' keys
         
     Returns:
-        Formatted prompt string (only the answer part)
+        Formatted prompt string with question and answer for SFT
     """
+    question = example.get('question', '')
     answer = example.get('answer', '')
     
-    # Only train on the answer part
-    prompt = answer
-    
-    return prompt
+    # Format as Question: ... Answer: ... for proper SFT on QA pairs
+    return f"Question: {question}\nAnswer: {answer}"
 
 
 def find_optimal_batch_size(model, tokenizer, dataset, max_length: int, max_batch_size: int = 16) -> int:
@@ -160,7 +159,7 @@ def validate_dataset(dataset: Dataset) -> bool:
 
 def tokenize_function(examples: Dict[str, Any], tokenizer, max_length: int = 512) -> Dict[str, Any]:
     """
-    Tokenize the examples.
+    Tokenize the examples for QA training.
     
     Args:
         examples: Batch of examples (dict with lists when batched=True)
@@ -172,8 +171,8 @@ def tokenize_function(examples: Dict[str, Any], tokenizer, max_length: int = 512
     """
     # Handle batched examples (dict with lists)
     if isinstance(examples.get('answer'), list):
-        # Batched case: examples is a dict with lists of answers
-        prompts = [format_prompt({'answer': ans}) for ans in examples['answer']]
+        # Batched case: examples is a dict with lists
+        prompts = [format_prompt({'question': q, 'answer': a}) for q, a in zip(examples['question'], examples['answer'])]
     else:
         # Single example case
         prompts = [format_prompt(examples)]
@@ -289,7 +288,7 @@ def main():
     if args.run_name is None:
         dataset_name = Path(args.dataset).stem
         model_name = args.model.split('/')[-1]
-        args.run_name = f"{dataset_name}_{model_name}_epochs{args.epochs}_lr{args.lr}"
+        args.run_name = f"{dataset_name}_{model_name}"
     
     print(f"   Experiment: {args.experiment_name}")
     print(f"   Run: {args.run_name}")
@@ -322,6 +321,15 @@ def main():
     model_max_length = getattr(tokenizer, 'model_max_length', None)
     if model_max_length is None:
         # Fallback for models that don't specify max length
+        model_max_length = 2048
+    
+    # Cap max_length on resource-constrained systems (Mac/CPU)
+    is_mac = torch.backends.mps.is_available()
+    is_cpu_only = not torch.cuda.is_available() and not is_mac
+    is_resource_constrained = is_mac or is_cpu_only
+    
+    if is_resource_constrained and model_max_length > 2048:
+        print(f"   Detected resource-constrained system, capping max_length at 2048 (model default: {model_max_length})")
         model_max_length = 2048
     
     # Use model's max length if not specified by user
@@ -510,7 +518,7 @@ def main():
         outputs = test_model.generate(
             **inputs,
             max_length=100,
-            temperature=0.7,
+            temperature=0.3,
             do_sample=True,
             pad_token_id=test_tokenizer.eos_token_id
         )
