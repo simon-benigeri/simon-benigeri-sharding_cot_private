@@ -66,7 +66,7 @@ def extract_final_answer(text: str) -> str:
     return INVALID_ANS
 
 
-def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 256) -> str:
+def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 256, system_prompt: str = None) -> str:
     """
     Generate answer for a given question using the trained model.
     
@@ -75,12 +75,20 @@ def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 256) 
         tokenizer: Model tokenizer
         question: Question to answer
         max_new_tokens: Maximum new tokens to generate
+        system_prompt: Optional system prompt to prepend
         
     Returns:
         Generated answer text
     """
+    # Default system prompt if none provided
+    if system_prompt is None:
+        system_prompt = "You are a helpful assistant that solves math problems step by step. Always end your answer with '#### [number]' where [number] is the final numerical answer."
+    
     # Format prompt to match training format exactly
-    prompt = f"Question: {question}\nAnswer:"
+    if system_prompt:
+        prompt = f"{system_prompt}\nQuestion: {question}\nAnswer:"
+    else:
+        prompt = f"Question: {question}\nAnswer:"
     
     # Tokenize
     inputs = tokenizer(
@@ -115,7 +123,7 @@ def generate_answer(model, tokenizer, question: str, max_new_tokens: int = 256) 
     return answer.strip()
 
 
-def evaluate_model(model, tokenizer, test_examples: List[Dict], max_new_tokens: int = 256) -> Dict:
+def evaluate_model(model, tokenizer, test_examples: List[Dict], max_new_tokens: int = 256, system_prompt: str = None) -> Dict:
     """
     Evaluate model on test examples.
     
@@ -124,6 +132,7 @@ def evaluate_model(model, tokenizer, test_examples: List[Dict], max_new_tokens: 
         tokenizer: Model tokenizer
         test_examples: List of test examples
         max_new_tokens: Maximum new tokens to generate
+        system_prompt: Optional system prompt to use
         
     Returns:
         Evaluation results dictionary
@@ -136,7 +145,7 @@ def evaluate_model(model, tokenizer, test_examples: List[Dict], max_new_tokens: 
     
     for example in tqdm(test_examples, desc="Evaluating"):
         # Generate answer
-        generated_answer = generate_answer(model, tokenizer, example["question"], max_new_tokens)
+        generated_answer = generate_answer(model, tokenizer, example["question"], max_new_tokens, system_prompt)
         
         # Extract final answer from generation
         predicted_answer = extract_final_answer(generated_answer)
@@ -248,6 +257,8 @@ Examples:
                        help="MLflow experiment name")
     parser.add_argument("--run-name", type=str, default=None,
                        help="MLflow run name")
+    parser.add_argument("--system-prompt", type=str, default=None,
+                       help="System prompt to use during evaluation (default: math problem solving prompt)")
     
     args = parser.parse_args()
     
@@ -324,7 +335,7 @@ Examples:
         mlflow.log_param("num_examples", args.num_examples or len(test_examples))
         
         # Run evaluation
-        eval_results = evaluate_model(model, tokenizer, test_examples, args.max_new_tokens)
+        eval_results = evaluate_model(model, tokenizer, test_examples, args.max_new_tokens, args.system_prompt)
         
         # Log metrics
         mlflow.log_metric("accuracy", eval_results["accuracy"])

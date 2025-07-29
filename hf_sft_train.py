@@ -55,12 +55,13 @@ def load_jsonl_dataset(file_path: str) -> Dict[str, Dataset]:
     }
 
 
-def format_prompt(example: Dict[str, Any]) -> str:
+def format_prompt(example, system_prompt=None):
     """
     Format example into training prompt.
     
     Args:
         example: Dictionary with 'question' and 'answer' keys
+        system_prompt: Optional system prompt to prepend
         
     Returns:
         Formatted prompt string with question and answer for SFT
@@ -68,8 +69,15 @@ def format_prompt(example: Dict[str, Any]) -> str:
     question = example.get('question', '')
     answer = example.get('answer', '')
     
-    # Format as Question: ... Answer: ... for proper SFT on QA pairs
-    return f"Question: {question}\nAnswer: {answer}"
+    # Default system prompt if none provided
+    if system_prompt is None:
+        system_prompt = "You are a helpful assistant that solves math problems step by step. Always end your answer with '#### [number]' where [number] is the final numerical answer."
+    
+    # Format with system prompt for proper SFT on QA pairs
+    if system_prompt:
+        return f"{system_prompt}\nQuestion: {question}\nAnswer: {answer}"
+    else:
+        return f"Question: {question}\nAnswer: {answer}"
 
 
 def find_optimal_batch_size(model, tokenizer, dataset, max_length: int, max_batch_size: int = 16) -> int:
@@ -157,7 +165,7 @@ def validate_dataset(dataset: Dataset) -> bool:
     return True
 
 
-def tokenize_function(examples: Dict[str, Any], tokenizer, max_length: int = 512) -> Dict[str, Any]:
+def tokenize_function(examples: Dict[str, Any], tokenizer, max_length: int = 512, system_prompt: str = None) -> Dict[str, Any]:
     """
     Tokenize the examples for QA training.
     
@@ -165,6 +173,7 @@ def tokenize_function(examples: Dict[str, Any], tokenizer, max_length: int = 512
         examples: Batch of examples (dict with lists when batched=True)
         tokenizer: Hugging Face tokenizer
         max_length: Maximum sequence length
+        system_prompt: Optional system prompt to prepend
         
     Returns:
         Tokenized examples
@@ -172,10 +181,10 @@ def tokenize_function(examples: Dict[str, Any], tokenizer, max_length: int = 512
     # Handle batched examples (dict with lists)
     if isinstance(examples.get('answer'), list):
         # Batched case: examples is a dict with lists
-        prompts = [format_prompt({'question': q, 'answer': a}) for q, a in zip(examples['question'], examples['answer'])]
+        prompts = [format_prompt({'question': q, 'answer': a}, system_prompt) for q, a in zip(examples['question'], examples['answer'])]
     else:
         # Single example case
-        prompts = [format_prompt(examples)]
+        prompts = [format_prompt(examples, system_prompt)]
     
     # Tokenize
     tokenized = tokenizer(
@@ -267,6 +276,8 @@ def main():
                        help="Learning rate scheduler type")
     parser.add_argument("--enable-mixed-precision", action="store_true",
                        help="Enable mixed precision training (bf16/fp16)")
+    parser.add_argument("--system-prompt", type=str, default=None,
+                       help="System prompt to prepend to all examples (default: math problem solving prompt)")
     
     args = parser.parse_args()
     
@@ -353,12 +364,12 @@ def main():
     # Tokenize datasets
     print("🔤 Tokenizing datasets...")
     tokenized_train_dataset = train_dataset.map(
-        lambda x: tokenize_function(x, tokenizer, args.max_length),
+        lambda x: tokenize_function(x, tokenizer, args.max_length, args.system_prompt),
         batched=True,
         remove_columns=train_dataset.column_names
     )
     tokenized_validation_dataset = validation_dataset.map(
-        lambda x: tokenize_function(x, tokenizer, args.max_length),
+        lambda x: tokenize_function(x, tokenizer, args.max_length, args.system_prompt),
         batched=True,
         remove_columns=validation_dataset.column_names
     )
