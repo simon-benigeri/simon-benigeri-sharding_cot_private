@@ -90,13 +90,7 @@ def find_optimal_batch_size(model, tokenizer, dataset, max_length: int, max_batc
         print("   No GPU available, using batch size 1")
         return 1
     
-    # Get a sample batch for testing
-    sample_data = dataset.select(range(min(10, len(dataset))))
-    tokenized_sample = sample_data.map(
-        lambda x: tokenize_function(x, tokenizer, max_length),
-        batched=True,
-        remove_columns=sample_data.column_names
-    )
+    # Get a sample batch for testing (skip this for now, we'll test with dummy data)
     
     # Test batch sizes from 1 to max_batch_size
     for batch_size in range(1, max_batch_size + 1):
@@ -166,15 +160,20 @@ def tokenize_function(examples: Dict[str, Any], tokenizer, max_length: int = 512
     Tokenize the examples.
     
     Args:
-        examples: Batch of examples
+        examples: Batch of examples (dict with lists when batched=True)
         tokenizer: Hugging Face tokenizer
         max_length: Maximum sequence length
         
     Returns:
         Tokenized examples
     """
-    # Format prompts
-    prompts = [format_prompt(ex) for ex in examples]
+    # Handle batched examples (dict with lists)
+    if isinstance(examples.get('answer'), list):
+        # Batched case: examples is a dict with lists of answers
+        prompts = [format_prompt({'answer': ans}) for ans in examples['answer']]
+    else:
+        # Single example case
+        prompts = [format_prompt(examples)]
     
     # Tokenize
     tokenized = tokenizer(
@@ -382,7 +381,6 @@ def main():
         max_grad_norm=args.gradient_clip,
         lr_scheduler_type=args.lr_scheduler,
         dataloader_num_workers=4,
-        remove_unused_columns=False,
     )
     
     # Trainer
