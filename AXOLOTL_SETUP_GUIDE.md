@@ -66,6 +66,19 @@ The config automatically maps:
 - `answer` → `field_output`
 - Formats as: `"Question: {question}\nAnswer: {answer}"`
 
+### 🤖 System Prompt for Proper Formatting
+
+The config includes a system prompt to ensure consistent answer formatting:
+
+```yaml
+system_prompt: "You are a helpful assistant that solves math problems step by step. Always end your answer with '#### [number]' where [number] is the final numerical answer."
+```
+
+This ensures the model learns to:
+- ✅ Show step-by-step reasoning
+- ✅ End with `#### number` format
+- ✅ Match the evaluation script expectations
+
 ## 🏋️ Training Commands
 
 ### Quick Test (10 samples)
@@ -266,6 +279,23 @@ tensorboard --logdir ./axolotl_outputs/
 3. **Conservative learning rates** - 2e-5 or lower
 4. **Monitor for overfitting** - use validation set
 5. **Test on different question types** - ensure generalization
+
+### System Prompt Customization:
+
+#### For GSM8K (Default):
+```yaml
+system_prompt: "You are a helpful assistant that solves math problems step by step. Always end your answer with '#### [number]' where [number] is the final numerical answer."
+```
+
+#### For Alternative CoT Datasets:
+```yaml
+system_prompt: "You are a helpful assistant that provides clear, step-by-step mathematical reasoning. Always conclude with '#### [final_answer]' containing only the numerical result."
+```
+
+#### For More Structured Output:
+```yaml
+system_prompt: "Solve math problems systematically. Show your work clearly and always end with '#### [number]' where [number] is the exact numerical answer without units or extra text."
+```
 
 ### For Small Datasets (10-100 samples):
 1. **More epochs** - 3-5 epochs

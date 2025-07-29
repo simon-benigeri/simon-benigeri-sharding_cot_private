@@ -9,7 +9,7 @@ strict: false
 datasets:
   - path: sft_data/gsm8k/10/original.jsonl
     type:
-      system_prompt: ""
+      system_prompt: "You are a helpful assistant that solves math problems step by step. Always end your answer with '#### [number]' where [number] is the final numerical answer."
       field_system: system
       field_instruction: question
       field_output: answer
