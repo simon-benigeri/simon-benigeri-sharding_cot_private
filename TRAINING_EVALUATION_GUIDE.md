@@ -31,6 +31,15 @@ python hf_sft_train.py \
     --output-dir ./models/gpt2_original_100samples \
     --experiment-name "model_comparison"
 
+# Train on CPU for local testing (smaller models)
+python hf_sft_train.py \
+    --dataset sft_data/gsm8k/10/original.jsonl \
+    --model HuggingFaceTB/SmolLM-135M \
+    --batch-size 1 \
+    --epochs 3 \
+    --output-dir ./models/smollm_original_10samples \
+    --experiment-name "local_cpu_test_smollm"
+
 # Train with mixed precision for faster GPU training
 python hf_sft_train.py \
     --dataset sft_data/gsm8k/100/alternative_cots_reasoning_only_direct.jsonl \
@@ -39,6 +48,8 @@ python hf_sft_train.py \
     --auto-batch-size \
     --output-dir ./models/olmo_reasoning_direct_100samples \
     --experiment-name "model_comparison"
+
+
 ```
 
 ## 🔍 Evaluating Models
